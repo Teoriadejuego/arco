@@ -1,0 +1,211 @@
+{
+  "edition": "ARCO-demo-20261021",
+  "syntheticOnly": true,
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "CLAVE-SALMER.html",
+      "bytes": 162520,
+      "sha256": "a1514fd1ee6159ead8fbe48c01c0471e6e61b115234a9f68ffcd0b0e72a2a34d"
+    },
+    {
+      "file": "CLAVE.html",
+      "bytes": 1035603,
+      "sha256": "9e8635459767bb4d8f9d3622595bd4e5b24d2d2918c9c368c6124efea38b7748"
+    },
+    {
+      "file": "DOVELA.html",
+      "bytes": 1292811,
+      "sha256": "1e64406264b8beeba047348ec49b1bfc90f70d5bd36b0736563fbdae3e8b47dc"
+    },
+    {
+      "file": "LEEME.txt",
+      "bytes": 1141,
+      "sha256": "de35bdd86059300d8843f4280b53d202d624e5af1c47ab01b59c884991133018"
+    },
+    {
+      "file": "LICENCIA-SheetJS.txt",
+      "bytes": 11355,
+      "sha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
+    },
+    {
+      "file": "PBIS-wave1.dovela",
+      "bytes": 15191,
+      "sha256": "b0db865186245a4e8faf0ea6f48d3f0542961585a1f840471494685851244029"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2112,
+      "sha256": "c4ff25d2d9b3b975ef88f0581391cc2108c9d0de25f091713de9555d8cc2b659"
+    },
+    {
+      "file": "SALMER.html",
+      "bytes": 998230,
+      "sha256": "f377178e947191dde03bab8641ef207713e7556d1b2abbbd196742be3389b794"
+    },
+    {
+      "file": "demo-pbis.arco",
+      "bytes": 138584,
+      "sha256": "25e84d1677581e6363635209c4ba4d9331c4a2f74650de476ed0d44a535fbfd5"
+    },
+    {
+      "file": "demo-titulacion.arco",
+      "bytes": 164680,
+      "sha256": "4c07a5cd9d367e81db0b86b82d6ff46a9a39019d222006f320e085c5c450893d"
+    },
+    {
+      "file": "ejemplos/completo/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "ceea3d9c0364d6dc91a888c827420fe4fba61172f1e24ad5f74e5eebae72bce5"
+    },
+    {
+      "file": "ejemplos/completo/encuesta.xlsx",
+      "bytes": 17035,
+      "sha256": "9f67eb89780de8365a9e19d43239569b38d4e6acc22f4d2274d85b13edaf4b72"
+    },
+    {
+      "file": "ejemplos/completo/informe.arco",
+      "bytes": 149506,
+      "sha256": "66ff4f8b875f49a3f401c47b14476e84831905131249f14887eb4632b6799f74"
+    },
+    {
+      "file": "ejemplos/completo/informe.dovela",
+      "bytes": 15831,
+      "sha256": "ee1fad16e4a3c2ae3c3c90c1d44b96b2c36731d2490e344d8a2c75838d233778"
+    },
+    {
+      "file": "ejemplos/esencial/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "f6b08b8ef86ae6d354e1c38a6bccd7986aad8edaa1b014f2847dfd0ebe9634a2"
+    },
+    {
+      "file": "ejemplos/esencial/centro-6701.xlsx",
+      "bytes": 11301,
+      "sha256": "52b57841a7b03a56bcb7ac6effa7bec696dd9b7195b4425e3c8b37caf06a9b46"
+    },
+    {
+      "file": "ejemplos/esencial/centro-6702.xlsx",
+      "bytes": 11301,
+      "sha256": "ae9f699a4592c1df0b4fc2389edf1bed87386a2ecb4fbbb42dc542611438014a"
+    },
+    {
+      "file": "ejemplos/esencial/informe.arco",
+      "bytes": 50126,
+      "sha256": "7090bd370cf810d212583c2cfc902099df395c97482dc4ba30c825c0b1aa8431"
+    },
+    {
+      "file": "ejemplos/esencial/informe.dovela",
+      "bytes": 7200,
+      "sha256": "e861b2103c1088cd746e5de9c2f656ad478292597f756b9f8329ada0c7be2ab5"
+    },
+    {
+      "file": "ejemplos/salmer/CLAVE.txt",
+      "bytes": 64,
+      "sha256": "501ae6aa8b741934188d6de62ceeaebaeb7588398b422809c64ad6d902ee11bd"
+    },
+    {
+      "file": "ejemplos/salmer/SALMER-ejemplo-completo.arco",
+      "bytes": 83422,
+      "sha256": "88de868b1e3a2b5bb94bad419f87af962b17093657056d69ea43b32d03d80534"
+    },
+    {
+      "file": "ejemplos/salmer/SALMER-ejemplo-completo.dovela",
+      "bytes": 18077,
+      "sha256": "1599db6a32e14d917ef3be71020158aceeaacbe37ad054f2b295c0946f904094"
+    },
+    {
+      "file": "ejemplos/salmer/SALMER-ejemplo-completo.xlsx",
+      "bytes": 8085,
+      "sha256": "7e79dd3c732f1f5a08d286f7cca38c542893ce2417ebcca20d1ceaa3703bde5d"
+    },
+    {
+      "file": "ejemplos/tres-olas/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "d7f03b558301b2c1ca5b58366bd55838f4ddab2ad71ce3cc96378f4c81186a42"
+    },
+    {
+      "file": "ejemplos/tres-olas/cierre.xlsx",
+      "bytes": 17932,
+      "sha256": "1acfa6f8a8e30c0cfcee331ef462993ad576c339df0b64388f681fbd5777bf86"
+    },
+    {
+      "file": "ejemplos/tres-olas/informe.arco",
+      "bytes": 457278,
+      "sha256": "57fbd88e5adf46fd9a2ee0fb17c3ffeb377cb8c03ee996db7289a2d38b03bc8e"
+    },
+    {
+      "file": "ejemplos/tres-olas/informe.dovela",
+      "bytes": 16361,
+      "sha256": "05b436a5ac864cddb9220fa24109da2d2934298d97d995a511d5f040ee9da1dc"
+    },
+    {
+      "file": "ejemplos/tres-olas/inicio.xlsx",
+      "bytes": 17033,
+      "sha256": "ad6a309073badbdff2983e2aebfa0df259aac2627287f4ecb4c43fed1fe6057f"
+    },
+    {
+      "file": "ejemplos/tres-olas/seguimiento.xlsx",
+      "bytes": 17936,
+      "sha256": "d61779442e59674c1eb402d4fa06405ab866e876754703b086d48135c12f089d"
+    },
+    {
+      "file": "ejemplos/universidad/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "e469dc669479000d1d3ea85e24b5826cdc756d3e28d8e049ccd9fd0a29f49374"
+    },
+    {
+      "file": "ejemplos/universidad/informe.arco",
+      "bytes": 138886,
+      "sha256": "e89ddbf3967f33ac3ef6f86df8301fb8105855b5b44bcbbfbb10a90ff82cd376"
+    },
+    {
+      "file": "ejemplos/universidad/informe.dovela",
+      "bytes": 11104,
+      "sha256": "0f8602047b947ffe1e52a98bdb7f31d63f003f486412fd15bc514cc48c32b0f7"
+    },
+    {
+      "file": "ejemplos/universidad/universidad.xlsx",
+      "bytes": 18627,
+      "sha256": "42e8bb968c360e27686d5af1d0618ad4e95e49d04e050054e0b595fa3604a916"
+    },
+    {
+      "file": "index.html",
+      "bytes": 30183,
+      "sha256": "0167ed49573afbf740c80869d9dc375a1b5e60760f4707caf47a04b3d12f00a0"
+    },
+    {
+      "file": "integridad-dovela.json",
+      "bytes": 267,
+      "sha256": "630545f98525f4a83acda34e234f74f65b04618be6c75047dbb71125f40e1141"
+    },
+    {
+      "file": "integridad.json",
+      "bytes": 674,
+      "sha256": "391665509acf94566ab78dfd7e1740bcf4145355a9146574fe0257aa2916df0d"
+    },
+    {
+      "file": "plantillas/ISAT.dovela",
+      "bytes": 10839,
+      "sha256": "1f5b1adc7fe3caf37d46e44e1cd553b3a7da047e32deb1eebd0fb2a04b213209"
+    },
+    {
+      "file": "plantillas/PBIS-esencial.dovela",
+      "bytes": 7201,
+      "sha256": "d39264ed5ddff5ea06dd44e6a92115159f8ba4d3bd98e7458a02d7358fb655e5"
+    },
+    {
+      "file": "plantillas/PBIS.dovela",
+      "bytes": 15218,
+      "sha256": "694a095dcfde867811679213986fb01c0185d7bb8b4352d614491130088a54fd"
+    }
+  ]
+}

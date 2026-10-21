@@ -1,0 +1,696 @@
+{
+  "format": "DOVELA",
+  "version": 1,
+  "import": {
+    "sheet": "Users",
+    "headerRow": 1,
+    "mode": "waves",
+    "waves": [
+      {
+        "sheet": "Users",
+        "headerRow": 1,
+        "period": {
+          "id": "demo-1",
+          "label": "Inicio · datos simulados"
+        }
+      },
+      {
+        "sheet": "Users",
+        "headerRow": 1,
+        "period": {
+          "id": "demo-2",
+          "label": "Seguimiento · datos simulados"
+        }
+      },
+      {
+        "sheet": "Users",
+        "headerRow": 1,
+        "period": {
+          "id": "demo-3",
+          "label": "Cierre · datos simulados"
+        }
+      }
+    ]
+  },
+  "config": {
+    "version": 1,
+    "datasetId": "dovela-pbis-wave1",
+    "title": "Conocer el grupo con más detalle",
+    "synthetic": true,
+    "period": {
+      "id": "2026-10",
+      "label": "Octubre de 2026"
+    },
+    "identity": {
+      "id": "Usuario Id",
+      "displayCode": "Alumno Id",
+      "name": "",
+      "surname": "",
+      "labelMode": "code"
+    },
+    "hierarchy": [
+      {
+        "id": "center",
+        "label": "Centro",
+        "column": "Estudio",
+        "prefix": "Centro "
+      },
+      {
+        "id": "course",
+        "label": "Curso",
+        "column": "Curso",
+        "prefix": ""
+      },
+      {
+        "id": "class",
+        "label": "Clase",
+        "column": "Grupo",
+        "prefix": "Clase "
+      }
+    ],
+    "sections": [
+      {
+        "id": "attention",
+        "label": "Señales de acoso",
+        "order": 1
+      },
+      {
+        "id": "wellbeing",
+        "label": "Bienestar",
+        "order": 2
+      },
+      {
+        "id": "relations",
+        "label": "Relaciones",
+        "order": 3
+      },
+      {
+        "id": "additional",
+        "label": "Información complementaria",
+        "order": 4
+      }
+    ],
+    "networks": [
+      {
+        "id": "relaciones",
+        "sources": [
+          {
+            "column": "redes1",
+            "routeColumn": "dia",
+            "routeValue": "Par",
+            "evidenceColumn": "eredes1"
+          },
+          {
+            "column": "redes2",
+            "routeColumn": "dia",
+            "routeValue": "Impar",
+            "evidenceColumn": "eredes2"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie",
+          "Ninguno",
+          "Ninguna"
+        ],
+        "invalidLabels": [
+          "Error en relación"
+        ],
+        "allowSelf": false,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "positive",
+            "label": "Buena relación"
+          },
+          {
+            "id": "negative",
+            "label": "Mala relación"
+          }
+        ],
+        "labels": [
+          {
+            "input": "Buena relación",
+            "relation": "positive",
+            "weight": 1
+          },
+          {
+            "input": "Muy buena relación",
+            "relation": "positive",
+            "weight": 2
+          },
+          {
+            "input": "Mala relación",
+            "relation": "negative",
+            "weight": 1
+          },
+          {
+            "input": "Muy mala relación",
+            "relation": "negative",
+            "weight": 2
+          }
+        ],
+        "defaultRelation": "",
+        "defaultWeight": 1
+      },
+      {
+        "id": "acoso",
+        "sources": [
+          {
+            "column": "bullying"
+          }
+        ],
+        "laterColumns": [
+          "fqbullying",
+          "stopbullying",
+          "conductas",
+          "mediador"
+        ],
+        "noneValues": [
+          "Nadie",
+          "Ninguno",
+          "Ninguna"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": 15,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Mención de acoso"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "mediacion",
+        "sources": [
+          {
+            "column": "mediador",
+            "evidenceColumn": "emediador"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie",
+          "Ninguno",
+          "Ninguna"
+        ],
+        "invalidLabels": [
+          "Error en relación"
+        ],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "positive",
+            "label": "Buena mediación"
+          },
+          {
+            "id": "negative",
+            "label": "Mala mediación"
+          }
+        ],
+        "labels": [
+          {
+            "input": "Buena mediación",
+            "relation": "positive",
+            "weight": 1
+          },
+          {
+            "input": "Muy buena mediación",
+            "relation": "positive",
+            "weight": 2
+          },
+          {
+            "input": "Mala mediación",
+            "relation": "negative",
+            "weight": 1
+          },
+          {
+            "input": "Muy mala mediación",
+            "relation": "negative",
+            "weight": 2
+          }
+        ],
+        "defaultRelation": "",
+        "defaultWeight": 1
+      }
+    ],
+    "indicators": [
+      {
+        "id": "acoso_declarado",
+        "label": "Declaración de acoso",
+        "question": "¿Declara haber sufrido acoso?",
+        "type": "categorical",
+        "section_id": "attention",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "self",
+        "network": "acoso",
+        "options": [
+          {
+            "id": "si",
+            "label": "Sí"
+          },
+          {
+            "id": "no",
+            "label": "No"
+          }
+        ]
+      },
+      {
+        "id": "acoso_dos_menciones",
+        "label": "Dos o más menciones de acoso",
+        "question": "¿Cuántos estudiantes reciben dos o más menciones de acoso?",
+        "type": "categorical",
+        "section_id": "attention",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class"
+        ],
+        "operation": "received_flag",
+        "network": "acoso",
+        "threshold": 2,
+        "options": [
+          {
+            "id": "si",
+            "label": "Sí"
+          },
+          {
+            "id": "no",
+            "label": "No"
+          }
+        ]
+      },
+      {
+        "id": "menciones_acoso",
+        "label": "Menciones de compañeros",
+        "question": "¿Cuántas personas mencionan que sufre acoso?",
+        "type": "scale",
+        "section_id": "attention",
+        "order": 3,
+        "summary": true,
+        "levels": [
+          "student"
+        ],
+        "operation": "received",
+        "direction": "lower_better",
+        "network": "acoso",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "bienestar",
+        "label": "Bienestar",
+        "question": "¿Cómo ha sido su bienestar?",
+        "type": "scale",
+        "section_id": "wellbeing",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "sum",
+        "direction": "higher_better",
+        "raw_unit": "puntos de 0 a 12",
+        "terms": [
+          {
+            "id": "centro",
+            "sources": [
+              {
+                "column": "general"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "min": 0,
+            "max": 4
+          },
+          {
+            "id": "diversion",
+            "sources": [
+              {
+                "column": "fun"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "min": 0,
+            "max": 4
+          },
+          {
+            "id": "soledad",
+            "sources": [
+              {
+                "column": "alone"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "reverse": true,
+            "min": 0,
+            "max": 4
+          }
+        ]
+      },
+      {
+        "id": "buenas_recibidas",
+        "label": "Buenas relaciones recibidas",
+        "question": "¿Cuántas personas indican una buena relación?",
+        "type": "scale",
+        "section_id": "relations",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "direction": "higher_better",
+        "network": "relaciones",
+        "relation": "positive",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "malas_recibidas",
+        "label": "Malas relaciones recibidas",
+        "question": "¿Cuántas personas indican una mala relación?",
+        "type": "scale",
+        "section_id": "relations",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "direction": "lower_better",
+        "network": "relaciones",
+        "relation": "negative",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "crt",
+        "label": "Prueba CRT",
+        "question": "¿Cuántas preguntas ha acertado?",
+        "type": "scale",
+        "section_id": "additional",
+        "order": 1,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "correct",
+        "direction": "higher_better",
+        "raw_unit": "aciertos de 0 a 3",
+        "terms": [
+          {
+            "id": "carrera",
+            "sources": [
+              {
+                "column": "carrera1",
+                "routeColumn": "dia",
+                "routeValue": "Par"
+              },
+              {
+                "column": "carrera2",
+                "routeColumn": "dia",
+                "routeValue": "Impar"
+              }
+            ],
+            "stripPrefix": true,
+            "correct": [
+              "2",
+              "2º",
+              "2ª",
+              "2°",
+              "segundo",
+              "segunda"
+            ]
+          },
+          {
+            "id": "emilia",
+            "sources": [
+              {
+                "column": "emilia1",
+                "routeColumn": "dia",
+                "routeValue": "Par"
+              },
+              {
+                "column": "emilia2",
+                "routeColumn": "dia",
+                "routeValue": "Impar"
+              }
+            ],
+            "stripPrefix": true,
+            "correct": [
+              "Emilia",
+              "Se llama Emilia",
+              "La tercera hija se llama Emilia"
+            ]
+          },
+          {
+            "id": "library",
+            "sources": [
+              {
+                "column": "library1",
+                "routeColumn": "dia",
+                "routeValue": "Par"
+              },
+              {
+                "column": "library2",
+                "routeColumn": "dia",
+                "routeValue": "Impar"
+              }
+            ],
+            "stripPrefix": true,
+            "correct": [
+              "47",
+              "47 días",
+              "día 47",
+              "el día 47"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "participacion",
+        "label": "Participación",
+        "question": "¿Ha respondido al cuestionario?",
+        "type": "categorical",
+        "section_id": "additional",
+        "order": 2,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "participation",
+        "terms": [
+          {
+            "id": "start",
+            "sources": [
+              {
+                "column": "start"
+              }
+            ],
+            "stripPrefix": true
+          },
+          {
+            "id": "end",
+            "sources": [
+              {
+                "column": "end"
+              }
+            ],
+            "stripPrefix": true
+          }
+        ],
+        "options": [
+          {
+            "id": "completa",
+            "label": "Respuesta completa"
+          },
+          {
+            "id": "parcial",
+            "label": "Respuesta parcial"
+          },
+          {
+            "id": "sin_respuesta",
+            "label": "Sin respuesta"
+          }
+        ]
+      },
+      {
+        "id": "mediacion_recibida",
+        "label": "Buenas mediaciones recibidas",
+        "question": "¿Cuántas personas indican una buena mediación?",
+        "type": "scale",
+        "section_id": "additional",
+        "order": 3,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "direction": "higher_better",
+        "network": "mediacion",
+        "relation": "positive",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "mediacion_negativa_recibida",
+        "label": "Malas mediaciones recibidas",
+        "question": "¿Cuántas personas indican una mala mediación?",
+        "type": "scale",
+        "section_id": "additional",
+        "order": 4,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "direction": "lower_better",
+        "network": "mediacion",
+        "relation": "negative",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "relaciones",
+        "label": "Red de relaciones",
+        "question": "¿Cómo se relacionan los estudiantes?",
+        "type": "network",
+        "section_id": "additional",
+        "order": 5,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "network",
+        "network": "relaciones"
+      },
+      {
+        "id": "voz",
+        "label": "Voz del grupo",
+        "question": "¿Qué ayudaría a mejorar la experiencia en el centro?",
+        "type": "text",
+        "section_id": "additional",
+        "order": 9,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "text",
+        "terms": [
+          {
+            "id": "respuesta",
+            "sources": [
+              {
+                "column": "Comentario"
+              }
+            ],
+            "stripPrefix": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "format": "DOVELA",
+  "version": 1,
+  "import": {
+    "sheet": "Users",
+    "headerRow": 1,
+    "mode": "same_period"
+  },
+  "config": {
+    "version": 1,
+    "datasetId": "dovela-pbis-wave1",
+    "title": "Una primera mirada",
+    "synthetic": false,
+    "period": {
+      "id": "2026-10",
+      "label": "Octubre de 2026"
+    },
+    "identity": {
+      "id": "Usuario Id",
+      "displayCode": "Alumno Id",
+      "name": "",
+      "surname": "",
+      "labelMode": "code"
+    },
+    "hierarchy": [
+      {
+        "id": "center",
+        "label": "Centro",
+        "column": "Estudio",
+        "prefix": "Centro "
+      },
+      {
+        "id": "course",
+        "label": "Curso",
+        "column": "Curso",
+        "prefix": ""
+      },
+      {
+        "id": "class",
+        "label": "Clase",
+        "column": "Grupo",
+        "prefix": "Clase "
+      }
+    ],
+    "sections": [
+      {
+        "id": "wellbeing",
+        "label": "Bienestar",
+        "order": 2
+      },
+      {
+        "id": "relations",
+        "label": "Relaciones",
+        "order": 3
+      },
+      {
+        "id": "additional",
+        "label": "Información complementaria",
+        "order": 4
+      }
+    ],
+    "networks": [
+      {
+        "id": "relaciones",
+        "sources": [
+          {
+            "column": "redes1",
+            "routeColumn": "dia",
+            "routeValue": "Par",
+            "evidenceColumn": "eredes1"
+          },
+          {
+            "column": "redes2",
+            "routeColumn": "dia",
+            "routeValue": "Impar",
+            "evidenceColumn": "eredes2"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie",
+          "Ninguno",
+          "Ninguna"
+        ],
+        "invalidLabels": [
+          "Error en relación"
+        ],
+        "allowSelf": false,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "positive",
+            "label": "Buena relación"
+          },
+          {
+            "id": "negative",
+            "label": "Mala relación"
+          }
+        ],
+        "labels": [
+          {
+            "input": "Buena relación",
+            "relation": "positive",
+            "weight": 1
+          },
+          {
+            "input": "Muy buena relación",
+            "relation": "positive",
+            "weight": 2
+          },
+          {
+            "input": "Mala relación",
+            "relation": "negative",
+            "weight": 1
+          },
+          {
+            "input": "Muy mala relación",
+            "relation": "negative",
+            "weight": 2
+          }
+        ],
+        "defaultRelation": "",
+        "defaultWeight": 1
+      }
+    ],
+    "indicators": [
+      {
+        "id": "bienestar",
+        "label": "Bienestar",
+        "question": "¿Cómo ha sido su bienestar?",
+        "type": "scale",
+        "section_id": "wellbeing",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "sum",
+        "direction": "higher_better",
+        "raw_unit": "puntos de 0 a 12",
+        "terms": [
+          {
+            "id": "centro",
+            "sources": [
+              {
+                "column": "general"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "min": 0,
+            "max": 4
+          },
+          {
+            "id": "diversion",
+            "sources": [
+              {
+                "column": "fun"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "min": 0,
+            "max": 4
+          },
+          {
+            "id": "soledad",
+            "sources": [
+              {
+                "column": "alone"
+              }
+            ],
+            "stripPrefix": true,
+            "map": [
+              {
+                "input": "Nunca",
+                "output": 0
+              },
+              {
+                "input": "Casi nunca",
+                "output": 1
+              },
+              {
+                "input": "Algunas veces",
+                "output": 2
+              },
+              {
+                "input": "Casi siempre",
+                "output": 3
+              },
+              {
+                "input": "Siempre",
+                "output": 4
+              }
+            ],
+            "reverse": true,
+            "min": 0,
+            "max": 4
+          }
+        ]
+      },
+      {
+        "id": "buenas_recibidas",
+        "label": "Buenas relaciones recibidas",
+        "question": "¿Cuántas personas indican una buena relación?",
+        "type": "scale",
+        "section_id": "relations",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "direction": "higher_better",
+        "network": "relaciones",
+        "relation": "positive",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "participacion",
+        "label": "Participación",
+        "question": "¿Ha respondido al cuestionario?",
+        "type": "categorical",
+        "section_id": "additional",
+        "order": 2,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "participation",
+        "terms": [
+          {
+            "id": "start",
+            "sources": [
+              {
+                "column": "start"
+              }
+            ],
+            "stripPrefix": true
+          },
+          {
+            "id": "end",
+            "sources": [
+              {
+                "column": "end"
+              }
+            ],
+            "stripPrefix": true
+          }
+        ],
+        "options": [
+          {
+            "id": "completa",
+            "label": "Respuesta completa"
+          },
+          {
+            "id": "parcial",
+            "label": "Respuesta parcial"
+          },
+          {
+            "id": "sin_respuesta",
+            "label": "Sin respuesta"
+          }
+        ]
+      }
+    ]
+  }
+}

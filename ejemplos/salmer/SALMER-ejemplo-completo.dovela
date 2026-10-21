@@ -1,0 +1,749 @@
+{
+  "format": "DOVELA",
+  "version": 1,
+  "import": {
+    "sheet": "Users",
+    "headerRow": 1,
+    "mode": "same_period"
+  },
+  "config": {
+    "version": 1,
+    "datasetId": "salmer-demo",
+    "title": "Situaciones y relaciones · ejemplo SALMER",
+    "synthetic": true,
+    "period": {
+      "id": "demo-20261021",
+      "label": "Octubre de 2026 · datos simulados"
+    },
+    "identity": {
+      "id": "ID",
+      "displayCode": "ID",
+      "name": "Nombre",
+      "surname": "Apellidos",
+      "labelMode": "initials"
+    },
+    "hierarchy": [
+      {
+        "id": "center",
+        "label": "Centro",
+        "column": "Centro",
+        "prefix": "Centro "
+      },
+      {
+        "id": "course",
+        "label": "Curso",
+        "column": "Curso",
+        "prefix": ""
+      },
+      {
+        "id": "class",
+        "label": "Clase",
+        "column": "Clase",
+        "prefix": "Clase "
+      }
+    ],
+    "sections": [
+      {
+        "id": "experiencia",
+        "label": "Experiencia en el centro",
+        "order": 3
+      },
+      {
+        "id": "relaciones",
+        "label": "Relaciones",
+        "order": 4
+      },
+      {
+        "id": "situaciones",
+        "label": "Situaciones observadas",
+        "order": 2
+      },
+      {
+        "id": "tipos",
+        "label": "Menciones por tipo de situación",
+        "order": 1
+      }
+    ],
+    "networks": [
+      {
+        "id": "relaciones",
+        "sources": [
+          {
+            "column": "relaciones"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": false,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "positive",
+            "label": "Buena relación"
+          },
+          {
+            "id": "negative",
+            "label": "Mala relación"
+          }
+        ],
+        "labels": [
+          {
+            "input": "Muy mala relación",
+            "relation": "negative",
+            "weight": 2
+          },
+          {
+            "input": "Mala relación",
+            "relation": "negative",
+            "weight": 1
+          },
+          {
+            "input": "Buena relación",
+            "relation": "positive",
+            "weight": 1
+          },
+          {
+            "input": "Muy buena relación",
+            "relation": "positive",
+            "weight": 2
+          }
+        ],
+        "defaultRelation": "",
+        "defaultWeight": 1
+      },
+      {
+        "id": "menciones",
+        "sources": [
+          {
+            "column": "menciones"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Situaciones observadas"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_fisica",
+        "sources": [
+          {
+            "column": "menciones_fisica"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Agresiones físicas"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_verbal",
+        "sources": [
+          {
+            "column": "menciones_verbal"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Insultos, burlas o amenazas"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_exclusion",
+        "sources": [
+          {
+            "column": "menciones_exclusion"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Exclusión intencionada"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_rumores",
+        "sources": [
+          {
+            "column": "menciones_rumores"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Rumores o mentiras"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_pertenencias",
+        "sources": [
+          {
+            "column": "menciones_pertenencias"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Daños o sustracción de pertenencias"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_sexual",
+        "sources": [
+          {
+            "column": "menciones_sexual"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Conductas sexuales no deseadas"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      },
+      {
+        "id": "tipo_digital",
+        "sources": [
+          {
+            "column": "menciones_digital"
+          }
+        ],
+        "laterColumns": [],
+        "noneValues": [
+          "Nadie"
+        ],
+        "invalidLabels": [],
+        "allowSelf": true,
+        "maxOthers": null,
+        "relations": [
+          {
+            "id": "mention",
+            "label": "Situaciones por medios digitales"
+          }
+        ],
+        "labels": [],
+        "defaultRelation": "mention",
+        "defaultWeight": 1
+      }
+    ],
+    "indicators": [
+      {
+        "id": "bienestar",
+        "label": "Bienestar declarado",
+        "question": "¿Cómo ha estado esta semana?",
+        "type": "scale",
+        "section_id": "experiencia",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "numeric",
+        "direction": "higher_better",
+        "raw_unit": "respuesta de 0 a 10",
+        "terms": [
+          {
+            "id": "valor",
+            "sources": [
+              {
+                "column": "bienestar"
+              }
+            ],
+            "min": 0,
+            "max": 10
+          }
+        ]
+      },
+      {
+        "id": "grupo",
+        "label": "Experiencia en el grupo",
+        "question": "¿Cómo se encuentra en el grupo?",
+        "type": "categorical",
+        "section_id": "experiencia",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "category",
+        "terms": [
+          {
+            "id": "valor",
+            "sources": [
+              {
+                "column": "grupo"
+              }
+            ]
+          }
+        ],
+        "options": [
+          {
+            "id": "integrado",
+            "label": "A gusto"
+          },
+          {
+            "id": "intermedio",
+            "label": "Depende del momento"
+          },
+          {
+            "id": "dificil",
+            "label": "Me cuesta encontrar mi lugar"
+          }
+        ]
+      },
+      {
+        "id": "comentario",
+        "label": "Propuestas del grupo",
+        "question": "¿Qué ayudaría a mejorar la experiencia?",
+        "type": "text",
+        "section_id": "experiencia",
+        "order": 3,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "text",
+        "terms": [
+          {
+            "id": "valor",
+            "sources": [
+              {
+                "column": "comentario"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "buenas_recibidas",
+        "label": "Buenas relaciones recibidas",
+        "question": "¿Cuántas personas indican una buena relación?",
+        "type": "scale",
+        "section_id": "relaciones",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "relaciones",
+        "relation": "positive",
+        "direction": "higher_better",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "malas_recibidas",
+        "label": "Malas relaciones recibidas",
+        "question": "¿Cuántas personas indican una mala relación?",
+        "type": "scale",
+        "section_id": "relaciones",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "relaciones",
+        "relation": "negative",
+        "direction": "lower_better",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "red",
+        "label": "Red de relaciones",
+        "question": "¿Cómo se relacionan los estudiantes?",
+        "type": "network",
+        "section_id": "relaciones",
+        "order": 3,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "network",
+        "network": "relaciones"
+      },
+      {
+        "id": "autoseleccion",
+        "label": "Autoselección",
+        "question": "¿Se incluye entre quienes viven estas situaciones?",
+        "type": "categorical",
+        "section_id": "situaciones",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "self",
+        "network": "menciones",
+        "options": [
+          {
+            "id": "si",
+            "label": "Sí"
+          },
+          {
+            "id": "no",
+            "label": "No"
+          }
+        ]
+      },
+      {
+        "id": "menciones_recibidas",
+        "label": "Menciones de otras personas",
+        "question": "¿Cuántas personas indican que vive estas situaciones?",
+        "type": "scale",
+        "section_id": "situaciones",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "menciones",
+        "direction": "lower_better",
+        "raw_unit": "personas"
+      },
+      {
+        "id": "frecuencia",
+        "label": "Frecuencia observada",
+        "question": "¿Con qué frecuencia ha visto o sabido de estas situaciones?",
+        "type": "categorical",
+        "section_id": "situaciones",
+        "order": 3,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "category",
+        "terms": [
+          {
+            "id": "valor",
+            "sources": [
+              {
+                "column": "frecuencia"
+              }
+            ]
+          }
+        ],
+        "options": [
+          {
+            "id": "nunca",
+            "label": "No han ocurrido en los últimos dos meses"
+          },
+          {
+            "id": "una_dos",
+            "label": "Una o dos veces"
+          },
+          {
+            "id": "mensual",
+            "label": "Dos o tres veces al mes"
+          },
+          {
+            "id": "semanal",
+            "label": "Aproximadamente una vez por semana"
+          },
+          {
+            "id": "varias_semana",
+            "label": "Varias veces por semana"
+          },
+          {
+            "id": "no_se",
+            "label": "No lo sé"
+          }
+        ]
+      },
+      {
+        "id": "dificultad",
+        "label": "Dificultad para detener la situación",
+        "question": "¿Qué dificultad percibe para detener estas situaciones?",
+        "type": "categorical",
+        "section_id": "situaciones",
+        "order": 4,
+        "summary": false,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "category",
+        "terms": [
+          {
+            "id": "valor",
+            "sources": [
+              {
+                "column": "dificultad"
+              }
+            ]
+          }
+        ],
+        "options": [
+          {
+            "id": "nada",
+            "label": "Nada difícil"
+          },
+          {
+            "id": "poco",
+            "label": "Poco difícil"
+          },
+          {
+            "id": "bastante",
+            "label": "Bastante difícil"
+          },
+          {
+            "id": "mucho",
+            "label": "Muy difícil"
+          },
+          {
+            "id": "no_se",
+            "label": "No lo sé"
+          },
+          {
+            "id": "no_aplica",
+            "label": "No se han dado estas situaciones"
+          }
+        ]
+      },
+      {
+        "id": "tipo_fisica",
+        "label": "Agresiones físicas",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 1,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_fisica",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_verbal",
+        "label": "Insultos, burlas o amenazas",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 2,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_verbal",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_exclusion",
+        "label": "Exclusión intencionada",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 3,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_exclusion",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_rumores",
+        "label": "Rumores o mentiras",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 4,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_rumores",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_pertenencias",
+        "label": "Daños o sustracción de pertenencias",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 5,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_pertenencias",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_sexual",
+        "label": "Conductas sexuales no deseadas",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 6,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_sexual",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      },
+      {
+        "id": "tipo_digital",
+        "label": "Situaciones por medios digitales",
+        "question": "¿Cuántas personas mencionan este tipo de situación?",
+        "type": "scale",
+        "section_id": "tipos",
+        "order": 7,
+        "summary": true,
+        "levels": [
+          "center",
+          "course",
+          "class",
+          "student"
+        ],
+        "operation": "received",
+        "network": "tipo_digital",
+        "direction": "lower_better",
+        "raw_unit": "personas que lo especifican (sin autoselección)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="es">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wfev1gwWxG8mRVdW7Try+dxYe7QD/xKP63dhEai9JOw=' 'sha256-bbq56YRmaXtMvKOTw0xxOuUHafArTX6LpLNWjSk0cn0=' 'sha256-7W9TlBKmTNtakKAUS4czUNU22WrOHowgO1gdTYsRWp4=' 'sha256-mMZ5KaUTa7eImP1oHc4ZOD+Y82IjfjtbH+8RfldMp9g='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>CLAVE · ARCO</title>
+  <style>:root{--ink:#183f49;--muted:#526b71;--teal:#155e63;--teal-soft:#e8f1ed;--cream:#f5f4ef;--line:#d6e3df;--white:#fff;--coral:#a65040;--rose:#faefea;--radius:24px;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button,input,select,summary{touch-action:manipulation}a{color:var(--teal)}[hidden]{display:none!important}:focus-visible{outline:3px solid #be832c;outline-offset:4px}.skip-link{position:absolute;top:-80px;left:16px;padding:12px;background:white;z-index:30}.skip-link:focus{top:10px}.topbar{height:88px;padding:0 clamp(20px,5vw,76px);display:flex;align-items:center;gap:20px;background:#fff;border-bottom:1px solid var(--line)}.brand{border:0;background:transparent;display:flex;align-items:center;gap:12px;color:var(--ink);font-size:22px;font-weight:750;letter-spacing:.08em;padding:4px}.brand small{font-size:12px;font-weight:500;border-left:1px solid #bdcdcf;padding-left:14px;margin-left:12px;letter-spacing:.12em}.brand-mark{font-family:Georgia,serif;font-size:45px;font-weight:900;line-height:.8;color:var(--teal)}.local-label{margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap}.local-label span{font-size:8px;color:var(--teal);margin-right:5px}.button{border:1px solid #718c86;border-radius:10px;padding:11px 16px;min-height:44px;font-size:14px;font-weight:600;background:white;color:var(--ink);display:inline-flex;justify-content:center;align-items:center;gap:16px;transition:background .15s}.button:hover{background:#edf3f1}.button.primary{background:var(--teal);border-color:var(--teal);color:white}.button.primary:hover{background:#174f54}.button.secondary{background:transparent;border-color:#718c86;color:var(--teal)}.button.quiet{background:transparent;border-color:transparent}.wide{width:100%}.welcome{max-width:1216px;margin:auto;padding:72px 32px 88px;display:grid;grid-template-columns:1.15fr 1fr;gap:96px;align-items:center}.eyebrow{font-size:11px;font-weight:750;letter-spacing:.16em;color:var(--teal);margin:0 0 24px}.welcome h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,5.4vw,72px);font-weight:400;letter-spacing:-.045em;line-height:1.08;margin:0 0 28px}.welcome h1 em{font-weight:400;color:var(--teal)}.intro{font-size:18px;line-height:1.7;max-width:435px;color:var(--muted)}.perspectives{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:13px;margin:32px 0}.perspectives span{padding:8px 0}.perspectives b{font-weight:400;color:#83a29c}.local-explanation{font-size:13px;line-height:1.7;color:var(--muted);max-width:370px}.open-card{background:white;padding:36px;border:1px solid var(--line);border-radius:24px}.open-card h2{margin:0 0 26px;font-family:Georgia,serif;font-weight:400;font-size:30px}.open-card .eyebrow{margin-bottom:12px}label{display:block;font-size:13px;font-weight:650;margin:18px 0 8px}input,select{width:100%;padding:11px 12px;border:1px solid #718c86;border-radius:8px;background:white;color:var(--ink);min-height:44px}input[type=file]{font-size:12px;padding:8px}input[type=file]::file-selector-button{padding:7px 9px;border:0;border-radius:5px;background:var(--teal-soft);color:var(--ink);margin-right:8px;cursor:pointer}.field-help{font-size:12px;line-height:1.5;color:var(--muted);margin:7px 0}.open-card .primary{margin-top:24px}.demo-entry{border-top:1px solid var(--line);margin-top:25px;padding-top:23px}.pill{display:inline-block;border-radius:5px;padding:5px 8px;font-size:10px;letter-spacing:.06em;font-weight:700;background:#f3efe4;color:#71603d}.demo-entry h3{font-size:15px;margin:12px 0 8px}.demo-entry p{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 14px}.demo-entry .demo-password{font-size:11px;margin:12px 0 0}.error{background:#fae9e6;color:#782a28;border-left:4px solid #ab413a;font-size:14px;padding:14px 18px;border-radius:14px;line-height:1.5}.workspace{max-width:1280px;padding:24px 36px 60px;margin:auto}.dataset-banner{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:18px}.dataset-banner span:last-child{overflow-wrap:anywhere}.workspace-tools{display:flex;align-items:center;justify-content:space-between;gap:12px}.breadcrumbs{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:13px}.breadcrumbs button{border:0;background:transparent;padding:6px 2px;color:var(--teal);font-size:13px}.breadcrumbs span{color:var(--muted)}.filters{display:flex;gap:12px;margin:18px 0 28px;flex-wrap:wrap;padding:18px;background:#eef1ed;border-radius:14px}.filter{flex:1;min-width:140px;max-width:280px}.filter label{margin:0 0 6px;font-size:11px;letter-spacing:.03em}.filter select{font-size:13px}.view-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin:0 0 22px}.view-heading h1{font-family:Georgia,serif;font-size:clamp(30px,4vw,44px);font-weight:400;letter-spacing:-.03em;margin:6px 0 8px}.view-heading .eyebrow{margin:0;font-size:10px}.context{font-size:13px;color:var(--muted);line-height:1.6;margin:0}.student-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.student-actions .button{min-width:44px}.student-position{font-size:12px;color:var(--muted)}.view-tabs{display:flex;gap:5px;border-bottom:1px solid #cddbd7;margin-bottom:28px}.view-tabs .button{border:0;border-radius:8px 8px 0 0;background:transparent;margin-bottom:-1px}.view-tabs .active{border-bottom:3px solid var(--teal);color:var(--teal);background:#edf2ee}.section{margin:26px 0}.section-title{display:flex;gap:12px;align-items:center;margin:0 0 14px;font-size:17px;font-weight:650}.section-index{font-size:11px;font-weight:500;color:var(--teal);border:1px solid #bfd2cc;min-width:26px;height:26px;border-radius:50%;display:inline-flex;justify-content:center;align-items:center}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:24px;background:white;border:1px solid var(--line);border-radius:var(--radius);min-width:0}.card-type{font-size:11px;font-weight:600;color:var(--muted);margin:0 0 9px}.card h3{font-size:17px;font-weight:620;line-height:1.45;margin:0 0 20px}.answer{font-size:40px;line-height:1.15;font-weight:550;letter-spacing:-.04em;margin:4px 0 8px}.answer-label{font-size:13px;font-weight:400;letter-spacing:normal;margin-left:9px;color:var(--muted)}.status-answer{font-size:19px;letter-spacing:normal}.coverage{font-size:12px;line-height:1.5;color:var(--muted);margin:13px 0 0}.score{padding-top:17px;margin-top:18px;border-top:1px solid #edf1ef}.score-heading{font-size:12px;display:flex;justify-content:space-between;gap:8px;margin-bottom:10px;color:var(--muted)}.score-heading strong{color:var(--teal);font-weight:650}.score-track{height:8px;border-radius:12px;background:#e7edeb;position:relative}.score-fill{background:#4a9190;height:100%;border-radius:12px}.score-dot{position:absolute;top:50%;width:14px;height:14px;border:3px solid white;box-shadow:0 0 0 1px var(--teal);border-radius:50%;background:var(--teal);transform:translate(-50%,-50%)}.score-axis{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:7px}.distribution{display:grid;gap:15px}.category-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:7px;font-size:13px}.category-top strong{font-variant-numeric:tabular-nums;font-size:14px}.category-top small{font-size:12px;font-weight:400;color:var(--muted)}.category-track{height:7px;background:#edf1ef;border-radius:8px}.category-fill{height:100%;background:#55908d;border-radius:8px}.explanation{font-size:12px;line-height:1.6;margin-top:16px;color:var(--muted)}.explanation summary{cursor:pointer;color:var(--teal);padding:4px 0}.more{margin-top:28px;border:1px solid var(--line);border-radius:16px;background:#fafbf8;padding:0 20px 20px}.more>summary{cursor:pointer;font-weight:650;padding:20px 0;font-size:15px}.more:not([open]){padding-bottom:0}.more .section:last-child{margin-bottom:0}.card.full{grid-column:1/-1}.text-response{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:20px;line-height:1.6;margin:0;padding:10px 0}.text-list{list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.text-list li{border:1px solid #e3eae7;border-radius:10px;padding:16px;min-width:0}.text-list blockquote{margin:0 0 10px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.6}.text-list button{font-size:11px;border:0;background:none;color:var(--teal);padding:4px 0}.pagination{display:flex;gap:12px;align-items:center;font-size:12px;color:var(--muted)}.text-filter{max-width:380px}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:white}.student-table{border-collapse:separate;border-spacing:0;width:100%;font-size:13px}.student-table th{background:#eef3f0;text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);min-width:145px}.student-table th button{background:none;border:0;text-align:left;color:var(--ink);font-size:12px;font-weight:650;padding:4px 0;display:flex;gap:8px;align-items:center}.student-table td{padding:15px 16px;border-bottom:1px solid #edf1ef;font-variant-numeric:tabular-nums}.student-table tr:last-child td{border-bottom:0}.student-table td:first-child,.student-table th:first-child{position:sticky;left:0;background:#fff;z-index:1;min-width:190px;border-right:1px solid #edf1ef}.student-table th:first-child{background:#eef3f0;z-index:2}.student-table tbody tr:hover td{background:#f7faf8}.student-name{background:none;border:0;color:var(--teal);font-weight:650;text-align:left;padding:4px 0}.muted-value{color:var(--muted);font-size:11px}.table-note{font-size:12px;color:var(--muted);margin:0 0 15px}.guide{background:#e8f0e9;border:1px solid #cbdcd0;padding:20px;border-radius:14px;margin:16px 0}.guide-head{display:flex;align-items:center;justify-content:space-between}.guide-head span{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--teal)}.guide h2{font-size:18px;font-weight:600;margin:6px 0 10px}.guide p{font-size:14px;line-height:1.6;max-width:720px;margin:0 0 16px}.guide-actions{display:flex;gap:8px;flex-wrap:wrap}.empty{padding:30px;border:1px dashed #b9ccc7;border-radius:12px;color:var(--muted);line-height:1.6}.footer{max-width:1280px;margin:auto;padding:25px 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:11px}.footer b{padding:0 8px;color:#90aaa4}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:900px){.welcome{gap:40px;padding-top:45px}.welcome h1{font-size:50px}.open-card{padding:25px}.local-label{display:none}.topbar .button{margin-left:auto}.cards{gap:12px}.card{padding:20px}}@media(max-width:650px){.topbar{height:72px;padding:0 18px;gap:8px}.brand{font-size:18px}.brand small{font-size:10px;padding-left:8px;margin-left:6px}.topbar .button{font-size:12px;padding:9px}.welcome{grid-template-columns:1fr;padding:36px 20px 45px;gap:26px}.welcome h1{font-size:47px;margin-bottom:16px}.intro{font-size:16px;line-height:1.6}.perspectives{margin:20px 0}.local-explanation{margin-bottom:0}.open-card{padding:24px}.welcome-story .eyebrow{margin-bottom:18px}.workspace{padding:20px 16px 36px}.workspace-tools{align-items:flex-start}.workspace-tools>.button{font-size:11px;white-space:nowrap;padding:6px;min-height:34px}.filters{padding:12px;gap:10px;margin-top:12px}.filter{min-width:125px;max-width:100%}.view-heading{display:block}.student-actions{margin-top:14px}.cards,.text-list{grid-template-columns:1fr}.card{padding:22px}.view-heading h1{font-size:33px}.view-tabs{margin-bottom:20px}.section{margin:22px 0}.more{padding:0 12px 12px}.dataset-banner{gap:8px;font-size:10px;align-items:flex-start}.dataset-banner .pill{white-space:nowrap}.footer{padding:22px 20px;flex-wrap:wrap}.answer{font-size:36px}.student-table th,.student-table td{padding:12px}.student-table td:first-child,.student-table th:first-child{min-width:155px;max-width:180px}.guide{padding:16px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Personal attribution persists across reports, lists, networks and scroll. */
+#recipient-watermark{position:fixed;inset:72px 0 0;z-index:10000;pointer-events:none;user-select:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));overflow:hidden;contain:strict}
+#recipient-watermark span{align-self:center;justify-self:center;white-space:nowrap;font:700 clamp(32px,4.1vw,70px)/1.2 system-ui,sans-serif;color:rgb(34 74 83 / 14%);transform:rotate(-24deg);letter-spacing:.04em}
+.recipient-label{font-weight:600;color:var(--teal)}
+@media(max-width:650px){#recipient-watermark{grid-template-columns:1fr;grid-template-rows:repeat(4,minmax(0,1fr))}#recipient-watermark span{font-size:clamp(32px,10vw,52px)}#recipient-watermark span:nth-child(n+5){display:none}}
+
+.dataset-banner{flex-wrap:wrap}
+@media(max-width:650px){.recipient-label{flex-basis:100%}}
+
+/* ARCO · revisión visual compartida. No altera escalas ni colores de las redes. */
+
+body{line-height:1.5}.topbar{height:auto;min-height:80px}.brand{min-height:44px}.brand svg{width:38px;height:38px;flex-shrink:0}.welcome,.workspace,.workspace-tools,.welcome-story,.open-card,.view-heading,.section,.filters,.filter,.text-filter{min-width:0}
+.button,input,select{border-radius:12px;min-height:44px}.button.primary:hover{background:#10494d}.card,.open-card{border-radius:24px}.card h3{font-size:18px}.card-type,.coverage,.field-help,.table-note,.demo-password{font-size:13px;line-height:1.6}.card-type{letter-spacing:.03em}.answer,.category-top strong{font-variant-numeric:tabular-nums}.answer{overflow-wrap:anywhere}.answer-label{display:inline-block}.coverage{max-width:66ch}.category-top{flex-wrap:wrap}.category-top>span{min-width:0;overflow-wrap:anywhere}.category-track{height:9px}.text-list li{border-radius:16px}.text-list button,.student-name,.student-table th button,.breadcrumbs button{min-height:44px}.student-table td:first-child,.student-table th:first-child{overflow-wrap:anywhere}.table-wrap{max-width:100%;overscroll-behavior-x:contain}.view-tabs{flex-wrap:wrap;gap:6px}.more{border-radius:24px}.guide{border-radius:20px}.filters{border-radius:20px;background:#e8efea}.filter{flex:1 1 170px}.filter select{max-width:100%}.breadcrumbs{overflow-wrap:anywhere}.dataset-banner{font-size:13px}.view-heading h1{overflow-wrap:anywhere;line-height:1.15}.error{overflow-wrap:anywhere}.pagination{flex-wrap:wrap}.workspace-tools>.button{min-height:44px}.footer{font-size:12px}
+:focus-visible{outline-color:#885d17}
+@media(max-width:650px){
+  .topbar{min-height:72px;padding:10px 16px;flex-wrap:wrap}.brand{font-size:17px;gap:8px}.brand small{letter-spacing:.06em}.topbar .button{min-height:44px;padding:8px 10px;font-size:13px}.welcome{padding:30px 16px 40px}.welcome h1{font-size:clamp(36px,10.7vw,47px)}.workspace{padding:18px 12px 32px}.workspace-tools{gap:8px;flex-wrap:wrap}.workspace-tools>.button{font-size:13px;padding:8px}.open-card,.card{padding:20px;border-radius:22px}.filters{padding:14px;gap:14px;margin-bottom:20px}.filter{flex-basis:100%;min-width:0;max-width:none}.dataset-banner{font-size:12px;gap:8px}.view-heading h1{font-size:30px}.view-tabs .button{font-size:13px}.student-actions{gap:8px}.student-actions .button{min-height:44px}.answer{font-size:36px}.card h3{font-size:17px}.student-table td:first-child,.student-table th:first-child{min-width:138px;max-width:156px}.text-list blockquote{font-size:15px}.more{padding:0 14px 14px;border-radius:22px}.more>summary{font-size:15px}.table-note{font-size:13px}.field-help{overflow-wrap:anywhere}input,select{font-size:16px}input[type=file]{font-size:14px}
+}
+
+.example-choices{display:grid;gap:10px}.example-choices .button{justify-content:flex-start;text-align:left;border-radius:14px;padding:14px 16px;min-height:48px}
+/* Preserve student cell appearance when its name is a semantic row heading. */
+.student-table tbody th[scope=row]{background:#fff;padding:15px 16px;border-bottom:1px solid #edf1ef;font-weight:inherit;z-index:1}.student-table tbody th[scope=row] button{color:var(--teal);font-size:inherit}.student-table tbody tr:last-child th[scope=row]{border-bottom:0}.student-table tbody tr:hover th[scope=row]{background:#f7faf8}@media(max-width:650px){.student-table tbody th[scope=row]{padding:12px}}
+
+/* El texto importado se ajusta; la tabla conserva su desplazamiento local. */
+.card h3,.section-title,.context,.explanation,.coverage{overflow-wrap:anywhere}
+.button,.breadcrumbs button{max-width:100%;min-width:0;overflow-wrap:anywhere}
+.explanation summary{min-height:44px;padding-block:12px}
+@media(max-width:650px){
+  .student-table td:first-child,.student-table th:first-child{position:static}
+  .student-table th button,.student-name{white-space:normal;overflow-wrap:anywhere}
+}
+
+.clave-network{color:var(--ink,#193b4b);margin-top:1rem;min-width:0}.clave-network__controls{display:flex;align-items:end;flex-wrap:wrap;gap:.8rem}.clave-network__field{display:flex;flex:1 1 170px;flex-direction:column;gap:.35rem;font-size:.85rem;font-weight:650}.clave-network input,.clave-network select{min-height:42px;max-width:100%;width:100%;font:inherit;border:1px solid #718c86;border-radius:.55rem;padding:.55rem .65rem;background:white;color:var(--ink,#183f49)}.clave-network__zoom{display:flex;gap:.35rem;align-items:center}.clave-network__button{font:inherit;line-height:1.2;color:#185b70;background:#f7fafb;border:1px solid #718c86;border-radius:.5rem;padding:.55rem .7rem;cursor:pointer;min-height:40px}.clave-network__button:hover{background:#eaf4f5}.clave-network__button:disabled{opacity:.45;cursor:default}.clave-network :focus-visible{outline:3px solid #d79327;outline-offset:3px}.clave-network__legend{display:flex;flex-wrap:wrap;gap:.65rem 1.2rem;margin:1rem 0 .5rem;font-size:.85rem}.clave-network__legend span{display:inline-flex;align-items:center;gap:.4rem}.clave-network__legend i{display:inline-block;width:1.5rem;height:3px}.clave-network__hint,.clave-network__status{font-size:.8rem;line-height:1.5;color:#5d6b75;margin:.5rem 0 .8rem}.clave-network__viewport{position:relative;width:100%;aspect-ratio:1/1;max-height:740px;background:linear-gradient(140deg,#fff,#f7fafb);border:1px solid #e2e9ed;border-radius:.9rem;overflow:hidden}.clave-network__viewport svg{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.clave-network__node{cursor:pointer}.clave-network__node circle{transition:stroke-width .12s}.clave-network__node:hover circle,.clave-network__node:focus circle{stroke-width:4}.clave-network__node-label{font:12px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#193b4b;paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round}.clave-network__details{margin-top:.8rem;border-top:1px solid #dfe7eb;padding-top:.8rem}.clave-network__details summary{cursor:pointer;font-weight:650;color:#185b70;padding:.5rem 0}.clave-network__table-wrap{overflow:auto}.clave-network table{width:100%;border-collapse:collapse;font-size:.82rem;white-space:nowrap}.clave-network td,.clave-network th{text-align:left;padding:.55rem;border-bottom:1px solid #e1e9ec}.clave-network th{color:#4e626d;background:#f5f8fa}.clave-network td button{border:0;background:transparent;padding:.25rem 0;min-height:32px;text-align:left;text-decoration:underline;text-underline-offset:3px}.clave-network__paging{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:.8rem;font-size:.8rem}.clave-network__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@media(min-width:760px){.clave-network__viewport{aspect-ratio:1.25/1}}@media(prefers-reduced-motion:reduce){.clave-network__node circle{transition:none}}
+
+/* ARCO: controles táctiles y contenido contenido en su tarjeta. */
+.clave-network__field{min-width:0}.clave-network input,.clave-network select,.clave-network__button{min-height:44px;border-radius:12px}.clave-network__button{min-width:44px;color:var(--teal,#155e63)}.clave-network__button:hover{background:#e8f1ed}.clave-network__viewport{border-radius:20px;border-color:var(--line,#d6e3df);background:#fcfdfb}.clave-network__hint,.clave-network__status{font-size:13px;color:var(--muted,#526b71)}.clave-network__table-wrap{max-width:100%;overscroll-behavior-x:contain}.clave-network td button{min-height:44px}.clave-network__paging{flex-wrap:wrap;font-size:13px}.clave-network__zoom{flex-wrap:wrap}.clave-network :focus-visible{outline-color:#885d17}
+@media(max-width:650px){.clave-network__field{flex-basis:100%}.clave-network input,.clave-network select{font-size:16px}.clave-network__viewport{min-height:300px;aspect-ratio:1/1}.clave-network__controls{gap:12px}.clave-network__legend{font-size:13px}.clave-network__legend span{max-width:100%;overflow-wrap:anywhere}}
+</style>
+</head>
+<body>
+  <div id="recipient-watermark" hidden aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="topbar">
+    <button id="brand" class="brand" aria-label="ARCO · Volver al inicio y cerrar consulta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="arco-mark-title arco-mark-desc">
+  <title id="arco-mark-title">ARCO</title>
+  <desc id="arco-mark-desc">Un arco de tres piezas, símbolo de recogida, preparación y consulta conectadas.</desc>
+  <path fill="#155E63" d="M10 83V48a38 38 0 0 1 23-35l7 18a19 19 0 0 0-11 17v35z"/>
+  <path fill="#A65040" d="M37 11a38 38 0 0 1 22 0l-5 19a19 19 0 0 0-12 0z"/>
+  <path fill="#183F49" d="M63 13a38 38 0 0 1 23 35v35H67V48a19 19 0 0 0-11-17z"/>
+</svg>
+<span>ARCO <small>CLAVE</small></span></button>
+    <span class="local-label"><span aria-hidden="true">●</span> Consulta local</span>
+    <button id="close-query" class="button quiet" hidden>Cerrar consulta</button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="welcome" class="welcome">
+      <div class="welcome-story">
+        <p class="eyebrow">ARCO / EL VISUALIZADOR</p>
+        <h1>Los datos, con<br><em>perspectiva.</em></h1>
+        <p class="intro">Consulta los resultados, textos y relaciones disponibles en tu ámbito del informe.</p>
+        <div class="perspectives" aria-label="Niveles de consulta"><span>Centro</span><b aria-hidden="true">→</b><span>Curso</span><b aria-hidden="true">→</b><span>Aula</span><b aria-hidden="true">→</b><span>Estudiante</span></div>
+        <p class="local-explanation">El informe se abre en este navegador. CLAVE no envía tus archivos ni guarda la consulta al cerrar.</p>
+      </div>
+      <div class="open-card">
+        <p class="eyebrow">COMIENZA UNA CONSULTA</p>
+        <h2>Abre tu informe</h2>
+        <p id="preview-help" class="field-help" tabindex="-1" hidden>Esta pestaña es una vista previa. Abre CLAVE.html desde la carpeta del programa para consultar un .arco con contraseña. Puedes cerrarla y volver a DOVELA.</p>
+        <form id="open-form">
+          <label for="datafile">Archivo de datos</label>
+          <input id="datafile" name="datafile" type="file" accept=".arco" required aria-describedby="file-help">
+          <p class="field-help" id="file-help">Selecciona el archivo .arco preparado con DOVELA.</p>
+          <label for="password">Contraseña del archivo</label>
+          <input id="password" name="password" type="password" required maxlength="1024" autocomplete="off" spellcheck="false">
+          <button class="button primary wide" id="open" type="submit">Abrir informe <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="open-error" role="alert" class="error" hidden></p>
+        <p id="open-status" role="status" class="field-help"></p>
+        <div class="demo-entry"><span class="pill">DATOS SIMULADOS</span><h3>Elige un ejemplo</h3><p>Desde una primera mirada hasta un informe con tres mediciones.</p><div id="example-choices" class="example-choices"></div><details><summary>Demo inicial</summary><button class="button secondary wide" id="demo-button">Explorar demo inicial <span aria-hidden="true">↗</span></button><p class="demo-password">Contraseña: <code>ARCO-DEMO-2026</code></p></details></div>
+      </div>
+    </section>
+    <section id="workspace" class="workspace" hidden>
+      <div id="dataset-banner" class="dataset-banner"></div>
+      <div class="workspace-tools"><nav id="breadcrumbs" aria-label="Ruta de consulta"></nav><button id="guide-open" class="button quiet">Cómo consultar</button></div>
+      <aside id="guide" class="guide" hidden aria-label="Guía de consulta"></aside>
+      <div id="wave-picker" class="filters" hidden></div>
+      <div id="filters" class="filters" aria-label="Seleccionar ámbito"></div>
+      <div id="view-heading" class="view-heading"></div>
+      <div id="view-tabs" class="view-tabs" role="group" aria-label="Vista"></div>
+      <div id="report"></div>
+    </section>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <footer class="footer"><span>ARCO <b>/</b> CLAVE</span><span>Observar. Comprender. Acompañar.</span></footer>
+  <script>window.CLAVE_PREVIEW_PAYLOAD={"format":"ARCO_PERSONAL","version":1,"recipient":{"type":"DNI_MASKED","value":"12**56*8Z"},"report":{"manifest":{"schema_version":"1.0.0","dataset_id":"salmer-demo","title":"Situaciones y relaciones · ejemplo SALMER","synthetic":true,"period":{"id":"demo-20261021","label":"Octubre de 2026 · datos simulados"},"hierarchy":[{"id":"center","label":"Centro","parent":null},{"id":"course","label":"Curso","parent":"center"},{"id":"class","label":"Clase","parent":"course"},{"id":"student","label":"Estudiante","parent":"class"}],"sections":[{"id":"experiencia","label":"Experiencia en el centro","order":3},{"id":"relaciones","label":"Relaciones","order":4},{"id":"situaciones","label":"Situaciones observadas","order":2},{"id":"tipos","label":"Menciones por tipo de situación","order":1}],"indicators":[{"id":"bienestar","label":"Bienestar declarado","question":"¿Cómo ha estado esta semana?","type":"scale","section_id":"experiencia","order":1,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"respuesta de 0 a 10","normalization":{"method":"minmax","reference":"center_period","direction":"higher_better","degenerate":"unavailable"}},{"id":"grupo","label":"Experiencia en el grupo","question":"¿Cómo se encuentra en el grupo?","type":"categorical","section_id":"experiencia","order":2,"summary":true,"levels":["center","course","class","student"],"aggregation":"distribution","options":[{"id":"integrado","label":"A gusto"},{"id":"intermedio","label":"Depende del momento"},{"id":"dificil","label":"Me cuesta encontrar mi lugar"}]},{"id":"comentario","label":"Propuestas del grupo","question":"¿Qué ayudaría a mejorar la experiencia?","type":"text","section_id":"experiencia","order":3,"summary":false,"levels":["center","course","class","student"],"aggregation":"list"},{"id":"buenas_recibidas","label":"Buenas relaciones recibidas","question":"¿Cuántas personas indican una buena relación?","type":"scale","section_id":"relaciones","order":1,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas","normalization":{"method":"minmax","reference":"center_period","direction":"higher_better","degenerate":"unavailable"}},{"id":"malas_recibidas","label":"Malas relaciones recibidas","question":"¿Cuántas personas indican una mala relación?","type":"scale","section_id":"relaciones","order":2,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"red","label":"Red de relaciones","question":"¿Cómo se relacionan los estudiantes?","type":"network","section_id":"relaciones","order":3,"summary":false,"levels":["center","course","class","student"],"aggregation":"network","network":{"directed":true,"reference":"center","relations":[{"id":"positive","label":"Buena relación"},{"id":"negative","label":"Mala relación"}],"weight_min":1,"weight_max":2}},{"id":"autoseleccion","label":"Autoselección","question":"¿Se incluye entre quienes viven estas situaciones?","type":"categorical","section_id":"situaciones","order":1,"summary":true,"levels":["center","course","class","student"],"aggregation":"distribution","options":[{"id":"si","label":"Sí"},{"id":"no","label":"No"}]},{"id":"menciones_recibidas","label":"Menciones de otras personas","question":"¿Cuántas personas indican que vive estas situaciones?","type":"scale","section_id":"situaciones","order":2,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"frecuencia","label":"Frecuencia observada","question":"¿Con qué frecuencia ha visto o sabido de estas situaciones?","type":"categorical","section_id":"situaciones","order":3,"summary":false,"levels":["center","course","class","student"],"aggregation":"distribution","options":[{"id":"nunca","label":"No han ocurrido en los últimos dos meses"},{"id":"una_dos","label":"Una o dos veces"},{"id":"mensual","label":"Dos o tres veces al mes"},{"id":"semanal","label":"Aproximadamente una vez por semana"},{"id":"varias_semana","label":"Varias veces por semana"},{"id":"no_se","label":"No lo sé"}]},{"id":"dificultad","label":"Dificultad para detener la situación","question":"¿Qué dificultad percibe para detener estas situaciones?","type":"categorical","section_id":"situaciones","order":4,"summary":false,"levels":["center","course","class","student"],"aggregation":"distribution","options":[{"id":"nada","label":"Nada difícil"},{"id":"poco","label":"Poco difícil"},{"id":"bastante","label":"Bastante difícil"},{"id":"mucho","label":"Muy difícil"},{"id":"no_se","label":"No lo sé"},{"id":"no_aplica","label":"No se han dado estas situaciones"}]},{"id":"tipo_fisica","label":"Agresiones físicas","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":1,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_verbal","label":"Insultos, burlas o amenazas","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":2,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_exclusion","label":"Exclusión intencionada","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":3,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_rumores","label":"Rumores o mentiras","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":4,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_pertenencias","label":"Daños o sustracción de pertenencias","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":5,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_sexual","label":"Conductas sexuales no deseadas","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":6,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}},{"id":"tipo_digital","label":"Situaciones por medios digitales","question":"¿Cuántas personas mencionan este tipo de situación?","type":"scale","section_id":"tipos","order":7,"summary":true,"levels":["center","course","class","student"],"aggregation":"mean","raw_unit":"personas que lo especifican (sin autoselección)","normalization":{"method":"minmax","reference":"center_period","direction":"lower_better","degenerate":"unavailable"}}],"files":{"entities":"entities.csv","values":"values.csv","aggregates":"aggregates.csv","edges":"edges.csv","normalization":"normalization.csv"}},"files":{"entities.csv":"\"id\",\"parent_id\",\"level\",\"label\"\n\"center:6701\",\"\",\"center\",\"Centro 6701\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"center:6701\",\"course\",\"1.º ESO\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"center:6701/course:1.%C2%BA%20ESO\",\"class\",\"Clase A\"\n\"center:6701/student:DEMO01\",\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"student\",\"Ana M. L.\"\n\"center:6701/student:DEMO02\",\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"student\",\"Bruno A. R.\"\n\"center:6701/student:DEMO03\",\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"student\",\"Lola S. D.\"\n\"center:6701/student:DEMO04\",\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"student\",\"Hugo R. G.\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"center:6701/course:1.%C2%BA%20ESO\",\"class\",\"Clase B\"\n\"center:6701/student:DEMO05\",\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"student\",\"Vega G. C.\"\n\"center:6701/student:DEMO06\",\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"student\",\"Leo M. V.\"\n\"center:6701/student:DEMO07\",\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"student\",\"Inés T. L.\"\n\"center:6701/student:DEMO08\",\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"student\",\"Mario R. S.\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"center:6701/course:1.%C2%BA%20ESO\",\"class\",\"Clase C\"\n\"center:6701/student:DEMO09\",\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"student\",\"Julia O. M.\"\n\"center:6701/student:DEMO10\",\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"student\",\"Nora N. C.\"\n\"center:6701/student:DEMO11\",\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"student\",\"Pablo R. S.\"\n\"center:6701/student:DEMO12\",\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"student\",\"Alba C. M.\"\n","values.csv":"\"entity_id\",\"indicator_id\",\"raw_value\",\"value\",\"status\"\n\"center:6701/student:DEMO01\",\"bienestar\",\"5\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO02\",\"bienestar\",\"4\",\"1.6666666666666667\",\"observed\"\n\"center:6701/student:DEMO03\",\"bienestar\",\"5\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO04\",\"bienestar\",\"6\",\"5\",\"observed\"\n\"center:6701/student:DEMO05\",\"bienestar\",\"7\",\"6.666666666666667\",\"observed\"\n\"center:6701/student:DEMO06\",\"bienestar\",\"8\",\"8.333333333333334\",\"observed\"\n\"center:6701/student:DEMO07\",\"bienestar\",\"9\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"bienestar\",\"3\",\"0\",\"observed\"\n\"center:6701/student:DEMO09\",\"bienestar\",\"4\",\"1.6666666666666667\",\"observed\"\n\"center:6701/student:DEMO10\",\"bienestar\",\"5\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO11\",\"bienestar\",\"6\",\"5\",\"observed\"\n\"center:6701/student:DEMO12\",\"bienestar\",\"7\",\"6.666666666666667\",\"observed\"\n\"center:6701/student:DEMO01\",\"grupo\",\"intermedio\",\"intermedio\",\"observed\"\n\"center:6701/student:DEMO02\",\"grupo\",\"intermedio\",\"intermedio\",\"observed\"\n\"center:6701/student:DEMO03\",\"grupo\",\"dificil\",\"dificil\",\"observed\"\n\"center:6701/student:DEMO04\",\"grupo\",\"integrado\",\"integrado\",\"observed\"\n\"center:6701/student:DEMO05\",\"grupo\",\"intermedio\",\"intermedio\",\"observed\"\n\"center:6701/student:DEMO06\",\"grupo\",\"dificil\",\"dificil\",\"observed\"\n\"center:6701/student:DEMO07\",\"grupo\",\"integrado\",\"integrado\",\"observed\"\n\"center:6701/student:DEMO08\",\"grupo\",\"intermedio\",\"intermedio\",\"observed\"\n\"center:6701/student:DEMO09\",\"grupo\",\"dificil\",\"dificil\",\"observed\"\n\"center:6701/student:DEMO10\",\"grupo\",\"integrado\",\"integrado\",\"observed\"\n\"center:6701/student:DEMO11\",\"grupo\",\"intermedio\",\"intermedio\",\"observed\"\n\"center:6701/student:DEMO12\",\"grupo\",\"dificil\",\"dificil\",\"observed\"\n\"center:6701/student:DEMO01\",\"comentario\",\"Me gustaría que se tuviera más cuidado con los mensajes del grupo.\",\"Me gustaría que se tuviera más cuidado con los mensajes del grupo.\",\"observed\"\n\"center:6701/student:DEMO02\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO03\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO04\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO05\",\"comentario\",\"\",\"\",\"not_answered\"\n\"center:6701/student:DEMO06\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO07\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO08\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO09\",\"comentario\",\"\",\"\",\"not_answered\"\n\"center:6701/student:DEMO10\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO11\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO12\",\"comentario\",\"Me ayuda trabajar con personas distintas.\",\"Me ayuda trabajar con personas distintas.\",\"observed\"\n\"center:6701/student:DEMO01\",\"buenas_recibidas\",\"4\",\"6.666666666666667\",\"observed\"\n\"center:6701/student:DEMO02\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO03\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO04\",\"buenas_recibidas\",\"2\",\"0\",\"observed\"\n\"center:6701/student:DEMO05\",\"buenas_recibidas\",\"5\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO07\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO08\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO09\",\"buenas_recibidas\",\"4\",\"6.666666666666667\",\"observed\"\n\"center:6701/student:DEMO10\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO11\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO12\",\"buenas_recibidas\",\"3\",\"3.3333333333333335\",\"observed\"\n\"center:6701/student:DEMO01\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO02\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"malas_recibidas\",\"1\",\"0\",\"observed\"\n\"center:6701/student:DEMO05\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO10\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"malas_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"autoseleccion\",\"si\",\"si\",\"observed\"\n\"center:6701/student:DEMO02\",\"autoseleccion\",\"si\",\"si\",\"observed\"\n\"center:6701/student:DEMO03\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO04\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO05\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO06\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO07\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO08\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO09\",\"autoseleccion\",\"si\",\"si\",\"observed\"\n\"center:6701/student:DEMO10\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO11\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO12\",\"autoseleccion\",\"no\",\"no\",\"observed\"\n\"center:6701/student:DEMO01\",\"menciones_recibidas\",\"4\",\"0\",\"observed\"\n\"center:6701/student:DEMO02\",\"menciones_recibidas\",\"1\",\"7.5\",\"observed\"\n\"center:6701/student:DEMO03\",\"menciones_recibidas\",\"2\",\"5\",\"observed\"\n\"center:6701/student:DEMO04\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"menciones_recibidas\",\"3\",\"2.5\",\"observed\"\n\"center:6701/student:DEMO06\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"menciones_recibidas\",\"1\",\"7.5\",\"observed\"\n\"center:6701/student:DEMO10\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"menciones_recibidas\",\"2\",\"5\",\"observed\"\n\"center:6701/student:DEMO12\",\"menciones_recibidas\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO02\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO03\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO04\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO05\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO06\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO07\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO08\",\"frecuencia\",\"nunca\",\"nunca\",\"observed\"\n\"center:6701/student:DEMO09\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO10\",\"frecuencia\",\"nunca\",\"nunca\",\"observed\"\n\"center:6701/student:DEMO11\",\"frecuencia\",\"nunca\",\"nunca\",\"observed\"\n\"center:6701/student:DEMO12\",\"frecuencia\",\"semanal\",\"semanal\",\"observed\"\n\"center:6701/student:DEMO01\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO02\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO03\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO04\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO05\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO06\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO07\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO08\",\"dificultad\",\"no_aplica\",\"no_aplica\",\"observed\"\n\"center:6701/student:DEMO09\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO10\",\"dificultad\",\"no_aplica\",\"no_aplica\",\"observed\"\n\"center:6701/student:DEMO11\",\"dificultad\",\"no_aplica\",\"no_aplica\",\"observed\"\n\"center:6701/student:DEMO12\",\"dificultad\",\"bastante\",\"bastante\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_fisica\",\"1\",\"0\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_fisica\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_verbal\",\"2\",\"0\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_verbal\",\"1\",\"5\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_verbal\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_exclusion\",\"2\",\"0\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_exclusion\",\"1\",\"5\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_exclusion\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_rumores\",\"3\",\"0\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_rumores\",\"1\",\"6.666666666666666\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_rumores\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_pertenencias\",\"2\",\"0\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_pertenencias\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_sexual\",\"2\",\"0\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_sexual\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO01\",\"tipo_digital\",\"3\",\"0\",\"observed\"\n\"center:6701/student:DEMO02\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO03\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO04\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO05\",\"tipo_digital\",\"3\",\"0\",\"observed\"\n\"center:6701/student:DEMO06\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO07\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO08\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO09\",\"tipo_digital\",\"1\",\"6.666666666666666\",\"observed\"\n\"center:6701/student:DEMO10\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n\"center:6701/student:DEMO11\",\"tipo_digital\",\"1\",\"6.666666666666666\",\"observed\"\n\"center:6701/student:DEMO12\",\"tipo_digital\",\"0\",\"10\",\"observed\"\n","aggregates.csv":"\"entity_id\",\"indicator_id\",\"statistic\",\"category\",\"value\",\"n_valid\",\"n_total\",\"status\"\n\"center:6701\",\"bienestar\",\"mean\",\"\",\"4.583333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"bienestar\",\"raw_mean\",\"\",\"5.75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"count\",\"integrado\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"percent\",\"integrado\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"count\",\"intermedio\",\"5\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"percent\",\"intermedio\",\"41.666666666666664\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"count\",\"dificil\",\"4\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"grupo\",\"percent\",\"dificil\",\"33.333333333333336\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"buenas_recibidas\",\"mean\",\"\",\"4.166666666666667\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"buenas_recibidas\",\"raw_mean\",\"\",\"3.25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"malas_recibidas\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"malas_recibidas\",\"raw_mean\",\"\",\"0.08333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"autoseleccion\",\"count\",\"si\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"autoseleccion\",\"percent\",\"si\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"autoseleccion\",\"count\",\"no\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"autoseleccion\",\"percent\",\"no\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"menciones_recibidas\",\"mean\",\"\",\"7.291666666666667\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"menciones_recibidas\",\"raw_mean\",\"\",\"1.0833333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"nunca\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"nunca\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"una_dos\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"una_dos\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"mensual\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"mensual\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"semanal\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"semanal\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"varias_semana\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"varias_semana\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"count\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"frecuencia\",\"percent\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"nada\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"nada\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"poco\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"poco\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"bastante\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"bastante\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"mucho\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"mucho\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"count\",\"no_aplica\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"dificultad\",\"percent\",\"no_aplica\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_fisica\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_fisica\",\"raw_mean\",\"\",\"0.08333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_verbal\",\"mean\",\"\",\"8.75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_verbal\",\"raw_mean\",\"\",\"0.25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_exclusion\",\"mean\",\"\",\"8.75\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_exclusion\",\"raw_mean\",\"\",\"0.25\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_rumores\",\"mean\",\"\",\"8.88888888888889\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_rumores\",\"raw_mean\",\"\",\"0.3333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_pertenencias\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_pertenencias\",\"raw_mean\",\"\",\"0.16666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_sexual\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_sexual\",\"raw_mean\",\"\",\"0.16666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_digital\",\"mean\",\"\",\"7.777777777777779\",\"12\",\"12\",\"observed\"\n\"center:6701\",\"tipo_digital\",\"raw_mean\",\"\",\"0.6666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"bienestar\",\"mean\",\"\",\"4.583333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"bienestar\",\"raw_mean\",\"\",\"5.75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"count\",\"integrado\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"percent\",\"integrado\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"count\",\"intermedio\",\"5\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"percent\",\"intermedio\",\"41.666666666666664\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"count\",\"dificil\",\"4\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"grupo\",\"percent\",\"dificil\",\"33.333333333333336\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"buenas_recibidas\",\"mean\",\"\",\"4.166666666666667\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"buenas_recibidas\",\"raw_mean\",\"\",\"3.25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"malas_recibidas\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"malas_recibidas\",\"raw_mean\",\"\",\"0.08333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"autoseleccion\",\"count\",\"si\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"autoseleccion\",\"percent\",\"si\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"autoseleccion\",\"count\",\"no\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"autoseleccion\",\"percent\",\"no\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"menciones_recibidas\",\"mean\",\"\",\"7.291666666666667\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"menciones_recibidas\",\"raw_mean\",\"\",\"1.0833333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"nunca\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"nunca\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"una_dos\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"una_dos\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"mensual\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"mensual\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"semanal\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"semanal\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"varias_semana\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"varias_semana\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"count\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"frecuencia\",\"percent\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"nada\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"nada\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"poco\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"poco\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"bastante\",\"9\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"bastante\",\"75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"mucho\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"mucho\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"no_se\",\"0\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"count\",\"no_aplica\",\"3\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"dificultad\",\"percent\",\"no_aplica\",\"25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_fisica\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_fisica\",\"raw_mean\",\"\",\"0.08333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_verbal\",\"mean\",\"\",\"8.75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_verbal\",\"raw_mean\",\"\",\"0.25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_exclusion\",\"mean\",\"\",\"8.75\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_exclusion\",\"raw_mean\",\"\",\"0.25\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_rumores\",\"mean\",\"\",\"8.88888888888889\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_rumores\",\"raw_mean\",\"\",\"0.3333333333333333\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_pertenencias\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_pertenencias\",\"raw_mean\",\"\",\"0.16666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_sexual\",\"mean\",\"\",\"9.166666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_sexual\",\"raw_mean\",\"\",\"0.16666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_digital\",\"mean\",\"\",\"7.777777777777779\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO\",\"tipo_digital\",\"raw_mean\",\"\",\"0.6666666666666666\",\"12\",\"12\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"bienestar\",\"mean\",\"\",\"3.3333333333333335\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"bienestar\",\"raw_mean\",\"\",\"5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"count\",\"integrado\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"percent\",\"integrado\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"count\",\"intermedio\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"percent\",\"intermedio\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"count\",\"dificil\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"grupo\",\"percent\",\"dificil\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"buenas_recibidas\",\"mean\",\"\",\"3.3333333333333335\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"buenas_recibidas\",\"raw_mean\",\"\",\"3\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"malas_recibidas\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"malas_recibidas\",\"raw_mean\",\"\",\"0.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"autoseleccion\",\"count\",\"si\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"autoseleccion\",\"percent\",\"si\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"autoseleccion\",\"count\",\"no\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"autoseleccion\",\"percent\",\"no\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"menciones_recibidas\",\"mean\",\"\",\"5.625\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"menciones_recibidas\",\"raw_mean\",\"\",\"1.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"nunca\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"nunca\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"semanal\",\"4\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"semanal\",\"100\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"frecuencia\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"bastante\",\"4\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"bastante\",\"100\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"count\",\"no_aplica\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"dificultad\",\"percent\",\"no_aplica\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_fisica\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_fisica\",\"raw_mean\",\"\",\"0.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_verbal\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_verbal\",\"raw_mean\",\"\",\"0.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_exclusion\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_exclusion\",\"raw_mean\",\"\",\"0.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_rumores\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_rumores\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_pertenencias\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_pertenencias\",\"raw_mean\",\"\",\"0.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_sexual\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_sexual\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_digital\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:A\",\"tipo_digital\",\"raw_mean\",\"\",\"0.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"bienestar\",\"mean\",\"\",\"6.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"bienestar\",\"raw_mean\",\"\",\"6.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"count\",\"integrado\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"percent\",\"integrado\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"count\",\"intermedio\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"percent\",\"intermedio\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"count\",\"dificil\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"grupo\",\"percent\",\"dificil\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"buenas_recibidas\",\"mean\",\"\",\"5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"buenas_recibidas\",\"raw_mean\",\"\",\"3.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"malas_recibidas\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"malas_recibidas\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"autoseleccion\",\"count\",\"si\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"autoseleccion\",\"percent\",\"si\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"autoseleccion\",\"count\",\"no\",\"4\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"autoseleccion\",\"percent\",\"no\",\"100\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"menciones_recibidas\",\"mean\",\"\",\"8.125\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"menciones_recibidas\",\"raw_mean\",\"\",\"0.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"nunca\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"nunca\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"semanal\",\"3\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"semanal\",\"75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"frecuencia\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"bastante\",\"3\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"bastante\",\"75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"count\",\"no_aplica\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"dificultad\",\"percent\",\"no_aplica\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_fisica\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_fisica\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_verbal\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_verbal\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_exclusion\",\"mean\",\"\",\"8.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_exclusion\",\"raw_mean\",\"\",\"0.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_rumores\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_rumores\",\"raw_mean\",\"\",\"0.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_pertenencias\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_pertenencias\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_sexual\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_sexual\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_digital\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:B\",\"tipo_digital\",\"raw_mean\",\"\",\"0.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"bienestar\",\"mean\",\"\",\"4.166666666666667\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"bienestar\",\"raw_mean\",\"\",\"5.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"count\",\"integrado\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"percent\",\"integrado\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"count\",\"intermedio\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"percent\",\"intermedio\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"count\",\"dificil\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"grupo\",\"percent\",\"dificil\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"buenas_recibidas\",\"mean\",\"\",\"4.166666666666667\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"buenas_recibidas\",\"raw_mean\",\"\",\"3.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"malas_recibidas\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"malas_recibidas\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"autoseleccion\",\"count\",\"si\",\"1\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"autoseleccion\",\"percent\",\"si\",\"25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"autoseleccion\",\"count\",\"no\",\"3\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"autoseleccion\",\"percent\",\"no\",\"75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"menciones_recibidas\",\"mean\",\"\",\"8.125\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"menciones_recibidas\",\"raw_mean\",\"\",\"0.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"nunca\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"nunca\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"una_dos\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"mensual\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"semanal\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"semanal\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"varias_semana\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"frecuencia\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"nada\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"poco\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"bastante\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"bastante\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"mucho\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"no_se\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"count\",\"no_aplica\",\"2\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"dificultad\",\"percent\",\"no_aplica\",\"50\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_fisica\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_fisica\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_verbal\",\"mean\",\"\",\"8.75\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_verbal\",\"raw_mean\",\"\",\"0.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_exclusion\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_exclusion\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_rumores\",\"mean\",\"\",\"9.166666666666666\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_rumores\",\"raw_mean\",\"\",\"0.25\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_pertenencias\",\"mean\",\"\",\"10\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_pertenencias\",\"raw_mean\",\"\",\"0\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_sexual\",\"mean\",\"\",\"7.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_sexual\",\"raw_mean\",\"\",\"0.5\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_digital\",\"mean\",\"\",\"8.333333333333332\",\"4\",\"4\",\"observed\"\n\"center:6701/course:1.%C2%BA%20ESO/class:C\",\"tipo_digital\",\"raw_mean\",\"\",\"0.5\",\"4\",\"4\",\"observed\"\n","edges.csv":"\"indicator_id\",\"source_id\",\"target_id\",\"relation\",\"weight\"\n\"red\",\"center:6701/student:DEMO01\",\"center:6701/student:DEMO02\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO01\",\"center:6701/student:DEMO03\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO01\",\"center:6701/student:DEMO04\",\"negative\",\"1\"\n\"red\",\"center:6701/student:DEMO01\",\"center:6701/student:DEMO05\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO02\",\"center:6701/student:DEMO01\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO02\",\"center:6701/student:DEMO03\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO02\",\"center:6701/student:DEMO04\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO03\",\"center:6701/student:DEMO01\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO03\",\"center:6701/student:DEMO02\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO03\",\"center:6701/student:DEMO04\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO04\",\"center:6701/student:DEMO01\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO04\",\"center:6701/student:DEMO02\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO04\",\"center:6701/student:DEMO03\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO04\",\"center:6701/student:DEMO05\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO05\",\"center:6701/student:DEMO06\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO05\",\"center:6701/student:DEMO07\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO05\",\"center:6701/student:DEMO08\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO06\",\"center:6701/student:DEMO05\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO06\",\"center:6701/student:DEMO07\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO06\",\"center:6701/student:DEMO08\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO07\",\"center:6701/student:DEMO05\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO07\",\"center:6701/student:DEMO06\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO07\",\"center:6701/student:DEMO08\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO08\",\"center:6701/student:DEMO05\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO08\",\"center:6701/student:DEMO06\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO08\",\"center:6701/student:DEMO07\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO08\",\"center:6701/student:DEMO09\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO09\",\"center:6701/student:DEMO10\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO09\",\"center:6701/student:DEMO11\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO09\",\"center:6701/student:DEMO12\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO10\",\"center:6701/student:DEMO09\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO10\",\"center:6701/student:DEMO11\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO10\",\"center:6701/student:DEMO12\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO11\",\"center:6701/student:DEMO09\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO11\",\"center:6701/student:DEMO10\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO11\",\"center:6701/student:DEMO12\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO12\",\"center:6701/student:DEMO01\",\"positive\",\"2\"\n\"red\",\"center:6701/student:DEMO12\",\"center:6701/student:DEMO09\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO12\",\"center:6701/student:DEMO10\",\"positive\",\"1\"\n\"red\",\"center:6701/student:DEMO12\",\"center:6701/student:DEMO11\",\"positive\",\"1\"\n","normalization.csv":"\"reference_id\",\"center_id\",\"indicator_id\",\"minimum\",\"maximum\",\"direction\",\"period_id\",\"n_valid\"\n\"center:6701:demo-20261021:bienestar\",\"center:6701\",\"bienestar\",\"3\",\"9\",\"higher_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:buenas_recibidas\",\"center:6701\",\"buenas_recibidas\",\"2\",\"5\",\"higher_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:malas_recibidas\",\"center:6701\",\"malas_recibidas\",\"0\",\"1\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:menciones_recibidas\",\"center:6701\",\"menciones_recibidas\",\"0\",\"4\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_fisica\",\"center:6701\",\"tipo_fisica\",\"0\",\"1\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_verbal\",\"center:6701\",\"tipo_verbal\",\"0\",\"2\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_exclusion\",\"center:6701\",\"tipo_exclusion\",\"0\",\"2\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_rumores\",\"center:6701\",\"tipo_rumores\",\"0\",\"3\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_pertenencias\",\"center:6701\",\"tipo_pertenencias\",\"0\",\"2\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_sexual\",\"center:6701\",\"tipo_sexual\",\"0\",\"2\",\"lower_better\",\"demo-20261021\",\"12\"\n\"center:6701:demo-20261021:tipo_digital\",\"center:6701\",\"tipo_digital\",\"0\",\"3\",\"lower_better\",\"demo-20261021\",\"12\"\n"}}};</script>
+<script>/* CLAVE: local declarative data reader. No DOM, storage or network access. */
+(function (root, factory) {
+  'use strict';
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.ClaveData = api;
+})(globalThis, function () {
+  'use strict';
+  const MAX_BYTES = 40 * 1024 * 1024;
+  const HEADERS = {
+    entities: ['id', 'parent_id', 'level', 'label'],
+    values: ['entity_id', 'indicator_id', 'raw_value', 'value', 'status'],
+    aggregates: ['entity_id', 'indicator_id', 'statistic', 'category', 'value', 'n_valid', 'n_total', 'status'],
+    edges: ['indicator_id', 'source_id', 'target_id', 'relation', 'weight'],
+    normalization: ['reference_id', 'center_id', 'indicator_id', 'minimum', 'maximum', 'direction', 'period_id', 'n_valid']
+  };
+  const LIMITS = { entities: 10000, values: 250000, aggregates: 500000, edges: 150000, normalization: 100000 };
+  const fail = message => { throw new Error(message); };
+  const check = (condition, message) => { if (!condition) fail(message); };
+  const object = v => !!v && typeof v === 'object' && !Array.isArray(v);
+  const text = v => typeof v === 'string' && v.length > 0 && v.length <= 20000;
+  const key = (...parts) => JSON.stringify(parts);
+  const same = (a, b) => Number.isFinite(a) && Number.isFinite(b) && Math.abs(a - b) < 0.000002;
+  function number(v, where) {
+    check(typeof v === 'string' && /^[-+]?(?:\d+\.?\d*|\.\d+)(?:e[-+]?\d+)?$/i.test(v), where + ': número no válido.');
+    const n = Number(v); check(Number.isFinite(n), where + ': número fuera de rango.'); return n;
+  }
+  function count(v, where) { const n = number(v, where); check(Number.isSafeInteger(n) && n >= 0, where + ': recuento no válido.'); return n; }
+  function exactKeys(o, expected, where) {
+    check(object(o) && Object.keys(o).length === expected.length && expected.every(k => Object.hasOwn(o, k)), where + ': estructura no válida.');
+  }
+  function parseCSV(input, table) {
+    check(typeof input === 'string' && input.length <= MAX_BYTES, 'CSV demasiado grande.');
+    if (table) check(Object.hasOwn(HEADERS, table), 'Tabla CSV no compatible.');
+    let csv = input.replace(/^\uFEFF/, ''), rows = [], row = [], cell = '', state = 'start';
+    const addCell = () => {
+      check(cell.length <= 20000, 'CSV: campo demasiado largo.');
+      // Known contracts bound even the header; generic CSV uses its first row.
+      const width = table ? HEADERS[table].length : rows[0]?.length;
+      check(width === undefined || row.length < width, 'CSV: número de columnas incorrecto.');
+      row.push(cell); cell = '';
+    };
+    const addRow = () => { addCell(); rows.push(row); row = []; check(rows.length <= (LIMITS[table] || 500000) + 1, 'CSV: demasiadas filas.'); };
+    for (let i = 0; i < csv.length; i++) {
+      const c = csv[i];
+      if (state === 'quoted') {
+        if (c === '"') { if (csv[i + 1] === '"') { cell += '"'; i++; } else state = 'closed'; }
+        else cell += c;
+      } else if (c === ',') { addCell(); state = 'start'; }
+      else if (c === '\n' || c === '\r') { if (c === '\r' && csv[i + 1] === '\n') i++; addRow(); state = 'start'; }
+      else if (state === 'closed') fail('CSV: hay caracteres después de cerrar las comillas.');
+      else if (c === '"') { check(state === 'start', 'CSV: comillas no válidas.'); state = 'quoted'; }
+      else { cell += c; state = 'plain'; }
+      check(cell.length <= 20000, 'CSV: campo demasiado largo.');
+    }
+    check(state !== 'quoted', 'CSV: comillas sin cerrar.');
+    if (row.length || cell.length || state !== 'start') addRow();
+    check(rows.length > 0, 'CSV vacío.');
+    const headers = rows.shift();
+    check(headers.every(text) && new Set(headers).size === headers.length, 'CSV: encabezados repetidos o vacíos.');
+    if (table) check(HEADERS[table] && key(...headers) === key(...HEADERS[table]), table + '.csv: encabezados incompatibles.');
+    return rows.map((r, i) => {
+      check(r.length === headers.length, (table || 'CSV') + ': número de columnas incorrecto en fila ' + (i + 2) + '.');
+      return Object.fromEntries(headers.map((h, j) => [h, r[j]]));
+    });
+  }
+  function createModel(bundle) {
+    check(object(bundle) && object(bundle.manifest) && object(bundle.tables), 'Falta el manifiesto o las tablas.');
+    const { manifest: m, tables: t } = bundle;
+    check(['1.0.0', '1.1.0'].includes(m.schema_version), 'Versión de datos no compatible.');
+    const scoped = m.schema_version === '1.1.0';
+    if (scoped) {
+      exactKeys(m.access, ['roots', 'normalization_reference'], 'Ámbito de acceso');
+      check(Array.isArray(m.access.roots) && m.access.roots.length > 0 && m.access.roots.length <= LIMITS.entities && m.access.roots.every(text) && new Set(m.access.roots).size === m.access.roots.length && m.access.normalization_reference === 'source_center_period', 'Ámbito de acceso no válido.');
+    } else check(m.access === undefined, 'El ámbito de acceso requiere la versión de datos 1.1.0.');
+    check(text(m.dataset_id) && text(m.title) && typeof m.synthetic === 'boolean', 'Manifiesto: identificación incompleta.');
+    check(object(m.period) && text(m.period.id) && text(m.period.label), 'Manifiesto: periodo incompleto.');
+    check(Array.isArray(m.hierarchy) && m.hierarchy.length >= 2 && m.hierarchy.length <= 16, 'Jerarquía no válida.');
+    const levels = new Map();
+    m.hierarchy.forEach((l, i) => {
+      check(object(l) && text(l.id) && text(l.label) && !levels.has(l.id) && l.parent === (i ? m.hierarchy[i - 1].id : null), 'Jerarquía: niveles repetidos o padres incorrectos.');
+      levels.set(l.id, l);
+    });
+    check(m.hierarchy[0].id === 'center' && m.hierarchy.at(-1).id === 'student', 'La jerarquía debe empezar en centro y terminar en estudiante.');
+    check(Array.isArray(m.sections) && m.sections.length > 0 && m.sections.length <= 100, 'Secciones no válidas.');
+    const sections = new Set();
+    m.sections.forEach(s => { check(object(s) && text(s.id) && text(s.label) && Number.isFinite(s.order) && !sections.has(s.id), 'Sección no válida o repetida.'); sections.add(s.id); });
+    check(Array.isArray(m.indicators) && m.indicators.length > 0 && m.indicators.length <= 200, 'Indicadores no válidos.');
+    const indicators = new Map(), options = new Map();
+    const aggregations = { scale: 'mean', categorical: 'distribution', text: 'list', network: 'network' };
+    m.indicators.forEach(ind => {
+      check(object(ind) && text(ind.id) && !indicators.has(ind.id) && text(ind.label) && text(ind.question) && sections.has(ind.section_id) && Number.isFinite(ind.order) && typeof ind.summary === 'boolean', 'Indicador incompleto o repetido.');
+      check(Object.hasOwn(aggregations, ind.type) && aggregations[ind.type] === ind.aggregation, 'Tipo o agregación de indicador no compatible.');
+      check(Array.isArray(ind.levels) && ind.levels.length > 0 && new Set(ind.levels).size === ind.levels.length && ind.levels.every(l => levels.has(l)), 'Niveles de indicador no válidos.');
+      if (ind.type === 'categorical') {
+        check(Array.isArray(ind.options) && ind.options.length > 0 && ind.options.length <= 100, 'Categorías no válidas.');
+        const ids = new Set(); ind.options.forEach(o => { check(object(o) && text(o.id) && text(o.label) && !ids.has(o.id), 'Categoría repetida o incompleta.'); ids.add(o.id); }); options.set(ind.id, ids);
+      }
+      if (ind.normalization !== undefined) {
+        const n = ind.normalization;
+        check(ind.type === 'scale' && object(n) && n.method === 'minmax' && n.reference === 'center_period' && ['higher_better', 'lower_better'].includes(n.direction) && n.degenerate === 'unavailable', 'Normalización no compatible.');
+      }
+      if (ind.type === 'network') {
+        const n = ind.network;
+        check(object(n) && n.directed === true && n.reference === 'center' && Number.isFinite(n.weight_min) && Number.isFinite(n.weight_max) && n.weight_min > 0 && n.weight_max >= n.weight_min && Array.isArray(n.relations) && n.relations.length > 0 && n.relations.length <= 100, 'Configuración de red no válida.');
+        const ids = new Set(); n.relations.forEach(r => { check(object(r) && text(r.id) && text(r.label) && !ids.has(r.id), 'Relación repetida o incompleta.'); ids.add(r.id); }); options.set(ind.id, ids);
+      }
+      indicators.set(ind.id, ind);
+    });
+    exactKeys(m.files, Object.keys(HEADERS), 'Archivos del manifiesto');
+    Object.keys(HEADERS).forEach(name => {
+      check(m.files[name] === name + '.csv', 'Nombre de archivo no compatible: ' + name + '.');
+      check(Array.isArray(t[name]) && t[name].length <= LIMITS[name], name + ': tabla ausente o demasiado grande.');
+      t[name].forEach((r, i) => { exactKeys(r, HEADERS[name], name + ', fila ' + (i + 2)); check(Object.values(r).every(v => typeof v === 'string' && v.length <= 20000), name + ': todos los campos deben ser texto CSV.'); });
+    });
+    const entities = new Map(), childrenIndex = new Map(), paths = new Map(), descendants = new Map();
+    t.entities.forEach((e, i) => { check(text(e.id) && text(e.label) && levels.has(e.level) && !entities.has(e.id), 'entities.csv, fila ' + (i + 2) + ': entidad no válida o ID repetido.'); entities.set(e.id, e); childrenIndex.set(e.id, []); descendants.set(e.id, []); });
+    check(entities.size > 0, 'No hay entidades para consultar.');
+    t.entities.forEach(e => {
+      const expected = levels.get(e.level).parent;
+      check(expected === null ? e.parent_id === '' : entities.get(e.parent_id)?.level === expected, 'entities.csv: padre o nivel incorrecto.');
+      if (e.parent_id) childrenIndex.get(e.parent_id).push(e);
+    });
+    t.entities.forEach(e => { const p = []; let node = e; while (node) { p.unshift(node); node = entities.get(node.parent_id); } paths.set(e.id, p); if (e.level === 'student') for (const ancestor of p) descendants.get(ancestor.id).push(e); });
+    const individuals = t.entities.filter(e => e.level === 'student');
+    check(individuals.length > 0, 'No hay estudiantes para consultar.');
+    if (scoped) {
+      const roots = new Set(m.access.roots), ancestors = new Set();
+      for (const id of roots) {
+        check(entities.has(id) && descendants.get(id).length > 0, 'Ámbito de acceso: raíz inexistente o sin estudiantes.');
+        const p = paths.get(id);
+        check(!p.slice(0, -1).some(e => roots.has(e.id)), 'Ámbito de acceso: las raíces se solapan.');
+        p.forEach(e => ancestors.add(e.id));
+      }
+      for (const e of t.entities) check(ancestors.has(e.id) || paths.get(e.id).some(p => roots.has(p.id)), 'Ámbito de acceso: entidad fuera de las raíces autorizadas.');
+    }
+    const valueIndex = new Map(), aggregateIndex = new Map(), edgeIndex = new Map(), refs = new Map();
+    const valueIndicators = m.indicators.filter(i => i.type !== 'network');
+    // Bound the declared matrices before allocating verification statistics. A
+    // sparse malicious file must not trigger entities × indicators expansion.
+    const nonIndividualCount = t.entities.length - individuals.length;
+    const aggregateWidth = valueIndicators.reduce((n, i) => n + (i.type === 'scale' ? 2 : i.type === 'categorical' ? 2 * i.options.length : 0), 0);
+    check(individuals.length * valueIndicators.length <= LIMITS.values, 'La matriz estudiante–indicador supera el límite de valores.');
+    check(nonIndividualCount * aggregateWidth <= LIMITS.aggregates, 'La matriz de agregados supera el límite de resultados.');
+    check(t.entities.filter(e => e.level === 'center').length * valueIndicators.filter(i => i.normalization).length <= LIMITS.normalization, 'La matriz de normalización supera el límite de referencias.');
+    t.values.forEach((r, i) => {
+      const where = 'values.csv, fila ' + (i + 2), ind = indicators.get(r.indicator_id), k = key(r.entity_id, r.indicator_id);
+      check(entities.get(r.entity_id)?.level === 'student' && ind && ind.type !== 'network' && !valueIndex.has(k), where + ': referencia o combinación repetida no válida.');
+      check(['observed', 'not_answered', 'not_applicable', 'insufficient'].includes(r.status), where + ': estado no válido.');
+      if (r.status !== 'observed') { check(r.value === '', where + ': un dato ausente no puede tener puntuación.'); if (r.status !== 'insufficient') check(r.raw_value === '', where + ': una respuesta ausente no puede tener valor original.'); }
+      else {
+        check(r.value !== '', where + ': valor observado vacío.');
+        if (ind.type === 'scale') { const n = number(r.value, where); check(n >= 0 && n <= 10, where + ': escala fuera de 0–10.'); check(r.raw_value !== '', where + ': falta el valor original.'); }
+        if (ind.type === 'categorical') check(options.get(ind.id).has(r.value), where + ': categoría desconocida.');
+        if (ind.type === 'text') check(r.raw_value === r.value, where + ': texto original modificado.');
+      }
+      if (ind.type === 'scale' && r.raw_value !== '') number(r.raw_value, where);
+      valueIndex.set(k, r);
+    });
+    check(t.values.length === individuals.length * valueIndicators.length, 'values.csv: faltan combinaciones estudiante–indicador.');
+    // Validation statistics are computed only to verify DOVELA, never used for display.
+    const stats = new Map();
+    for (const e of t.entities) if (e.level !== 'student') for (const ind of valueIndicators) if (['scale', 'categorical'].includes(ind.type)) stats.set(key(e.id, ind.id), { n: 0, sum: 0, rawN: 0, rawSum: 0, counts: new Map() });
+    for (const r of t.values) {
+      const ind = indicators.get(r.indicator_id); if (!['scale', 'categorical'].includes(ind.type)) continue;
+      for (const e of paths.get(r.entity_id).slice(0, -1)) {
+        const s = stats.get(key(e.id, ind.id));
+        if (r.status === 'observed') { s.n++; if (ind.type === 'scale') s.sum += Number(r.value); else s.counts.set(r.value, (s.counts.get(r.value) || 0) + 1); }
+        if (ind.type === 'scale' && r.raw_value !== '') { s.rawN++; s.rawSum += Number(r.raw_value); }
+      }
+    }
+    const aggregateKeys = new Set();
+    for (let i = 0; i < t.aggregates.length; i++) {
+      const r = t.aggregates[i], where = 'aggregates.csv, fila ' + (i + 2), ind = indicators.get(r.indicator_id), entity = entities.get(r.entity_id);
+      check(entity && entity.level !== 'student' && ind && ['scale', 'categorical'].includes(ind.type), where + ': referencia no válida.');
+      const k = key(r.entity_id, r.indicator_id, r.statistic, r.category); check(!aggregateKeys.has(k), where + ': agregado repetido.'); aggregateKeys.add(k);
+      const s = stats.get(key(r.entity_id, ind.id)); let expected, valid;
+      if (ind.type === 'scale') { check(r.category === '' && ['mean', 'raw_mean'].includes(r.statistic), where + ': estadístico no válido.'); valid = r.statistic === 'mean' ? s.n : s.rawN; expected = (r.statistic === 'mean' ? s.sum : s.rawSum) / valid; }
+      else { check(options.get(ind.id).has(r.category) && ['count', 'percent'].includes(r.statistic), where + ': categoría o estadístico no válido.'); valid = s.n; expected = (s.counts.get(r.category) || 0) * (r.statistic === 'percent' ? 100 / valid : 1); }
+      check(count(r.n_total, where) === descendants.get(entity.id).length && count(r.n_valid, where) === valid, where + ': participación incoherente.');
+      check(valid ? r.status === 'observed' && same(number(r.value, where), expected) : r.status === 'insufficient' && r.value === '', where + ': resultado incoherente con los valores individuales.');
+      const ik = key(entity.id, ind.id); if (!aggregateIndex.has(ik)) aggregateIndex.set(ik, []); aggregateIndex.get(ik).push(r);
+    }
+    for (const e of t.entities) if (e.level !== 'student') for (const ind of valueIndicators) {
+      if (ind.type === 'scale') for (const stat of ['mean', 'raw_mean']) check(aggregateKeys.has(key(e.id, ind.id, stat, '')), 'aggregates.csv: falta un resultado de escala.');
+      if (ind.type === 'categorical') for (const o of ind.options) for (const stat of ['count', 'percent']) check(aggregateKeys.has(key(e.id, ind.id, stat, o.id)), 'aggregates.csv: falta un resultado de categoría.');
+    }
+    const refIds = new Set();
+    for (const r of t.normalization) {
+      const ind = indicators.get(r.indicator_id), k = key(r.center_id, r.indicator_id);
+      check(text(r.reference_id) && !refIds.has(r.reference_id) && !refs.has(k) && entities.get(r.center_id)?.level === 'center' && ind?.normalization && r.direction === ind.normalization.direction && r.period_id === m.period.id, 'normalization.csv: referencia incoherente o repetida.');
+      const raw = descendants.get(r.center_id).map(e => valueIndex.get(key(e.id, ind.id))).filter(v => v.raw_value !== '').map(v => Number(v.raw_value));
+      const n = count(r.n_valid, 'normalization.csv');
+      if (scoped) {
+        // Original centre references travel with the encrypted subset. Verify
+        // internal consistency, without claiming to verify excluded records.
+        check(n >= raw.length, 'normalization.csv: recuento de referencia inferior a los datos disponibles.');
+        if (!n) check(r.minimum === '' && r.maximum === '', 'normalization.csv: una referencia vacía no admite extremos.');
+        else {
+          const min = number(r.minimum, 'normalization.csv'), max = number(r.maximum, 'normalization.csv');
+          check(min <= max && raw.every(v => v >= min && v <= max), 'normalization.csv: extremos de referencia incompatibles con los datos disponibles.');
+        }
+      } else {
+        check(n === raw.length, 'normalization.csv: recuento incorrecto.');
+        check(raw.length ? same(number(r.minimum, 'normalization.csv'), Math.min(...raw)) && same(number(r.maximum, 'normalization.csv'), Math.max(...raw)) : r.minimum === '' && r.maximum === '', 'normalization.csv: extremos incorrectos.');
+      }
+      refIds.add(r.reference_id); refs.set(k, r);
+    }
+    for (const e of t.entities) if (e.level === 'center') for (const ind of valueIndicators.filter(i => i.normalization)) check(refs.has(key(e.id, ind.id)), 'normalization.csv: falta una referencia de centro.');
+    for (const r of t.values) {
+      const ind = indicators.get(r.indicator_id); if (!ind.normalization || r.raw_value === '') continue;
+      const ref = refs.get(key(paths.get(r.entity_id)[0].id, ind.id)), min = Number(ref.minimum), max = Number(ref.maximum);
+      if (min === max) check(r.status === 'insufficient' && r.value === '', 'values.csv: una referencia constante no admite puntuación.');
+      else { const raw = Number(r.raw_value), expected = 10 * (ref.direction === 'higher_better' ? raw - min : max - raw) / (max - min); check(r.status === 'observed' && same(Number(r.value), expected), 'values.csv: puntuación incompatible con la normalización.'); }
+    }
+    const edgeKeys = new Set();
+    t.edges.forEach((r, i) => {
+      const where = 'edges.csv, fila ' + (i + 2), ind = indicators.get(r.indicator_id), source = entities.get(r.source_id), target = entities.get(r.target_id), k = key(r.indicator_id, r.source_id, r.target_id, r.relation);
+      check(ind?.type === 'network' && source?.level === 'student' && target?.level === 'student' && source.id !== target.id && paths.get(source.id)[0].id === paths.get(target.id)[0].id && options.get(ind.id).has(r.relation) && !edgeKeys.has(k), where + ': vínculo no válido o repetido.');
+      const w = number(r.weight, where); check(w >= ind.network.weight_min && w <= ind.network.weight_max, where + ': intensidad fuera de rango.'); edgeKeys.add(k);
+      if (!edgeIndex.has(ind.id)) edgeIndex.set(ind.id, []); edgeIndex.get(ind.id).push(r);
+    });
+    return { manifest: m, tables: t, entities, indicators,
+      children: id => (childrenIndex.get(id) || []).slice(), students: id => (descendants.get(id) || []).slice(), path: id => (paths.get(id) || []).slice(),
+      value: (id, indicator) => valueIndex.get(key(id, indicator)) || null,
+      aggregates: (id, indicator) => (aggregateIndex.get(key(id, indicator)) || []).slice(), edges: indicator => (edgeIndex.get(indicator) || []).slice() };
+  }
+  function base64(value, expected, where) {
+    check(typeof value === 'string' && value.length <= MAX_BYTES && value.length % 4 === 0 && /^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(value), where + ': codificación no válida.');
+    const bytes = Uint8Array.from(atob(value), c => c.charCodeAt(0));
+    check(expected ? bytes.length === expected : bytes.length >= 16, where + ': tamaño no válido.'); return bytes;
+  }
+  async function openPackage(buffer, password) {
+    check(buffer instanceof ArrayBuffer || ArrayBuffer.isView(buffer), 'No se ha seleccionado un archivo válido.');
+    check(buffer.byteLength > 0 && buffer.byteLength <= MAX_BYTES, 'El archivo debe ocupar como máximo 40 MiB.');
+    check(typeof password === 'string' && password.length > 0 && password.length <= 1024, 'Introduce una contraseña válida.');
+    check(globalThis.crypto?.subtle, 'Abre el archivo CLAVE.html guardado en tu equipo con Chrome o Edge. La vista previa de DOVELA no permite abrir otros archivos protegidos.');
+    const decoder = new TextDecoder('utf-8', { fatal: true }), encoder = new TextEncoder(); let envelope;
+    try { envelope = JSON.parse(decoder.decode(buffer)); } catch { fail('El archivo no es un paquete ARCO válido.'); }
+    if (object(envelope) && envelope.format === 'ARCO' && [2,3].includes(envelope.version)) {
+      exactKeys(envelope, ['format', 'version', 'recipients'], 'Paquete');
+      check(Array.isArray(envelope.recipients) && envelope.recipients.length > 0 && envelope.recipients.length <= 10, 'Destinatarios del paquete no válidos.');
+      const ids = new Set();
+      for (const recipient of envelope.recipients) {
+        exactKeys(recipient, ['id', 'envelope'], 'Destinatario');
+        check(typeof recipient.id === 'string' && /^[A-F0-9]{8}$/.test(recipient.id) && !ids.has(recipient.id), 'Identificador de destinatario no válido o repetido.');
+        ids.add(recipient.id);
+        exactKeys(recipient.envelope, ['format', 'version', 'kdf', 'cipher', 'ciphertext'], 'Paquete de destinatario');
+        check(recipient.envelope.format === 'ARCO' && recipient.envelope.version === 1, 'Versión de paquete de destinatario no compatible.');
+      }
+      if(envelope.version === 3){
+        // No public password hash: every attempt uses the full slow KDF.
+        // Bounded to ten recipients; only the matching authenticated payload is returned.
+        for(const recipient of envelope.recipients){
+          try{return await openPackage(encoder.encode(JSON.stringify(recipient.envelope)),password);}catch(_){/* Try the next independently protected scope. */}
+        }
+        fail('No se ha podido abrir el archivo. Revisa la contraseña y que el archivo esté completo.');
+      }
+      const id = /^[A-F0-9]{8}-.+$/.test(password) ? password.slice(0, 8) : '';
+      const recipient = envelope.recipients.find(r => r.id === id);
+      check(recipient, 'No se ha podido abrir el archivo. Revisa la contraseña y que el archivo esté completo.');
+      // Exactly one recipient and one derivation. Never try other passwords or
+      // recipients; the complete password, including its prefix, derives the key.
+      envelope = recipient.envelope;
+    }
+    exactKeys(envelope, ['format', 'version', 'kdf', 'cipher', 'ciphertext'], 'Paquete');
+    check(envelope.format === 'ARCO' && envelope.version === 1, 'Versión de paquete no compatible.');
+    exactKeys(envelope.kdf, ['name', 'hash', 'iterations', 'salt'], 'Derivación de clave');
+    exactKeys(envelope.cipher, ['name', 'iv'], 'Cifrado');
+    check(envelope.kdf.name === 'PBKDF2' && envelope.kdf.hash === 'SHA-256' && envelope.kdf.iterations === 600000 && envelope.cipher.name === 'AES-GCM', 'Protección del paquete no compatible.');
+    const salt = base64(envelope.kdf.salt, 16, 'Sal'), iv = base64(envelope.cipher.iv, 12, 'Vector'), ciphertext = base64(envelope.ciphertext, 0, 'Contenido');
+    let plain;
+    try {
+      const secret = await crypto.subtle.importKey('raw', encoder.encode(password), 'PBKDF2', false, ['deriveKey']);
+      const derived = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt, iterations: 600000, hash: 'SHA-256' }, secret, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+      plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv, additionalData: encoder.encode('ARCO:1'), tagLength: 128 }, derived, ciphertext);
+    } catch { fail('No se ha podido abrir el archivo. Revisa la contraseña y que el archivo esté completo.'); }
+    let payload;
+    try {
+      check(plain.byteLength <= MAX_BYTES, 'El contenido del paquete supera el límite de tamaño.');
+      payload = JSON.parse(decoder.decode(plain));
+    } catch { fail('El contenido del paquete no es válido o supera el límite de tamaño.'); }
+    finally { if (plain) new Uint8Array(plain).fill(0); }
+    return createReport(payload);
+  }
+  function createReport(payload) {
+    if (payload?.format === 'ARCO_PERSONAL') {
+      exactKeys(payload, ['format','version','recipient','report'], 'Informe personal');
+      check(payload.version === 1, 'Versión de informe personal no compatible.');
+      exactKeys(payload.recipient, ['type','value'], 'Destinatario');
+      const identity=payload.recipient;
+      check(typeof identity.value === 'string' && ((identity.type === 'DNI' && /^[0-9]{8}[A-Z]$/.test(identity.value)) || (identity.type === 'DNI_MASKED' && /^[0-9]{2}\*{2}[0-9]{2}\*[0-9][A-Z]$/.test(identity.value))), 'DNI del destinatario no válido.');
+      check(!payload.report?.format || payload.report.format === 'ARCO_SERIES', 'Contenido de informe personal no válido.');
+      const model = createReport(payload.report);
+      return {...model, recipient: {type:'DNI_MASKED',value:[...identity.value].map((char,index)=>[2,3,6].includes(index)?'*':char).join('')}};
+    }
+    if (payload?.format === 'ARCO_SERIES') {
+      exactKeys(payload, ['format', 'version', 'reports'], 'Informe de varias olas');
+      check(payload.version === 1 && Array.isArray(payload.reports) && payload.reports.length >= 1 && payload.reports.length <= 3, 'El informe admite entre una y tres olas.');
+      const models = payload.reports.map(p => { check(!p?.format, 'No se pueden anidar colecciones de olas.'); return createReport(p); });
+      check(new Set(models.map(m => m.manifest.period.id)).size === models.length, 'Los identificadores de las olas no pueden repetirse.');
+      return {...models[0], waves: models};
+    }
+    exactKeys(payload, ['manifest', 'files'], 'Contenido');
+    exactKeys(payload.files, Object.keys(HEADERS).map(n => n + '.csv'), 'Tablas del paquete');
+    const tables = {}; for (const name of Object.keys(HEADERS)) tables[name] = parseCSV(payload.files[name + '.csv'], name);
+    return createModel({ manifest: payload.manifest, tables });
+  }
+  return { createModel, createReport, openPackage, parseCSV, HEADERS, MAX_BYTES };
+});
+</script>
+<script>(function (root, factory) {
+  'use strict';
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.ClaveNetwork = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const palette = ['#167d8d', '#c35c4f', '#6655a2', '#a87c15', '#486f47', '#8c547c'];
+  const ns = 'http://www.w3.org/2000/svg';
+  let instanceCount = 0;
+  const compare = (a, b) => String(a.label || a.id).localeCompare(String(b.label || b.id), 'es', { numeric: true }) || a.id.localeCompare(b.id);
+  function entity(model, id) { const map = model.entities || model.entitiesMap; return map instanceof Map ? map.get(id) : map[id]; }
+  function centerId(model, id) {
+    const current = entity(model, id);
+    if (current && current.level === 'center') return current.id;
+    const parent = model.path(id).find(item => item.level === 'center');
+    return parent ? parent.id : null;
+  }
+  function buildGraph(model, entityId, indicator) {
+    const current = entity(model, entityId);
+    if (!current) return { nodes: [], edges: [], focalId: null, centerId: null };
+    const scope = current.level === 'student' ? [current] : model.students(entityId);
+    const included = new Set(scope.map(item => item.id));
+    // Scoped to this graph: a new wave or report must resolve its own hierarchy.
+    const centers = new Map();
+    const centerFor = id => {
+      if (!centers.has(id)) centers.set(id, centerId(model, id));
+      return centers.get(id);
+    };
+    const center = centerFor(entityId);
+    const edges = model.edges(indicator.id).filter(edge => {
+      const source = entity(model, edge.source_id), target = entity(model, edge.target_id);
+      return source && target && source.level === 'student' && target.level === 'student' &&
+        (included.has(source.id) || included.has(target.id)) &&
+        centerFor(source.id) === center && centerFor(target.id) === center;
+    });
+    const ids = new Set(included);
+    edges.forEach(edge => { ids.add(edge.source_id); ids.add(edge.target_id); });
+    const nodes = Array.from(ids, id => ({ ...entity(model, id), external: current.level !== 'student' && !included.has(id) })).sort(compare);
+    return { nodes, edges, focalId: current.level === 'student' ? current.id : null, centerId: center };
+  }
+  function layoutGraph(graph) {
+    const ring = graph.nodes.filter(node => node.id !== graph.focalId);
+    const radius = Math.max(210, ring.length * 8);
+    const margin = 155;
+    const size = (radius + margin) * 2;
+    const middle = size / 2;
+    const positions = new Map();
+    ring.forEach((node, index) => {
+      const angle = -Math.PI / 2 + index * Math.PI * 2 / Math.max(1, ring.length);
+      positions.set(node.id, { x: middle + radius * Math.cos(angle), y: middle + radius * Math.sin(angle), angle });
+    });
+    if (graph.focalId) positions.set(graph.focalId, { x: middle, y: middle, angle: 0 });
+    return { positions, size, middle, radius };
+  }
+  function mount(container, options) {
+    const { model, entityId, indicator, onStudentSelect } = options;
+    const graph = buildGraph(model, entityId, indicator);
+    const layout = layoutGraph(graph);
+    const config = indicator.network || {};
+    const relations = config.relations || [];
+    const instance = 'clave-net-' + (++instanceCount);
+    const controller = new AbortController();
+    const signal = controller.signal;
+    const listen = (node, name, fn) => node.addEventListener(name, fn, { signal });
+    const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = text; return node; };
+    const svgEl = (tag, attrs) => { const node = document.createElementNS(ns, tag); Object.entries(attrs || {}).forEach(([key, value]) => node.setAttribute(key, String(value))); return node; };
+    const relationIndex = id => Math.max(0, relations.findIndex(item => item.id === id));
+    const relationColor = id => palette[relationIndex(id) % palette.length];
+    const relationLabel = id => (relations.find(item => item.id === id) || {}).label || id;
+    const root = el('div', 'clave-network');
+    const controls = el('div', 'clave-network__controls');
+    const relationField = el('label', 'clave-network__field', 'Relación');
+    const select = el('select');
+    select.append(new Option('Todas las relaciones', ''));
+    relations.forEach(item => select.append(new Option(item.label, item.id)));
+    relationField.append(select);
+    const searchField = el('label', 'clave-network__field', 'Buscar estudiante');
+    const search = el('input'); search.type = 'search'; search.placeholder = 'Nombre o código';
+    searchField.append(search); controls.append(relationField, searchField);
+    const zoomBar = el('div', 'clave-network__zoom');
+    function button(text, label) { const b = el('button', 'clave-network__button', text); b.type = 'button'; if (label) b.setAttribute('aria-label', label); return b; }
+    const minus = button('−', 'Alejar la red'), plus = button('+', 'Ampliar la red'), reset = button('Ajustar');
+    zoomBar.append(minus, plus, reset); controls.append(zoomBar); root.append(controls);
+    const legend = el('div', 'clave-network__legend');
+    relations.forEach(item => { const part = el('span'); const swatch = el('i'); swatch.style.background = relationColor(item.id); swatch.setAttribute('aria-hidden', 'true'); part.append(swatch, document.createTextNode(item.label)); legend.append(part); });
+    root.append(legend);
+    root.append(el('p', 'clave-network__hint', 'Las flechas van de quien nombra a quien recibe la mención. Un trazo más grueso representa mayor intensidad.'));
+    const viewport = el('div', 'clave-network__viewport'); viewport.tabIndex = 0; viewport.setAttribute('aria-label', 'Red de relaciones. Puedes ampliar y desplazar el dibujo.');
+    const canvas = svgEl('svg', { viewBox: `0 0 ${layout.size} ${layout.size}`, role: 'group', 'aria-label': indicator.label || 'Red de relaciones' });
+    const defs = svgEl('defs');
+    relations.forEach((item, index) => {
+      const marker = svgEl('marker', { id: `${instance}-arrow-${index}`, viewBox: '0 0 10 10', refX: 8, refY: 5, markerWidth: 5, markerHeight: 5, orient: 'auto-start-reverse', markerUnits: 'strokeWidth' });
+      marker.append(svgEl('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: relationColor(item.id) })); defs.append(marker);
+    });
+    canvas.append(defs); viewport.append(canvas); root.append(viewport);
+    const status = el('p', 'clave-network__status'); status.setAttribute('aria-live', 'polite'); root.append(status);
+    if (graph.nodes.some(node => node.external)) root.append(el('p', 'clave-network__hint', 'Los nodos de contorno discontinuo pertenecen a otra aula o curso del mismo centro.'));
+    const details = el('details', 'clave-network__details'); details.append(el('summary', '', 'Consultar relaciones en una tabla'));
+    const tableWrap = el('div', 'clave-network__table-wrap'); tableWrap.tabIndex = 0; tableWrap.setAttribute('role', 'region'); tableWrap.setAttribute('aria-label', 'Tabla de relaciones, desplazable horizontalmente');
+    const table = el('table');
+    table.append(el('caption', 'clave-network__sr', `${indicator.label || 'Relaciones'} · ${entity(model, entityId)?.label || entityId}. El origen es quien nombra.`));
+    const thead = el('thead'), heading = el('tr'); ['Quien nombra', 'Persona nombrada', 'Relación', 'Intensidad'].forEach(label => { const th = el('th', '', label); th.scope = 'col'; heading.append(th); }); thead.append(heading); table.append(thead);
+    const tbody = el('tbody'); table.append(tbody); tableWrap.append(table); details.append(tableWrap);
+    const paging = el('div', 'clave-network__paging'), previous = button('Anterior'), next = button('Siguiente'), pageText = el('span');
+    pageText.setAttribute('role', 'status'); pageText.setAttribute('aria-atomic', 'true');
+    paging.append(previous, pageText, next); details.append(paging); root.append(details); container.replaceChildren(root);
+    let page = 0, filtered = [], zoom = 1, panX = 0, panY = 0, dragging = null;
+    let graphController = null, tableController = null;
+    const view = () => {
+      const width = layout.size / zoom;
+      canvas.setAttribute('viewBox', `${(layout.size-width)/2+panX} ${(layout.size-width)/2+panY} ${width} ${width}`);
+      minus.disabled = zoom <= 0.75; plus.disabled = zoom >= 4;
+    };
+    listen(plus, 'click', () => { zoom = Math.min(4, zoom * 1.3); view(); });
+    listen(minus, 'click', () => { zoom = Math.max(0.75, zoom / 1.3); view(); });
+    listen(reset, 'click', () => { zoom = 1; panX = 0; panY = 0; view(); });
+    listen(viewport, 'keydown', event => {
+      if (event.target !== viewport) return;
+      const step = layout.size / zoom / 10;
+      if (event.key === 'ArrowLeft') panX -= step; else if (event.key === 'ArrowRight') panX += step;
+      else if (event.key === 'ArrowUp') panY -= step; else if (event.key === 'ArrowDown') panY += step; else return;
+      event.preventDefault(); view();
+    });
+    listen(canvas, 'pointerdown', event => { if (event.target.closest('[role="button"]')) return; dragging = { x: event.clientX, y: event.clientY, panX, panY }; canvas.setPointerCapture(event.pointerId); });
+    listen(canvas, 'pointermove', event => { if (!dragging) return; const factor = layout.size / zoom / canvas.getBoundingClientRect().width; panX = dragging.panX - (event.clientX-dragging.x)*factor; panY = dragging.panY - (event.clientY-dragging.y)*factor; view(); });
+    listen(canvas, 'pointerup', () => { dragging = null; }); listen(canvas, 'pointercancel', () => { dragging = null; });
+    function openStudent(id) { if (typeof onStudentSelect === 'function') onStudentSelect(id); }
+    function studentButton(id) { const e = entity(model, id); const b = button(e.label || e.id); b.addEventListener('click', () => openStudent(id), { signal: tableController.signal }); return b; }
+    function renderTable() {
+      if (tableController) tableController.abort(); tableController = new AbortController();
+      tbody.replaceChildren(); const start = page * 40;
+      filtered.slice(start, start + 40).forEach(edge => { const row = el('tr'); [edge.source_id, edge.target_id].forEach(id => { const cell = el('td'); cell.append(studentButton(id)); row.append(cell); }); row.append(el('td', '', relationLabel(edge.relation)), el('td', '', edge.weight)); tbody.append(row); });
+      if (!filtered.length) { const row = el('tr'), td = el('td', '', 'No hay relaciones para esta selección.'); td.colSpan = 4; row.append(td); tbody.append(row); }
+      previous.disabled = page === 0; next.disabled = start + 40 >= filtered.length;
+      pageText.textContent = filtered.length ? `${start+1}–${Math.min(start+40, filtered.length)} de ${filtered.length}` : '0 relaciones';
+    }
+    listen(previous, 'click', () => { page--; renderTable(); if (previous.disabled) next.focus(); });
+    listen(next, 'click', () => { page++; renderTable(); if (next.disabled) previous.focus(); });
+    function render() {
+      if (graphController) graphController.abort(); graphController = new AbortController();
+      page = 0; const query = search.value.trim().toLocaleLowerCase('es');
+      const matches = new Set(graph.nodes.filter(node => `${node.label} ${node.id}`.toLocaleLowerCase('es').includes(query)).map(node => node.id));
+      filtered = graph.edges.filter(edge => (!select.value || edge.relation === select.value) && (!query || matches.has(edge.source_id) || matches.has(edge.target_id)));
+      Array.from(canvas.children).filter(child => child !== defs).forEach(child => child.remove());
+      const edgeLayer = svgEl('g', { 'aria-hidden': 'true', class: 'clave-network__edges' });
+      const multi = new Map();
+      filtered.forEach(edge => { const key = [edge.source_id, edge.target_id].sort().join('|'); if (!multi.has(key)) multi.set(key, []); multi.get(key).push(edge); });
+      filtered.forEach(edge => {
+        const a = layout.positions.get(edge.source_id), b = layout.positions.get(edge.target_id);
+        if (!a || !b) return;
+        const group = multi.get([edge.source_id, edge.target_id].sort().join('|'));
+        const slot = group.indexOf(edge);
+        const dx = b.x-a.x, dy = b.y-a.y, length = Math.max(1, Math.hypot(dx, dy));
+        const sign = edge.source_id < edge.target_id ? 1 : -1;
+        const bend = (slot-(group.length-1)/2) * 25 * sign;
+        const sx = a.x + dx/length*11, sy = a.y+dy/length*11, tx = b.x-dx/length*13, ty = b.y-dy/length*13;
+        const cx = (sx+tx)/2-dy/length*bend, cy = (sy+ty)/2+dx/length*bend;
+        const min = Number(config.weight_min || 1), max = Number(config.weight_max || 2);
+        const proportion = max > min ? Math.max(0, Math.min(1, (Number(edge.weight)-min)/(max-min))) : 0.5;
+        const path = svgEl('path', { d: edge.source_id === edge.target_id ? `M ${a.x-8} ${a.y-8} C ${a.x-45} ${a.y-65}, ${a.x+45} ${a.y-65}, ${a.x+8} ${a.y-8}` : `M ${sx} ${sy} Q ${cx} ${cy} ${tx} ${ty}`, fill: 'none', stroke: relationColor(edge.relation), 'stroke-width': 1.5+2.5*proportion, opacity: query ? 0.9 : 0.62 });
+        if (config.directed !== false) path.setAttribute('marker-end', `url(#${instance}-arrow-${relationIndex(edge.relation)})`);
+        edgeLayer.append(path);
+      }); canvas.append(edgeLayer);
+      const active = new Set(); filtered.forEach(edge => { active.add(edge.source_id); active.add(edge.target_id); });
+      graph.nodes.forEach(node => {
+        const p = layout.positions.get(node.id), focal = node.id === graph.focalId;
+        const group = svgEl('g', { role: 'button', tabindex: '0', 'aria-label': `${node.label || node.id}${node.external ? ', fuera de este ámbito' : ''}. Abrir ficha`, class: 'clave-network__node' });
+        if (query && !matches.has(node.id) && !active.has(node.id)) group.setAttribute('opacity', '0.22');
+        group.append(svgEl('circle', { cx: p.x, cy: p.y, r: focal ? 13 : 9, fill: focal ? '#153f53' : '#fff', stroke: node.external ? '#6d7980' : '#167d8d', 'stroke-width': focal ? 3 : 2, 'stroke-dasharray': node.external ? '4 3' : 'none' }));
+        const right = Math.cos(p.angle) >= 0;
+        const text = svgEl('text', { x: p.x + (focal ? 0 : right ? 16 : -16), y: p.y + (focal ? 31 : 4), 'text-anchor': focal ? 'middle' : right ? 'start' : 'end', class: 'clave-network__node-label' });
+        const displayLabel = node.label || node.id;
+        text.textContent = displayLabel.length > 26 ? displayLabel.slice(0, 25) + '…' : displayLabel;
+        if (!focal) text.setAttribute('transform', `rotate(${p.angle*180/Math.PI+(right?0:180)} ${p.x} ${p.y})`);
+        const title = svgEl('title'); title.textContent = `${node.label || node.id} · ${node.id}`; group.append(title, text);
+        group.addEventListener('click', () => openStudent(node.id), { signal: graphController.signal });
+        group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openStudent(node.id); } }, { signal: graphController.signal }); canvas.append(group);
+      });
+      status.textContent = graph.edges.length === 0 ? `${graph.nodes.length} estudiantes incluidos. El archivo no contiene relaciones para este ámbito.` : `${graph.nodes.length} estudiantes · ${filtered.length} relaciones mostradas${query ? ' para la búsqueda' : ''}.`;
+      renderTable();
+    }
+    listen(select, 'change', render); listen(search, 'input', render); render(); view();
+    return function cleanup() { controller.abort(); if (graphController) graphController.abort(); if (tableController) tableController.abort(); root.remove(); };
+  }
+  return { buildGraph, layoutGraph, mount };
+});
+</script>
+<script>/* CLAVE: presentation only. Values and aggregates come from the validated package. */
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const fmt = value => Number(value).toLocaleString('es-ES', { maximumFractionDigits: 2 });
+  const isValue = value => value !== '' && value !== null && value !== undefined;
+  const observed = row => row && row.status === 'observed' && isValue(row.value);
+  const hasOriginal = row => row && ['observed', 'insufficient'].includes(row.status) && isValue(row.raw_value);
+  const statuses = { not_answered: 'No respondió', not_applicable: 'No aplicable', insufficient: 'Datos insuficientes' };
+  let model = null, entityId = null, view = 'report', generation = 0, busy = false;
+  let order = { key: 'name', direction: 1 }, listParent = null, guideStep = -1;
+  let cleanups = [];
+  let waveModels = [], waveIndex = 0;
+  let waveAnchor = null, waveNotice = '';
+  let recipient = null;
+  const previewMode=!!window.CLAVE_PREVIEW_PAYLOAD;
+  if(previewMode){$('open-form').hidden=true;$('preview-help').hidden=false;document.querySelector('.demo-entry').hidden=true;}
+  function renderWatermark() {
+    const mark = $('recipient-watermark'); mark.replaceChildren(); mark.hidden = !recipient;
+    if (recipient) for (let i=0;i<12;i++) mark.append(el('span', '', recipient.value));
+  }
+  const el = (tag, className, text) => {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = String(text);
+    return node;
+  };
+  const button = (text, action, className = 'button') => {
+    const node = el('button', className, text); node.type = 'button'; node.addEventListener('click', action); return node;
+  };
+  const statusText = row => statuses[row?.status] || 'Dato no disponible';
+  const name = entity => entity.label || entity.id;
+  const levelLabel = level => model.manifest.hierarchy.find(item => item.id === level)?.label || level;
+  // The package already contains only the authorised data. Ancestors remain
+  // for structural validation, but are not selectable reporting scopes.
+  const accessRoots = () => model?.manifest.access?.roots || [];
+  const allowed = id => !!model?.entities.has(id) && (!accessRoots().length || model.path(id).some(part => accessRoots().includes(part.id)));
+  const accessRootFor = id => model.path(id).find(part => accessRoots().includes(part.id)) || null;
+  const cleanup = () => { cleanups.forEach(fn => fn()); cleanups = []; };
+  function announce(text) { $('announcement').textContent = text; }
+  function setBusy(value) {
+    busy = value;
+    $('open').disabled = value; $('demo-button').disabled = value;
+    $('open-form').setAttribute('aria-busy', String(value));
+    $('open-status').textContent = value ? 'Abriendo y comprobando el informe…' : '';
+  }
+  function reset({ keepFile = false } = {}) {
+    generation++; cleanup(); model = null; recipient = null; renderWatermark(); waveModels = []; waveIndex = 0; waveAnchor = null; waveNotice = ''; $('wave-picker').replaceChildren(); $('wave-picker').hidden = true; entityId = null; view = 'report'; listParent = null;
+    order = { key: 'name', direction: 1 }; guideStep = -1;
+    $('workspace').hidden = true; $('welcome').hidden = false; $('close-query').hidden = true;
+    ['report', 'filters', 'breadcrumbs', 'view-heading', 'view-tabs', 'guide', 'dataset-banner'].forEach(id => $(id).replaceChildren());
+    $('guide').hidden = true; $('password').value = '';
+    if (!keepFile) $('datafile').value = '';
+    $('open-error').hidden = true; $('open-error').textContent = ''; announce(''); setBusy(false);
+  }
+  function close() { reset(); announce('Consulta cerrada. No se ha enviado información.'); $(previewMode?'preview-help':'datafile').focus(); }
+  $('brand').addEventListener('click', close);
+  $('close-query').addEventListener('click', close);
+  window.addEventListener('pagehide', () => reset());
+  $('datafile').addEventListener('change', () => reset({ keepFile: true }));
+  async function openReport(getBytes, password) {
+    reset({ keepFile: true });
+    const current = generation; setBusy(true); $('close-query').hidden = false;
+    try {
+      const bytes = await getBytes();
+      if (current !== generation) return;
+      const result = await window.ClaveData.openPackage(bytes, password);
+      if (current !== generation) return;
+      recipient = result.recipient || null; renderWatermark();
+      waveModels = result.waves || [result]; waveIndex = 0; model = waveModels[0];
+      entityId = accessRoots()[0] || [...model.entities.values()].find(item => !item.parent_id).id;
+      $('welcome').hidden = true; $('workspace').hidden = false;
+      $('datafile').value = ''; $('password').value = '';
+      render(); $('main').focus(); announce('Informe abierto. Selecciona el ámbito que quieres consultar.');
+    } catch (error) {
+      if (current !== generation) return;
+      $('open-error').textContent = error?.message || 'No se ha podido abrir el archivo. Comprueba el paquete y la contraseña.';
+      $('open-error').hidden = false; $('close-query').hidden = true;
+    } finally {
+      password = '';
+      if (current === generation) { $('password').value = ''; setBusy(false); }
+    }
+  }
+  $('open-form').addEventListener('submit', event => {
+    event.preventDefault(); if (busy) return;
+    const file = $('datafile').files[0]; if (!file) return;
+    const password = $('password').value;
+    if (file.size > window.ClaveData.MAX_BYTES || password.length > 1024) {
+      $('open-error').textContent = file.size > window.ClaveData.MAX_BYTES ? 'El archivo supera el límite de 40 MiB. Solicita una entrega más pequeña.' : 'La contraseña es demasiado larga (máximo 1024 caracteres).';
+      $('open-error').hidden = false; $('password').value = ''; return;
+    }
+    openReport(() => file.arrayBuffer(), password);
+  });
+  $('demo-button').addEventListener('click', () => {
+    if (busy) return;
+    openReport(async () => new TextEncoder().encode(JSON.stringify(window.CLAVE_DEMO_PACKAGE)).buffer, window.CLAVE_DEMO_PASSWORD);
+  });
+  function navigate(id, nextView = 'report') {
+    if (!allowed(id)) return;
+    waveAnchor = {id, label: name(model.entities.get(id))}; waveNotice = '';
+    entityId = id; view = nextView;
+    if (nextView === 'list') listParent = id;
+    render();
+    const heading = $('view-heading').querySelector('h1'); if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+    announce(`${name(model.entities.get(id))}. ${nextView === 'list' ? 'Lista de estudiantes' : 'Informe'}.`);
+  }
+  function render() {
+    cleanup();
+    if (!model) return;
+    renderWavePicker();
+    const entity = model.entities.get(entityId);
+    const banner = $('dataset-banner'); banner.replaceChildren();
+    if (model.manifest.synthetic) banner.append(el('span', 'pill', 'DATOS SIMULADOS'));
+    banner.append(el('span', '', model.manifest.title));
+    if (recipient) banner.append(el('span', 'recipient-label', 'Acceso asignado al DNI ' + recipient.value));
+    const scope = accessRootFor(entity.id);
+    if (scope) banner.append(el('span', 'context', 'Ámbito autorizado: ' + model.path(scope.id).map(name).join(' › ')));
+    renderBreadcrumbs(entity); renderFilters(entity); renderHeading(entity); renderTabs(entity);
+    $('report').replaceChildren();
+    if (view === 'list') renderList(entity); else renderReport(entity);
+    renderGuide();
+  }
+  function renderWavePicker() {
+    const root = $('wave-picker'); root.replaceChildren(); root.hidden = waveModels.length < 2;
+    if (root.hidden) return;
+    const label = el('label', '', 'Ola de la encuesta'); label.htmlFor = 'wave-select';
+    const select = el('select'); select.id = 'wave-select';
+    waveModels.forEach((m, index) => {const option = el('option', '', m.manifest.period.label); option.value = String(index); select.append(option);});
+    select.value = String(waveIndex);
+    select.addEventListener('change', () => {
+      waveAnchor ||= {id: entityId, label: name(model.entities.get(entityId))};
+      const previous = waveAnchor.id; waveIndex = Number(select.value); model = waveModels[waveIndex];
+      entityId = allowed(previous) ? previous : accessRoots()[0] || [...model.entities.values()].find(e => !e.parent_id).id;
+      waveNotice = entityId !== previous ? waveAnchor.label + ' no tiene un registro disponible en esta ola dentro de tu ámbito. Se muestra el ámbito disponible.' : '';
+      if (entityId !== previous) { view = 'report'; listParent = null; }
+      render(); $('wave-select').focus(); announce('Consultando ' + model.manifest.period.label + (entityId !== previous ? '. El ámbito anterior no está disponible en esta ola.' : ''));
+    });
+    root.append(label, select, el('p', 'coverage', 'Cada ola conserva sus participantes y sus resultados. Las puntuaciones 0–10 tienen su propia referencia en cada ola.'));
+    if (waveNotice) root.append(el('p', 'coverage', waveNotice));
+  }
+  function renderBreadcrumbs(entity) {
+    const root = $('breadcrumbs'); root.className = 'breadcrumbs'; root.replaceChildren();
+    model.path(entity.id).forEach((part, index, all) => {
+      if (index) root.append(el('span', '', '›'));
+      const node = index === all.length - 1 || !allowed(part.id) ? el('span', '', name(part)) : button(name(part), () => navigate(part.id), '');
+      if (index === all.length - 1) node.setAttribute('aria-current', 'page'); root.append(node);
+    });
+  }
+  function renderFilters(entity) {
+    const root = $('filters'); root.replaceChildren();
+    const path = model.path(entity.id);
+    const hierarchy = model.manifest.hierarchy;
+    const scope = accessRootFor(entity.id);
+    if (accessRoots().length > 1) {
+      const holder = el('div', 'filter'), label = el('label', '', 'Ámbito autorizado'), select = el('select');
+      select.id = 'filter-access'; label.htmlFor = select.id;
+      for (const id of accessRoots()) {
+        const option = el('option', '', model.path(id).map(name).join(' › ')); option.value = id; option.selected = scope?.id === id; select.append(option);
+      }
+      select.addEventListener('change', () => { navigate(select.value); $('filter-access')?.focus({ preventScroll: true }); });
+      holder.append(label, select); root.append(holder);
+    }
+    for (let i = 0; i < hierarchy.length; i++) {
+      const level = hierarchy[i]; const selected = path.find(part => part.level === level.id);
+      if (scope && i < hierarchy.findIndex(item => item.id === scope.level)) continue;
+      const parent = level.parent ? path.find(part => part.level === level.parent) : null;
+      if (level.parent && !parent) continue;
+      const candidates = scope?.level === level.id ? [scope] : level.parent ? model.children(parent.id).filter(item => item.level === level.id) : [...model.entities.values()].filter(item => item.level === level.id);
+      const options = candidates.filter(item => allowed(item.id));
+      if (!options.length) continue;
+      const selectParent = parent && allowed(parent.id);
+      // A fixed root is already named in the heading and breadcrumb trail.
+      if (options.length === 1 && selected?.id === options[0].id && !selectParent) continue;
+      const holder = el('div', 'filter'); const label = el('label', '', level.label);
+      const select = el('select'); select.id = `filter-${level.id}`; label.htmlFor = select.id;
+      if (selectParent) { const opt = el('option', '', `Seleccionar ${level.label.toLocaleLowerCase('es')}`); opt.value = ''; select.append(opt); }
+      options.forEach(item => { const option = el('option', '', name(item)); option.value = item.id; option.selected = selected?.id === item.id; select.append(option); });
+      if (!selected && selectParent) select.value = '';
+      select.addEventListener('change', () => { const focusId = select.id; navigate(select.value || (selectParent ? parent.id : scope?.id)); $(focusId)?.focus({ preventScroll: true }); });
+      holder.append(label, select); root.append(holder);
+    }
+  }
+  function renderHeading(entity) {
+    const root = $('view-heading'); root.replaceChildren(); const heading = el('div');
+    heading.append(el('p', 'eyebrow', levelLabel(entity.level)), el('h1', '', name(entity)));
+    const students = model.students(entity.id);
+    const context = [model.manifest.period.label, entity.level === 'student' ? `Código ${entity.id}` : `${students.length} estudiantes`];
+    heading.append(el('p', 'context', context.join(' · '))); root.append(heading);
+    if (entity.level === 'student') {
+      const parent = entity.parent_id;
+      const siblings = orderedStudents(parent); const at = siblings.findIndex(item => item.id === entity.id);
+      const actions = el('div', 'student-actions');
+      if (allowed(parent)) actions.append(button('Volver a la lista', () => navigate(listParent && allowed(listParent) && model.students(listParent).some(s => s.id === entity.id) ? listParent : parent, 'list'), 'button quiet'));
+      const prev = button('←', () => navigate(siblings[at - 1].id)); prev.disabled = at <= 0; prev.setAttribute('aria-label', 'Estudiante anterior');
+      const next = button('→', () => navigate(siblings[at + 1].id)); next.disabled = at === siblings.length - 1; next.setAttribute('aria-label', 'Estudiante siguiente');
+      actions.append(prev, el('span', 'student-position', `${at + 1} / ${siblings.length}`), next); root.append(actions);
+    } else root.append(button('Cambiar archivo', () => { close(); }, 'button quiet'));
+  }
+  function renderTabs(entity) {
+    const root = $('view-tabs'); root.replaceChildren();
+    const isClass = model.children(entity.id).some(child => child.level === 'student');
+    if (!isClass) { root.hidden = true; return; }
+    root.hidden = false;
+    for (const [id, label] of [['report', 'Ficha de clase'], ['list', 'Lista de clase']]) {
+      const node = button(label.replace('clase', levelLabel(entity.level).toLocaleLowerCase('es')), () => navigate(entity.id, id), `button ${view === id ? 'active' : ''}`);
+      node.setAttribute('aria-pressed', String(view === id)); root.append(node);
+    }
+  }
+  function indicatorsFor(entity) { return model.manifest.indicators.filter(ind => ind.levels.includes(entity.level)).sort((a, b) => a.order - b.order); }
+  function renderReport(entity) {
+    const all = indicatorsFor(entity); const root = $('report');
+    const sections = [...model.manifest.sections].sort((a, b) => a.order - b.order);
+    const drawSections = (container, summary) => {
+      for (const section of sections) {
+        const indicators = all.filter(ind => ind.section_id === section.id && Boolean(ind.summary) === summary);
+        if (!indicators.length) continue;
+        const block = el('section', 'section'); const title = el('h2', 'section-title');
+        title.append(el('span', 'section-index', String(sections.indexOf(section) + 1).padStart(2, '0')), document.createTextNode(section.label));
+        const cards = el('div', 'cards');
+        for (const indicator of indicators) cards.append(renderCard(entity, indicator));
+        block.append(title, cards); container.append(block);
+      }
+    };
+    drawSections(root, true);
+    if (all.some(ind => !ind.summary)) {
+      const details = el('details', 'more'); details.id = 'more-indicators';
+      details.append(el('summary', '', 'Ver más indicadores'));
+      let drawn=false;
+      details.addEventListener('toggle',()=>{if(details.open&&!drawn){drawn=true;drawSections(details,false);}});
+      root.append(details);
+    }
+    if (!all.length) root.append(el('p', 'empty', 'Este informe no incluye indicadores para este ámbito.'));
+  }
+  function renderCard(entity, indicator) {
+    const card = el('article', `card ${['network', 'text'].includes(indicator.type) ? 'full' : ''}`);
+    card.dataset.indicator = indicator.id;
+    const title = el('h3', '', indicator.question || indicator.label); title.id = `indicator-${encodeURIComponent(indicator.id)}`;
+    card.setAttribute('aria-labelledby', title.id);
+    card.append(el('p', 'card-type', indicator.label), title);
+    if (indicator.type === 'scale') renderScale(card, entity, indicator);
+    if (indicator.type === 'categorical') renderCategory(card, entity, indicator);
+    if (indicator.type === 'text') renderText(card, entity, indicator);
+    if (indicator.type === 'network') {
+      const canvas = el('div', 'network-host'); card.append(canvas);
+      const cleanupFn = window.ClaveNetwork.mount(canvas, { model, entityId: entity.id, indicator, onStudentSelect: id => navigate(id) });
+      if (typeof cleanupFn === 'function') cleanups.push(cleanupFn);
+    }
+    if (indicator.description || indicator.explanation) {
+      const details = el('details', 'explanation'), summary = el('summary', '', 'Sobre este dato');
+      summary.id = `explanation-${encodeURIComponent(indicator.id)}`; summary.setAttribute('aria-labelledby', `${summary.id} ${title.id}`);
+      details.append(summary, el('p', '', indicator.description || indicator.explanation)); card.append(details);
+    }
+    return card;
+  }
+  function renderScale(card, entity, indicator) {
+    const individual = entity.level === 'student'; const rows = individual ? [] : model.aggregates(entity.id, indicator.id);
+    const original = individual ? model.value(entity.id, indicator.id) : rows.find(row => row.statistic === 'raw_mean');
+    const scoreRow = individual ? original : rows.find(row => row.statistic === 'mean');
+    const raw = individual ? original?.raw_value : original?.value;
+    const rawAvailable = individual ? hasOriginal(original) : observed(original);
+    const answer = el('p', rawAvailable ? 'answer' : 'answer status-answer', rawAvailable ? fmt(raw) : statusText(original));
+    if (rawAvailable) answer.append(el('span', 'answer-label', `${individual ? 'Valor original' : 'Media de valores originales'}${indicator.raw_unit ? ' · ' + indicator.raw_unit : ''}`));
+    card.append(answer);
+    if (!individual && original) card.append(el('p', 'coverage', `${original.n_valid} de ${original.n_total} estudiantes con valor válido`));
+    if (observed(scoreRow)) {
+      const score = Number(scoreRow.value); const container = el('div', 'score'); const heading = el('div', 'score-heading');
+      const scoreLabel = individual ? (indicator.normalization ? 'Puntuación normalizada' : 'Puntuación') : (indicator.normalization ? 'Media de puntuaciones normalizadas' : 'Media de puntuaciones');
+      heading.append(el('span', '', scoreLabel), el('strong', '', `${fmt(score)} / 10`));
+      const bar = el('div', 'score-track'); bar.setAttribute('role', 'img'); bar.setAttribute('aria-label', `Puntuación ${fmt(score)} de 10. 10 representa el sentido favorable de la escala.`);
+      const fill = el('div', 'score-fill'); fill.style.width = `${score * 10}%`;
+      const marker = el('span', 'score-dot'); marker.style.left = `${score * 10}%`; bar.append(fill, marker);
+      const axis = el('div', 'score-axis'); axis.append(el('span', '', '0'), el('span', '', '10 · Favorable')); container.append(heading, bar, axis);
+      if (!individual && scoreRow.n_valid !== original?.n_valid) container.append(el('p', 'coverage', `${scoreRow.n_valid} de ${scoreRow.n_total} con puntuación válida`));
+      card.append(container);
+    } else if (rawAvailable) {
+      const center = model.path(entity.id).find(part => part.level === 'center');
+      const reference = model.tables.normalization.find(row => row.center_id === center?.id && row.indicator_id === indicator.id && row.period_id === model.manifest.period.id);
+      const constant = reference && Number(reference.n_valid) > 0 && Number(reference.minimum) === Number(reference.maximum);
+      card.append(el('p', 'coverage', constant ? 'Sin puntuación: todos los valores de referencia del centro en este periodo son iguales.' : 'Puntuación: datos insuficientes.'));
+    }
+    if (individual && allowed(entity.parent_id)) {
+      const comparison = model.aggregates(entity.parent_id, indicator.id).find(row => row.statistic === 'raw_mean');
+      if (observed(comparison)) card.append(el('p', 'coverage', `Media de ${name(model.entities.get(entity.parent_id))}: ${fmt(comparison.value)} ${indicator.raw_unit || ''} · ${comparison.n_valid}/${comparison.n_total} valores válidos`));
+    }
+  }
+  function renderCategory(card, entity, indicator) {
+    if (entity.level === 'student') {
+      const row = model.value(entity.id, indicator.id);
+      const label = observed(row) ? (indicator.options.find(option => option.id === row.value)?.label || row.value) : statusText(row);
+      card.append(el('p', 'answer status-answer', label)); return;
+    }
+    const rows = model.aggregates(entity.id, indicator.id); const container = el('div', 'distribution');
+    for (const option of indicator.options) {
+      const count = rows.find(row => row.statistic === 'count' && row.category === option.id);
+      const percent = rows.find(row => row.statistic === 'percent' && row.category === option.id);
+      const group = el('div'); const top = el('div', 'category-top'); top.append(el('span', '', option.label));
+      const number = el('strong', '', observed(count) ? fmt(count.value) : statusText(count));
+      if (observed(percent)) number.append(el('small', '', ` · ${fmt(percent.value)} %`)); top.append(number); group.append(top);
+      if (observed(percent)) { const track = el('div', 'category-track'); const fill = el('div', 'category-fill'); fill.style.width = `${percent.value}%`; track.append(fill); group.append(track); }
+      container.append(group);
+    }
+    card.append(container);
+    const first = rows[0]; if (first) card.append(el('p', 'coverage', `${first.n_valid} de ${first.n_total} estudiantes con respuesta válida${Number(first.n_valid) > 0 ? ' · Porcentajes sobre las respuestas válidas' : ''}`));
+  }
+  function renderText(card, entity, indicator) {
+    if (entity.level === 'student') {
+      const row = model.value(entity.id, indicator.id); card.append(el('blockquote', 'text-response', observed(row) ? row.value : statusText(row))); return;
+    }
+    const students = model.students(entity.id); const rows = students.map(student => ({ student, row: model.value(student.id, indicator.id) })).filter(item => observed(item.row));
+    const label = el('label', '', 'Buscar en las respuestas'); const search = el('input', 'text-filter'); search.type = 'search'; search.id = `text-${encodeURIComponent(indicator.id)}`; label.htmlFor = search.id;
+    label.id = `text-label-${encodeURIComponent(indicator.id)}`; search.setAttribute('aria-labelledby', `${label.id} indicator-${encodeURIComponent(indicator.id)}`);
+    const results = el('div'), navigation = el('div', 'pagination'), pageText = el('span'); let page = 0;
+    pageText.setAttribute('role', 'status'); pageText.setAttribute('aria-atomic', 'true');
+    const prev = button('Anterior', () => { page--; show(); if (prev.disabled) next.focus(); });
+    const next = button('Siguiente', () => { page++; show(); if (next.disabled) prev.focus(); });
+    navigation.append(prev, pageText, next);
+    card.append(el('p', 'coverage', `${rows.length} de ${students.length} respuestas disponibles`), label, search, results, navigation);
+    const show = () => {
+      const q = search.value.toLocaleLowerCase('es'); const found = rows.filter(item => item.row.value.toLocaleLowerCase('es').includes(q));
+      results.replaceChildren(); const list = el('ul', 'text-list');
+      found.slice(page * 6, page * 6 + 6).forEach(item => { const li = el('li'); li.append(el('blockquote', '', item.row.value), button(name(item.student), () => navigate(item.student.id), '')); list.append(li); }); results.append(list);
+      if (!found.length) results.append(el('p', 'coverage', 'No hay respuestas que coincidan.'));
+      prev.disabled = page === 0; next.disabled = (page + 1) * 6 >= found.length;
+      pageText.textContent = `${found.length ? page * 6 + 1 : 0}–${Math.min(found.length, (page + 1) * 6)} de ${found.length} respuestas`;
+    };
+    search.addEventListener('input', () => { page = 0; show(); }); show();
+  }
+  function orderedStudents(id) {
+    const result = model.students(id).filter(student => allowed(student.id));
+    return result.sort((a, b) => {
+      if (order.key === 'name') return name(a).localeCompare(name(b), 'es', { numeric: true }) * order.direction || a.id.localeCompare(b.id);
+      const indicator = model.indicators.get(order.key); const av = model.value(a.id, order.key), bv = model.value(b.id, order.key);
+      const aHas = indicator.type === 'scale' ? hasOriginal(av) : observed(av), bHas = indicator.type === 'scale' ? hasOriginal(bv) : observed(bv);
+      if (!aHas || !bHas) return aHas ? -1 : bHas ? 1 : name(a).localeCompare(name(b), 'es');
+      const rawA = indicator.type === 'scale' && isValue(av.raw_value) ? Number(av.raw_value) : av.value;
+      const rawB = indicator.type === 'scale' && isValue(bv.raw_value) ? Number(bv.raw_value) : bv.value;
+      return (typeof rawA === 'number' ? rawA - rawB : String(rawA).localeCompare(String(rawB), 'es')) * order.direction || name(a).localeCompare(name(b), 'es');
+    });
+  }
+  function renderList(entity) {
+    const sectionOrder = id => model.manifest.sections.find(section => section.id === id)?.order || 0;
+    const columns = model.manifest.indicators.filter(ind => ind.summary && ['scale', 'categorical'].includes(ind.type) && ind.levels.includes('student')).sort((a, b) => sectionOrder(a.section_id) - sectionOrder(b.section_id) || a.order - b.order);
+    $('report').append(el('p', 'table-note', 'Pulsa un encabezado para ordenar o un nombre para abrir su ficha. Las cifras muestran los valores originales.'));
+    const wrap = el('div', 'table-wrap'); wrap.tabIndex = 0; wrap.setAttribute('role', 'region'); wrap.setAttribute('aria-label', 'Lista de estudiantes, desplazable horizontalmente');
+    const table = el('table', 'student-table'); table.append(el('caption', 'sr-only', `Estudiantes de ${name(entity)} · ${model.manifest.period.label}`));
+    const thead = el('thead'); const header = el('tr');
+    for (const column of [{ id: 'name', label: 'Estudiante' }, ...columns]) {
+      const th = el('th'); th.scope = 'col'; if (order.key === column.id) th.setAttribute('aria-sort', order.direction === 1 ? 'ascending' : 'descending');
+      const sort = button(`${column.label} ${order.key === column.id ? order.direction === 1 ? '↑' : '↓' : '↕'}`, () => {
+        order = { key: column.id, direction: order.key === column.id ? -order.direction : 1 }; render();
+        const activeHeader = $('report').querySelector('[aria-sort] button'); activeHeader?.focus();
+      }, ''); th.append(sort); header.append(th);
+    }
+    thead.append(header); const tbody = el('tbody');
+    for (const student of orderedStudents(entity.id)) {
+      const tr = el('tr'); const first = el('th'); first.scope = 'row'; first.append(button(name(student), () => { listParent = entity.id; navigate(student.id); }, 'student-name')); tr.append(first);
+      for (const indicator of columns) {
+        const row = model.value(student.id, indicator.id); let text = statusText(row);
+        if (observed(row)) text = indicator.type === 'categorical' ? indicator.options.find(option => option.id === row.value)?.label || row.value : isValue(row.raw_value) ? fmt(row.raw_value) : fmt(row.value);
+        else if (indicator.type === 'scale' && row?.status === 'insufficient' && isValue(row.raw_value)) text = `${fmt(row.raw_value)} · Sin puntuación`;
+        tr.append(el('td', observed(row) ? '' : 'muted-value', text));
+      }
+      tbody.append(tr);
+    }
+    table.append(thead, tbody); wrap.append(table); $('report').append(wrap);
+  }
+  const steps = [
+    ['Elige la perspectiva', 'Empieza por el centro y usa los selectores para consultar cursos, aulas y estudiantes. El ámbito y el periodo aparecen sobre el informe.'],
+    ['Lee la respuesta y su contexto', 'Cada tarjeta muestra una pregunta, su resultado y las respuestas disponibles. Un cero es un valor; «No respondió» indica que falta esa respuesta.'],
+    ['Consulta la lista de estudiantes', 'Abre la lista de un aula. Pulsa los encabezados para ordenar y un nombre para ver su ficha. Lee juntas las distintas fuentes: aportan perspectivas diferentes.'],
+    ['Amplía la información', 'En «Ver más indicadores» encontrarás tarjetas adicionales, respuestas abiertas y la red. Busca textos, explora relaciones o abre otras fichas.'],
+    ['Termina la consulta', '«Cerrar consulta» retira los datos y la contraseña de la aplicación. No se guardan valoraciones ni se envía información.']
+  ];
+  function moveGuide(step) { guideStep = step; renderGuide(); const title = $('guide').querySelector('h2'); if (title) { title.tabIndex = -1; title.focus(); } }
+  $('guide-open').addEventListener('click', () => moveGuide(0));
+  function renderGuide() {
+    const root = $('guide'); root.replaceChildren(); root.hidden = guideStep < 0; if (guideStep < 0) return;
+    const head = el('div', 'guide-head'); head.append(el('span', '', `GUÍA BREVE · ${guideStep + 1} DE ${steps.length}`), button('Salir', () => { guideStep = -1; renderGuide(); $('guide-open').focus(); }, 'button quiet'));
+    const actions = el('div', 'guide-actions'); const prev = button('Anterior', () => moveGuide(guideStep - 1)); prev.disabled = guideStep === 0;
+    const next = button(guideStep === steps.length - 1 ? 'Cerrar consulta' : 'Siguiente', () => { if (guideStep === steps.length - 1) close(); else moveGuide(guideStep + 1); }, 'button primary');
+    const explanation = guideStep === 0 && accessRoots().length ? 'Empieza en el ámbito autorizado por tu contraseña. Usa los selectores para recorrer sus fichas. El ámbito y el periodo aparecen sobre el informe.' : steps[guideStep][1];
+    actions.append(prev, next); root.append(head, el('h2', '', steps[guideStep][0]), el('p', '', explanation), actions);
+    announce(`Paso ${guideStep + 1}. ${steps[guideStep][0]}`);
+  }
+  // DOVELA's in-memory preview has already decrypted/created its data. Blob
+  // pages are not secure contexts in every browser, so no crypto is needed here.
+  if (window.CLAVE_PREVIEW_PAYLOAD) {
+    const payload = window.CLAVE_PREVIEW_PAYLOAD;
+    delete window.CLAVE_PREVIEW_PAYLOAD;
+    try {
+      const result = ClaveData.createReport(payload);
+      recipient = result.recipient || null; renderWatermark();
+      waveModels = result.waves || [result]; waveIndex = 0; model = waveModels[0];
+      entityId = 'center:6701/student:DEMO01';
+      $('welcome').hidden = true; $('workspace').hidden = false; $('close-query').hidden = false;
+      render(); $('main').focus(); announce('Vista previa del informe.');
+    } catch (error) {
+      $('open-error').textContent = error.message; $('open-error').hidden = false;
+    }
+  }
+  if(!previewMode&&Array.isArray(window.CLAVE_EXAMPLES)){
+    const holder=$('example-choices');
+    for(const example of window.CLAVE_EXAMPLES){
+      const openExample=()=>openReport(async()=>new TextEncoder().encode(JSON.stringify(example.package)),example.password);
+      holder.append(button(example.title,openExample,'button secondary'));
+      if(location.hash==='#ejemplo-'+example.id)openExample();
+    }
+  }
+})();
+</script>
+</body>
+</html>

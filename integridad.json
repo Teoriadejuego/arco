@@ -1,0 +1,26 @@
+{
+  "edition": "CLAVE-local-0.1.0",
+  "synthetic": true,
+  "files": [
+    {
+      "name": "CLAVE.html",
+      "bytes": 1035603,
+      "sha256": "9e8635459767bb4d8f9d3622595bd4e5b24d2d2918c9c368c6124efea38b7748"
+    },
+    {
+      "name": "demo-pbis.arco",
+      "bytes": 138584,
+      "sha256": "25e84d1677581e6363635209c4ba4d9331c4a2f74650de476ed0d44a535fbfd5"
+    },
+    {
+      "name": "demo-titulacion.arco",
+      "bytes": 164680,
+      "sha256": "4c07a5cd9d367e81db0b86b82d6ff46a9a39019d222006f320e085c5c450893d"
+    },
+    {
+      "name": "LEEME.txt",
+      "bytes": 1141,
+      "sha256": "de35bdd86059300d8843f4280b53d202d624e5af1c47ab01b59c884991133018"
+    }
+  ]
+}
