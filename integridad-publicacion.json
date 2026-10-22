@@ -20,12 +20,12 @@
     {
       "file": "CLAVE.html",
       "bytes": 1035603,
-      "sha256": "9e8635459767bb4d8f9d3622595bd4e5b24d2d2918c9c368c6124efea38b7748"
+      "sha256": "bae9e947dafd2301953288fd27a9ef60a88953b8f83a001fc107fb17b076c532"
     },
     {
       "file": "DOVELA.html",
-      "bytes": 1292811,
-      "sha256": "1e64406264b8beeba047348ec49b1bfc90f70d5bd36b0736563fbdae3e8b47dc"
+      "bytes": 1293029,
+      "sha256": "6b81425aaaafd58457bb6d5c6c58794157d4ea9f76946c25e4b5993612ae26cc"
     },
     {
       "file": "LEEME.txt",
@@ -49,18 +49,18 @@
     },
     {
       "file": "SALMER.html",
-      "bytes": 998230,
-      "sha256": "f377178e947191dde03bab8641ef207713e7556d1b2abbbd196742be3389b794"
+      "bytes": 998283,
+      "sha256": "e01034828a2c7fe3da63ba945508b7d3bc25c38ed480f4cc6f8528ac52d4522d"
     },
     {
       "file": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "25e84d1677581e6363635209c4ba4d9331c4a2f74650de476ed0d44a535fbfd5"
+      "sha256": "901a024ea899e5b25425e9ee547bd178e4015cc11df1cdbf6393fe498a1d44e9"
     },
     {
       "file": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "4c07a5cd9d367e81db0b86b82d6ff46a9a39019d222006f320e085c5c450893d"
+      "sha256": "bca5fa42d2b937846735e6b928652b7f1e7b7d86940d6f267771e7ec324fb339"
     },
     {
       "file": "ejemplos/completo/CLAVE.txt",
@@ -185,12 +185,12 @@
     {
       "file": "integridad-dovela.json",
       "bytes": 267,
-      "sha256": "630545f98525f4a83acda34e234f74f65b04618be6c75047dbb71125f40e1141"
+      "sha256": "88550a25c566473b76c4411b20f04ad6f1f1b16e8ba0aec6ccf87bd5d6fddcdf"
     },
     {
       "file": "integridad.json",
       "bytes": 674,
-      "sha256": "391665509acf94566ab78dfd7e1740bcf4145355a9146574fe0257aa2916df0d"
+      "sha256": "dfa7e3ce3b2213fb399c76806b26e17d2d742556f162cd2f8a89ed3f871c71c5"
     },
     {
       "file": "plantillas/ISAT.dovela",
