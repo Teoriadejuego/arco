@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wfev1gwWxG8mRVdW7Try+dxYe7QD/xKP63dhEai9JOw=' 'sha256-bbq56YRmaXtMvKOTw0xxOuUHafArTX6LpLNWjSk0cn0=' 'sha256-7W9TlBKmTNtakKAUS4czUNU22WrOHowgO1gdTYsRWp4=' 'sha256-mMZ5KaUTa7eImP1oHc4ZOD+Y82IjfjtbH+8RfldMp9g='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-wfev1gwWxG8mRVdW7Try+dxYe7QD/xKP63dhEai9JOw=' 'sha256-bbq56YRmaXtMvKOTw0xxOuUHafArTX6LpLNWjSk0cn0=' 'sha256-7W9TlBKmTNtakKAUS4czUNU22WrOHowgO1gdTYsRWp4=' 'sha256-eNkEu9q2ng1/a+BCaA/0OSkb5Vx/acp/Ewjz9ZDzQ2I='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light">
@@ -37,6 +37,8 @@ body{line-height:1.5}.topbar{height:auto;min-height:80px}.brand{min-height:44px}
   .student-table td:first-child,.student-table th:first-child{position:static}
   .student-table th button,.student-name{white-space:normal;overflow-wrap:anywhere}
 }
+
+.arco-demo-flow header,.arco-demo-flow footer{display:none}
 
 .clave-network{color:var(--ink,#193b4b);margin-top:1rem;min-width:0}.clave-network__controls{display:flex;align-items:end;flex-wrap:wrap;gap:.8rem}.clave-network__field{display:flex;flex:1 1 170px;flex-direction:column;gap:.35rem;font-size:.85rem;font-weight:650}.clave-network input,.clave-network select{min-height:42px;max-width:100%;width:100%;font:inherit;border:1px solid #718c86;border-radius:.55rem;padding:.55rem .65rem;background:white;color:var(--ink,#183f49)}.clave-network__zoom{display:flex;gap:.35rem;align-items:center}.clave-network__button{font:inherit;line-height:1.2;color:#185b70;background:#f7fafb;border:1px solid #718c86;border-radius:.5rem;padding:.55rem .7rem;cursor:pointer;min-height:40px}.clave-network__button:hover{background:#eaf4f5}.clave-network__button:disabled{opacity:.45;cursor:default}.clave-network :focus-visible{outline:3px solid #d79327;outline-offset:3px}.clave-network__legend{display:flex;flex-wrap:wrap;gap:.65rem 1.2rem;margin:1rem 0 .5rem;font-size:.85rem}.clave-network__legend span{display:inline-flex;align-items:center;gap:.4rem}.clave-network__legend i{display:inline-block;width:1.5rem;height:3px}.clave-network__hint,.clave-network__status{font-size:.8rem;line-height:1.5;color:#5d6b75;margin:.5rem 0 .8rem}.clave-network__viewport{position:relative;width:100%;aspect-ratio:1/1;max-height:740px;background:linear-gradient(140deg,#fff,#f7fafb);border:1px solid #e2e9ed;border-radius:.9rem;overflow:hidden}.clave-network__viewport svg{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.clave-network__node{cursor:pointer}.clave-network__node circle{transition:stroke-width .12s}.clave-network__node:hover circle,.clave-network__node:focus circle{stroke-width:4}.clave-network__node-label{font:12px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#193b4b;paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round}.clave-network__details{margin-top:.8rem;border-top:1px solid #dfe7eb;padding-top:.8rem}.clave-network__details summary{cursor:pointer;font-weight:650;color:#185b70;padding:.5rem 0}.clave-network__table-wrap{overflow:auto}.clave-network table{width:100%;border-collapse:collapse;font-size:.82rem;white-space:nowrap}.clave-network td,.clave-network th{text-align:left;padding:.55rem;border-bottom:1px solid #e1e9ec}.clave-network th{color:#4e626d;background:#f5f8fa}.clave-network td button{border:0;background:transparent;padding:.25rem 0;min-height:32px;text-align:left;text-decoration:underline;text-underline-offset:3px}.clave-network__paging{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:.8rem;font-size:.8rem}.clave-network__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@media(min-width:760px){.clave-network__viewport{aspect-ratio:1.25/1}}@media(prefers-reduced-motion:reduce){.clave-network__node circle{transition:none}}
 
@@ -654,7 +656,7 @@ body{line-height:1.5}.topbar{height:auto;min-height:80px}.brand{min-height:44px}
     if (!keepFile) $('datafile').value = '';
     $('open-error').hidden = true; $('open-error').textContent = ''; announce(''); setBusy(false);
   }
-  function close() { reset(); announce('Consulta cerrada. No se ha enviado información.'); $(previewMode?'preview-help':'datafile').focus(); }
+  function close() { window.ArcoDemoFlow?.end(); reset(); announce('Consulta cerrada. No se ha enviado información.'); $(previewMode?'preview-help':'datafile').focus(); }
   $('brand').addEventListener('click', close);
   $('close-query').addEventListener('click', close);
   window.addEventListener('pagehide', () => reset());
@@ -999,6 +1001,14 @@ body{line-height:1.5}.topbar{height:auto;min-height:80px}.brand{min-height:44px}
       $('open-error').textContent = error.message; $('open-error').hidden = false;
     }
   }
+
+  if(window.ArcoDemoFlow?.active)window.ArcoDemoFlow.receive('clave',async payload=>{
+    if(payload?.kind!=='demo-access'||!payload.package||typeof payload.password!=='string')throw Error('Falta el acceso de demostración.');
+    await openReport(async()=>new TextEncoder().encode(JSON.stringify(payload.package)),payload.password);
+    payload.password='';
+    if(!model||model.manifest.synthetic!==true){reset();throw Error('No se ha podido abrir el informe simulado. Vuelve a DOVELA y crea el acceso de nuevo.');}
+    announce('Tu contraseña de prueba se ha introducido automáticamente. Puedes explorar el informe.');
+  });
   if(!previewMode&&Array.isArray(window.CLAVE_EXAMPLES)){
     const holder=$('example-choices');
     for(const example of window.CLAVE_EXAMPLES){

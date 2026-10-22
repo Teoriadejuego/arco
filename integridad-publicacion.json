@@ -14,18 +14,23 @@
     },
     {
       "file": "CLAVE-SALMER.html",
-      "bytes": 162520,
-      "sha256": "a1514fd1ee6159ead8fbe48c01c0471e6e61b115234a9f68ffcd0b0e72a2a34d"
+      "bytes": 163240,
+      "sha256": "dac94e6de25f30741fbc5a3bccc70c8f50a5c8f9118e2bfdd24d552fd9dc3e27"
     },
     {
       "file": "CLAVE.html",
-      "bytes": 1035603,
-      "sha256": "bae9e947dafd2301953288fd27a9ef60a88953b8f83a001fc107fb17b076c532"
+      "bytes": 1037668,
+      "sha256": "6f930f5cdc198a764e79638b343c302b32d233152a0435482cd4b46a4d2b9d51"
+    },
+    {
+      "file": "DEMO.html",
+      "bytes": 10616,
+      "sha256": "ad5ec55f5b82f42b1b2db83879abee32531c1dfa98aecdf027d0e1764c41dca4"
     },
     {
       "file": "DOVELA.html",
-      "bytes": 1293029,
-      "sha256": "6b81425aaaafd58457bb6d5c6c58794157d4ea9f76946c25e4b5993612ae26cc"
+      "bytes": 1302106,
+      "sha256": "d22c53a75eda7e4b7e422c57821ce476b8b0c5264c3976312b1c03a777c3ce68"
     },
     {
       "file": "LEEME.txt",
@@ -44,23 +49,23 @@
     },
     {
       "file": "README.md",
-      "bytes": 2112,
-      "sha256": "c4ff25d2d9b3b975ef88f0581391cc2108c9d0de25f091713de9555d8cc2b659"
+      "bytes": 2482,
+      "sha256": "ed290b07d3425ae4c362029d5063f4f00cef25be50fcd7708c3140f6b97dbee3"
     },
     {
       "file": "SALMER.html",
-      "bytes": 998283,
-      "sha256": "e01034828a2c7fe3da63ba945508b7d3bc25c38ed480f4cc6f8528ac52d4522d"
+      "bytes": 1001239,
+      "sha256": "a1c8f68bf8166708f7ed0c98dd276520038ceeaab5e07ccd75b7b5e21c2303aa"
     },
     {
       "file": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "901a024ea899e5b25425e9ee547bd178e4015cc11df1cdbf6393fe498a1d44e9"
+      "sha256": "dc9dd0effecde0997698c64015e89de2545bbc84b3323b7b9eef972f11a184c2"
     },
     {
       "file": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "bca5fa42d2b937846735e6b928652b7f1e7b7d86940d6f267771e7ec324fb339"
+      "sha256": "5e065834eda4b706ddb38fa293b9d24f36f8772d2de9df68e7d1af6919e7264a"
     },
     {
       "file": "ejemplos/completo/CLAVE.txt",
@@ -179,18 +184,18 @@
     },
     {
       "file": "index.html",
-      "bytes": 30183,
-      "sha256": "0167ed49573afbf740c80869d9dc375a1b5e60760f4707caf47a04b3d12f00a0"
+      "bytes": 30164,
+      "sha256": "88269995b36a7a01530dd2387ef21d19cca98997dca3427817d478567757447a"
     },
     {
       "file": "integridad-dovela.json",
       "bytes": 267,
-      "sha256": "88550a25c566473b76c4411b20f04ad6f1f1b16e8ba0aec6ccf87bd5d6fddcdf"
+      "sha256": "119e7a832fdcb7b02403fd1e04e530fdc73c7e3637b06a448bf9b78d3e537b7b"
     },
     {
       "file": "integridad.json",
       "bytes": 674,
-      "sha256": "dfa7e3ce3b2213fb399c76806b26e17d2d742556f162cd2f8a89ed3f871c71c5"
+      "sha256": "f7238b7cf34f3b392071b41057c6254a8d50369463c072e24203e5a3c4c49534"
     },
     {
       "file": "plantillas/ISAT.dovela",

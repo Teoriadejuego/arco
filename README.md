@@ -5,10 +5,13 @@
 Demostración de herramientas para centros educativos, con datos simulados.
 
 - [Abrir la web](https://teoriadejuego.github.io/arco/).
+- [Recorrido acompañado SALMER → DOVELA → CLAVE](https://teoriadejuego.github.io/arco/DEMO.html).
 - [Probar SALMER](https://teoriadejuego.github.io/arco/SALMER.html).
 - [Preparar un informe en DOVELA](https://teoriadejuego.github.io/arco/DOVELA.html).
 - [Consultar en CLAVE](https://teoriadejuego.github.io/arco/CLAVE.html).
 - [Caso SALMER: tipos de situaciones](https://teoriadejuego.github.io/arco/CLAVE-SALMER.html).
+
+La demo acompañada permite responder, elegir entre informe breve o completo y abrir CLAVE sin descargar archivos ni recordar contraseñas. Su guía es opcional y los datos solo permanecen en memoria hasta cerrar o recargar. El recorrido integrado necesita HTTP(S).
 
 La portada ofrece cuatro informes simulados y un caso completo de SALMER, con Excel, plantillas y paquetes de ejemplo. Las contraseñas de demostración son públicas deliberadamente.
 
