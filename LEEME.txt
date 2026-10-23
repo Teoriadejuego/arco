@@ -6,7 +6,9 @@ ARCO · Edición local de revisión
    Hasta 10 Excel del mismo periodo o hasta 3 olas.
 4. CLAVE.html: consulta los ejemplos o abre el .arco con su contraseña.
    Los informes de la galería tienen su clave en los detalles de la portada.
-5. Cerrar encuesta/consulta retira las respuestas cargadas de esa página. No elimina archivos descargados.
+5. En DOVELA puedes permitir exportar PDF por perfil. CLAVE descarga la vista con marca de agua.
+   La contraseña del PDF es el nombre de usuario; la clave del .arco es independiente.
+6. Cerrar encuesta/consulta retira las respuestas cargadas de esa página. No elimina archivos descargados.
 
 Todo el contenido incluido es simulado. SALMER es una demo funcional; no está conectado a LimeSurvey.
 No necesitas instalar R ni Node para abrir los HTML. Revisa su funcionamiento en el navegador y equipo de destino.

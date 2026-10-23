@@ -1,7 +1,7 @@
 {
   "file": "DOVELA.html",
-  "bytes": 1302106,
-  "sha256": "d22c53a75eda7e4b7e422c57821ce476b8b0c5264c3976312b1c03a777c3ce68",
+  "bytes": 6106626,
+  "sha256": "b7681e104afbd89fe36cde2cc213afd9e4a016a029495684eb35ce91cea4467e",
   "dependencies": [
     "SheetJS (lector Excel local)",
     "Web Crypto (navegador)"
