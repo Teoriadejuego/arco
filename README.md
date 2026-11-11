@@ -2,7 +2,7 @@
 
 **SALMER recoge · DOVELA prepara · CLAVE permite consultar.**
 
-Edición 0.11.0-eval.4. Revisión de interfaz publicada el 11 de noviembre de 2026. Herramientas en evaluación para centros educativos, con datos simulados.
+Edición 0.11.0-eval.4. Revisión de consulta preparada para publicación el 12 de noviembre de 2026. Herramientas en evaluación para centros educativos, con datos simulados.
 
 - [Abrir la web](https://teoriadejuego.github.io/arco/).
 - [Recorrido acompañado SALMER → DOVELA → CLAVE](https://teoriadejuego.github.io/arco/DEMO.html).
@@ -18,6 +18,8 @@ DOVELA se organiza en cuatro pasos: Cargar, Revisar, Preparar accesos y Entregar
 DOVELA permite autorizar la exportación de PDF por perfil. CLAVE descarga la vista con marca de agua y contraseña de apertura igual al nombre de usuario; la clave del .arco sigue siendo independiente. Los informes antiguos deben regenerarse en DOVELA para habilitar este permiso. En la demo acompañada el usuario es orientacion.
 
 Las redes incluyen «Otra visualización», que agrupa los estudiantes por comunidades exploratorias y mantiene las flechas y sus tipos de relación.
+
+CLAVE permite abrir la lista de una categoría desde su recuento, buscar estudiantes por nombre o código y consultar listas de centro, curso y aula. En móvil las listas se presentan en tarjetas con ordenación. Al volver de una ficha se mantienen la búsqueda y los filtros de cada ola.
 
 La portada ofrece cuatro informes simulados y un caso completo de SALMER, con Excel, plantillas y paquetes de ejemplo. Las contraseñas de demostración son públicas deliberadamente.
 

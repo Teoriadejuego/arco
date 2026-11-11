@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-H3+tjdt2U11E0BESfAYvTTygJqr7mpUukVkZ0S8J23g=' 'sha256-cIoq/6/PwKUi+tnahzm19yR+LGGwp1gtxaDbuFGuVNU=' 'sha256-tsMJKj2APETsBgeNHS9+vkEtwepcjx4Sj6zAFhO+an4=' 'sha256-13t0DOGo5V9ZdsSoibn/7sHu3O6G8wI3LuMlfyh0aOY=' 'sha256-HlkWMlNzTAAKJBdQWfEBVOAaWnpfP514ZgDAqZdKFy0=' 'sha256-wfev1gwWxG8mRVdW7Try+dxYe7QD/xKP63dhEai9JOw=' 'sha256-Cd/IWUmfOLwqKJwDVr8FIeQc2NVrbYRLa4N7Aufn70E=' 'sha256-gtqvqJed1U7qPjNsJXFanY2RGOdSR5dqTeBC01nCMPc=' 'sha256-oCSP5knARZsg1eRN9fqijlI5KAQEDT4qXUCoW5GV0Ks=' 'sha256-OKFAZTTRI89jdWX0MPzZ3JxdY3/dRSgRyOmToC1vudw=' 'sha256-U4YcUgQ9lv7dae3UMEZAB/RouzbEfYdA2Y8ppBUXx88='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-H3+tjdt2U11E0BESfAYvTTygJqr7mpUukVkZ0S8J23g=' 'sha256-cIoq/6/PwKUi+tnahzm19yR+LGGwp1gtxaDbuFGuVNU=' 'sha256-tsMJKj2APETsBgeNHS9+vkEtwepcjx4Sj6zAFhO+an4=' 'sha256-13t0DOGo5V9ZdsSoibn/7sHu3O6G8wI3LuMlfyh0aOY=' 'sha256-sotgR7E1SZ1pmvna87mZ03mSGYyDAOtaHKiHyvJ56XE=' 'sha256-wfev1gwWxG8mRVdW7Try+dxYe7QD/xKP63dhEai9JOw=' 'sha256-Cd/IWUmfOLwqKJwDVr8FIeQc2NVrbYRLa4N7Aufn70E=' 'sha256-gtqvqJed1U7qPjNsJXFanY2RGOdSR5dqTeBC01nCMPc=' 'sha256-oCSP5knARZsg1eRN9fqijlI5KAQEDT4qXUCoW5GV0Ks=' 'sha256-OKFAZTTRI89jdWX0MPzZ3JxdY3/dRSgRyOmToC1vudw=' 'sha256-ePN3K0zQ0twhVRUGdGGZEVV17xOOaDbvo5eB525ka/g='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light">
@@ -73,6 +73,30 @@ select[aria-invalid="true"]{border-color:#a65040;box-shadow:0 0 0 1px #a65040}
 h1,h2,h3{text-wrap:balance}.button,button,summary,input,select{touch-action:manipulation}
 .arco-terms summary{min-height:44px}.guide{border-radius:14px}
 @media(max-width:650px){.welcome{padding:24px 16px 32px;gap:20px;grid-template-columns:1fr}.welcome-story{padding:0}.welcome h1{font-size:30px;margin-bottom:12px}.welcome .intro{font-size:15px}.welcome .perspectives{margin:14px 0}.local-explanation{font-size:13px;margin-top:12px}.open-card{padding:20px;border-radius:16px}.card{padding:20px;border-radius:14px}.filters{gap:10px}.filter{flex:1 1 140px}.view-heading h1{font-size:28px}.example-choices{grid-template-columns:1fr}.example-choices .button{min-height:44px}.section-title{font-size:17px}}
+
+/* Consulta basada en PBiS: del recuento a la lista, sin modificar el informe. */
+.category-count{border:0;background:transparent;color:var(--teal);padding:8px 0;min-height:44px;text-align:right;font:inherit;border-radius:4px}
+.category-count:hover{text-decoration:underline;text-underline-offset:4px}
+.list-selection{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 16px;margin-bottom:16px;border:1px solid var(--line);border-radius:12px;background:var(--teal-soft)}
+.list-selection p{margin:0;overflow-wrap:anywhere}
+.list-tools{display:flex;align-items:end;gap:12px;flex-wrap:wrap}.list-tools>div{flex:1 1 240px;max-width:440px}.list-tools label{margin-top:0}
+.list-mobile-sort{display:none}.student-code,.student-class{display:block;font-size:12px;line-height:1.5;color:var(--muted);font-weight:400;overflow-wrap:anywhere}
+.student-table{font-variant-numeric:tabular-nums}.student-table td{overflow-wrap:anywhere}
+@media screen and (max-width:650px){
+ .list-mobile-sort{display:flex;gap:10px;align-items:end;margin:16px 0}.list-mobile-sort>div{flex:1;min-width:0}.list-mobile-sort label{margin-top:0}.list-mobile-sort .button{font-size:13px;padding:10px 8px;gap:4px}
+ .table-wrap{overflow:visible;border:0;background:transparent}
+ .student-table{display:block;min-width:0;width:100%}.student-table caption{display:block}
+ .student-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .student-table tbody{display:grid;gap:16px}
+ .student-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:14px;background:#fff;overflow:hidden}
+ .student-table tbody th[scope=row],.student-table tbody td{position:static;min-width:0;max-width:none;width:auto;padding:12px 14px;border:0;background:transparent;box-shadow:none}
+ .student-table tbody th[scope=row]{grid-column:1/-1;border-bottom:1px solid var(--line)}
+ .student-table tbody td{border-bottom:1px solid #edf1ef;display:flex;flex-direction:column;gap:8px;justify-content:space-between;font-size:16px}
+ .student-table tbody td::before{content:attr(data-label);font-size:12px;font-weight:500;color:var(--muted);line-height:1.4}
+ .student-table .student-name{max-width:100%;text-align:left;padding-left:0;font-size:17px}
+ .student-table tbody tr:hover th[scope=row]{background:transparent}
+ .list-selection{padding:12px}.list-selection .button{justify-content:flex-start}
+}
 
 .clave-network{color:var(--ink,#193b4b);margin-top:1rem;min-width:0}.clave-network__controls{display:flex;align-items:end;flex-wrap:wrap;gap:.8rem}.clave-network__field{display:flex;flex:1 1 170px;flex-direction:column;gap:.35rem;font-size:.85rem;font-weight:650}.clave-network input,.clave-network select{min-height:42px;max-width:100%;width:100%;font:inherit;border:1px solid #718c86;border-radius:.55rem;padding:.55rem .65rem;background:white;color:var(--ink,#183f49)}.clave-network__zoom{display:flex;gap:.35rem;align-items:center}.clave-network__button{font:inherit;line-height:1.2;color:#185b70;background:#f7fafb;border:1px solid #718c86;border-radius:.5rem;padding:.55rem .7rem;cursor:pointer;min-height:40px}.clave-network__button:hover{background:#eaf4f5}.clave-network__button:disabled{opacity:.45;cursor:default}.clave-network :focus-visible{outline:3px solid #d79327;outline-offset:3px}.clave-network__legend{display:flex;flex-wrap:wrap;gap:.65rem 1.2rem;margin:1rem 0 .5rem;font-size:.85rem}.clave-network__legend span{display:inline-flex;align-items:center;gap:.4rem}.clave-network__legend i{display:inline-block;width:1.5rem;height:3px}.clave-network__hint,.clave-network__status{font-size:.8rem;line-height:1.5;color:#5d6b75;margin:.5rem 0 .8rem}.clave-network__viewport{position:relative;width:100%;aspect-ratio:1/1;max-height:740px;background:linear-gradient(140deg,#fff,#f7fafb);border:1px solid #e2e9ed;border-radius:.9rem;overflow:hidden}.clave-network__viewport svg{width:100%;height:100%;display:block;touch-action:none;cursor:grab}.clave-network__node{cursor:pointer}.clave-network__node circle{transition:stroke-width .12s}.clave-network__node:hover circle,.clave-network__node:focus circle{stroke-width:4}.clave-network__node-label{font:12px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#193b4b;paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round}.clave-network__details{margin-top:.8rem;border-top:1px solid #dfe7eb;padding-top:.8rem}.clave-network__details summary{cursor:pointer;font-weight:650;color:#185b70;padding:.5rem 0}.clave-network__table-wrap{overflow:auto}.clave-network table{width:100%;border-collapse:collapse;font-size:.82rem;white-space:nowrap}.clave-network td,.clave-network th{text-align:left;padding:.55rem;border-bottom:1px solid #e1e9ec}.clave-network th{color:#4e626d;background:#f5f8fa}.clave-network td button{border:0;background:transparent;padding:.25rem 0;min-height:32px;text-align:left;text-decoration:underline;text-underline-offset:3px}.clave-network__paging{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:.8rem;font-size:.8rem}.clave-network__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@media(min-width:760px){.clave-network__viewport{aspect-ratio:1.25/1}}@media(prefers-reduced-motion:reduce){.clave-network__node circle{transition:none}}
 
@@ -53208,7 +53232,7 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
       }
       if(n.matches('.score-axis')){add('note',text(n));return;}
       if(n.matches('.score-heading,.category-top,.clave-network__legend,.pagination,.clave-network__paging')){
-        add('note',[...n.childNodes].filter(c=>c.nodeType!==1||c.tagName!=='BUTTON').map(text).join(' '));return;
+        add('note',[...n.childNodes].filter(c=>c.nodeType!==1||c.tagName!=='BUTTON'||c.matches('.category-count')).map(text).join(' '));return;
       }
       if(/^h[1-6]$/.test(tag)){add(tag==='h2'?'section':'heading',text(n));return;}
       if(n.matches('.answer')&&n.querySelector('.answer-label')){
@@ -54003,6 +54027,7 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
   let order = { key: 'name', direction: 1 }, listParent = null, guideStep = -1;
   let cleanups = [];
   const listPositions = new Map();
+  const listOptions = new Map();
   let waveModels = [], waveIndex = 0;
   let waveAnchor = null, waveNotice = '';
   let recipient = null, permissions = {export_pdf:false}, pdfBusy = false;
@@ -54044,7 +54069,7 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
     if (!keepFile && $('terms-open')) $('terms-open').checked = false;
     executiveSelection = null;
     generation++; cleanup(); model = null; recipient = null; permissions = {export_pdf:false}; pdfBusy = false; renderWatermark(); waveModels = []; waveIndex = 0; waveAnchor = null; waveNotice = ''; $('wave-picker').replaceChildren(); $('wave-picker').hidden = true; entityId = null; view = 'report'; listParent = null;
-    order = { key: 'name', direction: 1 }; guideStep = -1; listPositions.clear();
+    order = { key: 'name', direction: 1 }; guideStep = -1; listPositions.clear(); listOptions.clear();
     $('workspace').hidden = true; $('welcome').hidden = false; $('close-query').hidden = true;
     ['report', 'filters', 'breadcrumbs', 'view-heading', 'view-tabs', 'guide', 'dataset-banner'].forEach(id => $(id).replaceChildren());
     $('guide').hidden = true; $('password').value = '';
@@ -54103,13 +54128,14 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
       listPositions.set(`${waveIndex}:${entityId}`,{y:window.scrollY,x:wrap?.scrollLeft||0,student:id,order:{...order}});
     }
     const restored=nextView==='list'?listPositions.get(`${waveIndex}:${id}`):null;
+    const navigationWave=waveIndex;
     if(restored)order={...restored.order};
     entityId = id; view = nextView;
     if (nextView === 'list') listParent = id;
     render();
     const heading = $('view-heading').querySelector('h1'); if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
     if(restored)requestAnimationFrame(()=>{
-      if(view!=='list'||entityId!==id)return;
+      if(view!=='list'||entityId!==id||waveIndex!==navigationWave)return;
       const wrap=$('report').querySelector('.table-wrap');if(wrap)wrap.scrollLeft=restored.x;
       [...$('report').querySelectorAll('.student-name')].find(b=>b.dataset.student===restored.student)?.focus({preventScroll:true});window.scrollTo(0,restored.y);
     });
@@ -54233,7 +54259,8 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
     heading.append(el('p', 'context', context.join(' · '))); root.append(heading);
     if (entity.level === 'student') {
       const parent = entity.parent_id;
-      const siblings = orderedStudents(parent); const at = siblings.findIndex(item => item.id === entity.id);
+      const origin = listParent && allowed(listParent) && model.students(listParent).some(s => s.id === entity.id) ? listParent : parent;
+      const candidates = filteredStudents(origin); const siblings = candidates.some(s => s.id === entity.id) ? candidates : orderedStudents(parent); const at = siblings.findIndex(item => item.id === entity.id);
       const actions = el('div', 'student-actions');
       if (allowed(parent)) actions.append(button('Volver a la lista', () => navigate(listParent && allowed(listParent) && model.students(listParent).some(s => s.id === entity.id) ? listParent : parent, 'list'), 'button quiet'));
       const prev = button('←', () => navigate(siblings[at - 1].id)); prev.disabled = at <= 0; prev.setAttribute('aria-label', 'Estudiante anterior');
@@ -54252,7 +54279,7 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
     if (entity.level === 'student') { root.hidden = true; return; }
     root.hidden = false;
     const tabs = [['report', `Ficha de ${levelLabel(entity.level).toLocaleLowerCase('es')}`], ['executive', 'Resumen ejecutivo']];
-    if (isClass) tabs.push(['list', 'Lista de clase']);
+    if (model.students(entity.id).some(student => allowed(student.id))) tabs.push(['list', isClass ? 'Lista de clase' : 'Lista de estudiantes']);
     for (const [id, label] of tabs) {
       const node = button(label.replace('clase', levelLabel(entity.level).toLocaleLowerCase('es')), () => navigate(entity.id, id), `button ${view === id ? 'active' : ''}`);
       node.setAttribute('aria-pressed', String(view === id)); root.append(node);
@@ -54355,7 +54382,13 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
       const percent = rows.find(row => row.statistic === 'percent' && row.category === option.id);
       const group = el('div'); const top = el('div', 'category-top'); top.append(el('span', '', option.label));
       const number = el('strong', '', observed(count) ? fmt(count.value) : statusText(count));
-      if (observed(percent)) number.append(el('small', '', ` · ${fmt(percent.value)} %`)); top.append(number); group.append(top);
+      if (observed(percent)) number.append(el('small', '', ` · ${fmt(percent.value)} %`));
+      const matching = studentsForCategory(entity.id, indicator.id, option.id);
+      if (observed(count) && Number(count.value) > 0 && matching.length === Number(count.value)) {
+        const detail = button('', () => showCategoryList(entity.id, indicator.id, option.id), 'category-count');
+        detail.setAttribute('aria-label', `Ver ${fmt(count.value)} estudiantes: ${option.label}`);detail.append(number);top.append(detail);
+      } else top.append(number);
+      group.append(top);
       if (observed(percent)) { const track = el('div', 'category-track'); const fill = el('div', 'category-fill'); fill.style.width = `${percent.value}%`; track.append(fill); group.append(track); }
       container.append(group);
     }
@@ -54397,37 +54430,94 @@ if (typeof module !== 'undefined' && module && typeof module.exports !== 'undefi
       return (typeof rawA === 'number' ? rawA - rawB : String(rawA).localeCompare(String(rawB), 'es')) * order.direction || name(a).localeCompare(name(b), 'es');
     });
   }
+  const normalizeSearch = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es').trim();
+  function listSettings(id) {
+    const key = `${waveIndex}:${id}`;
+    if (!listOptions.has(key)) listOptions.set(key, { query: '', category: null });
+    return listOptions.get(key);
+  }
+  function studentsForCategory(id, indicatorId, categoryId) {
+    const indicator = model.indicators.get(indicatorId);
+    if (!allowed(id) || indicator?.type !== 'categorical' || !indicator.levels.includes('student')) return [];
+    return model.students(id).filter(student => {
+      const row = model.value(student.id, indicatorId);
+      return allowed(student.id) && observed(row) && row.value === categoryId;
+    });
+  }
+  function filteredStudents(id) {
+    const settings = listSettings(id), words = normalizeSearch(settings.query).split(/\s+/).filter(Boolean);
+    const ids = settings.category ? new Set(studentsForCategory(id, settings.category.indicator, settings.category.value).map(s => s.id)) : null;
+    return orderedStudents(id).filter(student => (!ids || ids.has(student.id)) && words.every(word => normalizeSearch(name(student) + ' ' + student.id).includes(word)));
+  }
+  function showCategoryList(id, indicator, value) {
+    if (!allowed(id)) return;
+    listOptions.set(`${waveIndex}:${id}`, { query: '', category: { indicator, value } });
+    listPositions.delete(`${waveIndex}:${id}`);navigate(id, 'list');
+  }
   function renderList(entity) {
     const sectionOrder = id => model.manifest.sections.find(section => section.id === id)?.order || 0;
-    const columns = model.manifest.indicators.filter(ind => ind.summary && ['scale', 'categorical'].includes(ind.type) && ind.levels.includes('student')).sort((a, b) => sectionOrder(a.section_id) - sectionOrder(b.section_id) || a.order - b.order);
-    $('report').append(el('p', 'table-note', 'Pulsa un encabezado para ordenar o un nombre para abrir su ficha. Las cifras muestran los valores originales.'));
+    const settings = listSettings(entity.id), host = $('report');
+    const columns = model.manifest.indicators.filter(ind => (ind.summary || ind.id === settings.category?.indicator) && ['scale', 'categorical'].includes(ind.type) && ind.levels.includes('student')).sort((a, b) => sectionOrder(a.section_id) - sectionOrder(b.section_id) || a.order - b.order);
+    if (settings.category) {
+      const indicator = model.indicators.get(settings.category.indicator), option = indicator?.options?.find(o => o.id === settings.category.value);
+      const note = el('div', 'list-selection');
+      note.append(el('p', '', `${indicator?.label || ''}: ${option?.label || ''}`),button('Ver todos los estudiantes', () => { settings.category = null; listPositions.delete(`${waveIndex}:${entity.id}`);render();$('list-search')?.focus(); }, 'button quiet'));
+      host.append(note);
+    }
+    const tools = el('div', 'list-tools'), searchField = el('div'), label = el('label', '', 'Buscar estudiante'), search = el('input');
+    search.id = 'list-search'; search.type = 'search'; search.autocomplete = 'off'; search.spellcheck = false; search.placeholder = 'Nombre o código'; search.value = settings.query; label.htmlFor = search.id;
+    const status = el('p', 'table-note');status.id = 'list-search-status';status.setAttribute('role', 'status');status.setAttribute('aria-live', 'polite');search.setAttribute('aria-describedby', status.id);
+    const clear = button('Borrar búsqueda', () => { settings.query = '';search.value = '';update();search.focus(); }, 'button quiet');clear.id='list-search-clear';
+    search.addEventListener('input', () => { settings.query = search.value;update(); });searchField.append(label, search);tools.append(searchField,clear);host.append(tools,status);
+    const mobileSort = el('div', 'list-mobile-sort'), sortField = el('div'), sortLabel = el('label', '', 'Ordenar por'), sortSelect = el('select');
+    sortSelect.id = 'list-sort';sortLabel.htmlFor = sortSelect.id;
+    for (const column of [{id:'name',label:'Estudiante'},...columns]) {const option=el('option','',column.label);option.value=column.id;sortSelect.append(option);}
+    const sortDirection=button('',()=>{order.direction*=-1;update();},'button quiet');sortDirection.id='list-sort-direction';
+    sortSelect.addEventListener('change',()=>{order={key:sortSelect.value,direction:1};update();});sortField.append(sortLabel,sortSelect);mobileSort.append(sortField,sortDirection);host.append(mobileSort);
+    host.append(el('p', 'table-note', 'Abre un nombre para consultar su ficha. Las cifras muestran los valores originales.'));
     const wrap = el('div', 'table-wrap'); wrap.tabIndex = 0; wrap.setAttribute('role', 'region'); wrap.setAttribute('aria-label', 'Lista de estudiantes, desplazable horizontalmente');
     const table = el('table', 'student-table'); table.append(el('caption', 'sr-only', `Estudiantes de ${name(entity)} · ${model.manifest.period.label}`));
-    const thead = el('thead'); const header = el('tr');
+    const thead = el('thead'); const header = el('tr');const sortHeaders=[];
     for (const column of [{ id: 'name', label: 'Estudiante' }, ...columns]) {
-      const th = el('th'); th.scope = 'col'; if (order.key === column.id) th.setAttribute('aria-sort', order.direction === 1 ? 'ascending' : 'descending');
-      const sort = button(`${column.label} ${order.key === column.id ? order.direction === 1 ? '↑' : '↓' : '↕'}`, () => {
-        order = { key: column.id, direction: order.key === column.id ? -order.direction : 1 }; render();
-        const activeHeader = $('report').querySelector('[aria-sort] button'); activeHeader?.focus();
-      }, ''); th.append(sort); header.append(th);
+      const th = el('th'); th.scope = 'col';
+      const sort = button('', () => { order = { key: column.id, direction: order.key === column.id ? -order.direction : 1 };update();sort.focus(); }, '');
+      sortHeaders.push({column,th,sort});th.append(sort);header.append(th);
     }
     thead.append(header); const tbody = el('tbody');
-    for (const student of orderedStudents(entity.id)) {
+    const empty = el('p','empty','No hay estudiantes que coincidan. Borra la búsqueda o cambia el filtro.');
+    function update() {
+      const students=filteredStudents(entity.id);tbody.replaceChildren();
+      status.textContent=`${students.length} de ${model.students(entity.id).filter(s=>allowed(s.id)).length} estudiantes${settings.category?' · Lista filtrada':''}`;
+      clear.hidden=!settings.query;sortSelect.value=order.key;sortDirection.textContent=order.direction===1?'Ascendente ↑':'Descendente ↓';
+      for (const {column,th,sort} of sortHeaders) {
+        const active=order.key===column.id;th.setAttribute('aria-sort',active?(order.direction===1?'ascending':'descending'):'none');
+        sort.textContent=`${column.label} ${active?(order.direction===1?'↑':'↓'):'↕'}`;
+      }
+      for (const student of students) {
       const tr = el('tr'); const first = el('th'); first.scope = 'row'; const studentButton=button(name(student), () => { listParent = entity.id; navigate(student.id); }, 'student-name');studentButton.dataset.student=student.id;first.append(studentButton); tr.append(first);
+      if(name(student)!==student.id)first.append(el('small','student-code',student.id));
+      const studentPath=model.path(student.id),scopeIndex=studentPath.findIndex(part=>part.id===entity.id);
+      const classContext=studentPath.slice(scopeIndex+1,-1).map(name).join(' · ');
+      if(classContext)first.append(el('small','student-class',classContext));
       for (const indicator of columns) {
         const row = model.value(student.id, indicator.id); let text = statusText(row);
         if (observed(row)) text = indicator.type === 'categorical' ? indicator.options.find(option => option.id === row.value)?.label || row.value : isValue(row.raw_value) ? fmt(row.raw_value) : fmt(row.value);
         else if (indicator.type === 'scale' && row?.status === 'insufficient' && isValue(row.raw_value)) text = `${fmt(row.raw_value)} · Sin puntuación`;
-        tr.append(el('td', observed(row) ? '' : 'muted-value', text));
+        const cell=el('td', observed(row) ? '' : 'muted-value', text);cell.dataset.label=indicator.label;tr.append(cell);
       }
       tbody.append(tr);
+      }
+      empty.hidden=students.length>0;wrap.hidden=!students.length;
     }
-    table.append(thead, tbody); wrap.append(table); $('report').append(wrap);
+    table.append(thead, tbody); wrap.append(table);host.append(wrap,empty);update();
+    const compact=window.matchMedia?.('(max-width:650px)');
+    const adapt=()=>{for(const {sort} of sortHeaders)sort.tabIndex=compact?.matches?-1:0;wrap.tabIndex=compact?.matches?-1:0;wrap.setAttribute('aria-label',compact?.matches?'Lista de estudiantes':'Lista de estudiantes, desplazable horizontalmente');};
+    adapt();compact?.addEventListener('change',adapt);if(compact)cleanups.push(()=>compact.removeEventListener('change',adapt));
   }
   const steps = [
     ['Elige la perspectiva', 'Empieza por el centro y usa los selectores para consultar cursos, aulas y estudiantes. El ámbito y el periodo aparecen sobre el informe.'],
     ['Lee la respuesta y su contexto', 'Cada tarjeta muestra una pregunta, su resultado y las respuestas disponibles. Un cero es un valor; «No respondió» indica que falta esa respuesta.'],
-    ['Consulta la lista de estudiantes', 'Abre la lista de un aula. Pulsa los encabezados para ordenar y un nombre para ver su ficha. Lee juntas las distintas fuentes: aportan perspectivas diferentes.'],
+    ['Consulta la lista de estudiantes', 'Pulsa un recuento de respuestas para abrir su lista, o entra en «Lista de estudiantes». Busca por nombre o código, ordena los resultados y abre una ficha. Al volver se conservan los filtros.'],
     ['Amplía la información', 'En «Ver más indicadores» encontrarás tarjetas adicionales, respuestas abiertas y la red. Busca textos, explora relaciones o abre otras fichas.'],
     ['Termina la consulta', '«Cerrar consulta» retira los datos y la contraseña de la aplicación. No se guardan valoraciones ni se envía información.']
   ];

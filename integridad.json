@@ -4,18 +4,18 @@
   "files": [
     {
       "name": "CLAVE.html",
-      "bytes": 5760364,
-      "sha256": "eac043bd6eaa32a9da886998d872a41e3d157d8e95cd3477db44a901c29824a9"
+      "bytes": 5768964,
+      "sha256": "4fe86a4ef02d8d90f977406054152932804e35c27490a30fad8b1976a148dd38"
     },
     {
       "name": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "24e33ab641ab98ba779bdc9f4cd3e19d9557cc8feedda5badc5635c761880b57"
+      "sha256": "2c9eb826b142008c97e39d60e60ccb39d055234df4c469b32ce80b57dd1926cb"
     },
     {
       "name": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "88b236909affc8347dc073a27a0f2781ae6b04940a5d38adc6f613233e1aae55"
+      "sha256": "58a84256acf634c61a5d2cffb673e97070b08e23d861fbf3f18e33109cd5ae36"
     },
     {
       "name": "LEEME.txt",

@@ -1,6 +1,6 @@
 {
   "edition": "0.11.0-eval.4",
-  "revision": "usabilidad-20261111",
+  "revision": "integracion-pbis-20261112",
   "syntheticOnly": true,
   "files": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "file": "CLAVE-SALMER.html",
-      "bytes": 4885898,
-      "sha256": "9c46a8a1a3eb29edfe2d5d84fe0995aaa89145b88d92eb01ae7e6b01e69a7c08"
+      "bytes": 4894498,
+      "sha256": "4036807981062aafe4333d203e742bb24ed2e5a965d8a03c4cf74cc5f9062176"
     },
     {
       "file": "CLAVE.html",
-      "bytes": 5760364,
-      "sha256": "eac043bd6eaa32a9da886998d872a41e3d157d8e95cd3477db44a901c29824a9"
+      "bytes": 5768964,
+      "sha256": "4fe86a4ef02d8d90f977406054152932804e35c27490a30fad8b1976a148dd38"
     },
     {
       "file": "DEMO.html",
@@ -30,8 +30,8 @@
     },
     {
       "file": "DOVELA.html",
-      "bytes": 6248525,
-      "sha256": "ba0c2d28beaa610b82890b55d4affe4200488a5a8c125b3604622c78cffa8d7e"
+      "bytes": 6257218,
+      "sha256": "2ec365bfff1a82ededfae79dd7c28195fa809821d888b02322710ee0f48450b2"
     },
     {
       "file": "LEEME.txt",
@@ -55,8 +55,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 3636,
-      "sha256": "63d125329725bcf2bcbf04910930b7f5f281e56ff4adcc03c9b0ca4a2b508d76"
+      "bytes": 3944,
+      "sha256": "4036060de2adc2c62c3e29e0f3d12016a3ce6db159f6b1e9c38e87c86d3f0a17"
     },
     {
       "file": "SALMER.html",
@@ -66,12 +66,12 @@
     {
       "file": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "24e33ab641ab98ba779bdc9f4cd3e19d9557cc8feedda5badc5635c761880b57"
+      "sha256": "2c9eb826b142008c97e39d60e60ccb39d055234df4c469b32ce80b57dd1926cb"
     },
     {
       "file": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "88b236909affc8347dc073a27a0f2781ae6b04940a5d38adc6f613233e1aae55"
+      "sha256": "58a84256acf634c61a5d2cffb673e97070b08e23d861fbf3f18e33109cd5ae36"
     },
     {
       "file": "ejemplos/completo/CLAVE.txt",
@@ -196,12 +196,12 @@
     {
       "file": "integridad-dovela.json",
       "bytes": 267,
-      "sha256": "1993769c41a91d0ada0483cf2fb1388d9feddf5a5716ced17ad1728b13dadbc8"
+      "sha256": "f19770fe42514c05f1f1c16bd7e874e99567ed4afb41678a5a8348f536a5102e"
     },
     {
       "file": "integridad.json",
       "bytes": 670,
-      "sha256": "4b8003c23e0f4c4a5806df23ce73cdcedf1900503528d8cea8c922eb13f92af4"
+      "sha256": "38882ce69de7182fafbbf02182b3e184924f6afdef87d86f9b7d846f6db38c37"
     },
     {
       "file": "plantillas/ISAT.dovela",
