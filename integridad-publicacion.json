@@ -1,5 +1,6 @@
 {
-  "edition": "ARCO-pdf-comunidades-20261023",
+  "edition": "0.11.0-eval.4",
+  "revision": "usabilidad-20261111",
   "syntheticOnly": true,
   "files": [
     {
@@ -14,28 +15,28 @@
     },
     {
       "file": "CLAVE-SALMER.html",
-      "bytes": 4846464,
-      "sha256": "da1d9efa93323b0cccf39fed82aa526ae89c693810274c53ab7b5cddf109ffb9"
+      "bytes": 4885898,
+      "sha256": "9c46a8a1a3eb29edfe2d5d84fe0995aaa89145b88d92eb01ae7e6b01e69a7c08"
     },
     {
       "file": "CLAVE.html",
-      "bytes": 5720892,
-      "sha256": "61a967912a3d93b3da0b8dea3a658ea36523f695c8f2e00b0c0ae06136882ade"
+      "bytes": 5760364,
+      "sha256": "eac043bd6eaa32a9da886998d872a41e3d157d8e95cd3477db44a901c29824a9"
     },
     {
       "file": "DEMO.html",
-      "bytes": 10768,
-      "sha256": "fe30c0363d2d0479164264b0b047f45b2ad23c52ed2112a7910ce561ded43658"
+      "bytes": 24506,
+      "sha256": "84f90b07a52071cc0bf17c330bff11848d78bcb2b3d93a2e6848c8d47ed249fb"
     },
     {
       "file": "DOVELA.html",
-      "bytes": 6106626,
-      "sha256": "b7681e104afbd89fe36cde2cc213afd9e4a016a029495684eb35ce91cea4467e"
+      "bytes": 6248525,
+      "sha256": "ba0c2d28beaa610b82890b55d4affe4200488a5a8c125b3604622c78cffa8d7e"
     },
     {
       "file": "LEEME.txt",
-      "bytes": 1326,
-      "sha256": "b14fb34e3161eb6daf4684569bb6f5e1c0965ffad47e5273d28b16e8940b730e"
+      "bytes": 1820,
+      "sha256": "c6f52f92bad8e4177a002b8e3572cd3c48edb51ec9bcac313b99df9a13917e7f"
     },
     {
       "file": "LICENCIA-SheetJS.txt",
@@ -54,23 +55,23 @@
     },
     {
       "file": "README.md",
-      "bytes": 3052,
-      "sha256": "86c60cef10e71ecdced7a60b0c41b402ff313efdb27d892c5cefb3ca4c25740d"
+      "bytes": 3636,
+      "sha256": "63d125329725bcf2bcbf04910930b7f5f281e56ff4adcc03c9b0ca4a2b508d76"
     },
     {
       "file": "SALMER.html",
-      "bytes": 1001377,
-      "sha256": "275635295ef37e61c8657f52098eaaeacb6b57d8572e4fe8f9707e78aa43990c"
+      "bytes": 1020625,
+      "sha256": "09951342f3f7c45de06596b6bd56989cbb5c51478efbe60428bcfa4f76765dea"
     },
     {
       "file": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "62a4bf50d334e47ba0527fbda21f482d98bff046fd93ed7355ba1bf10fa97b43"
+      "sha256": "24e33ab641ab98ba779bdc9f4cd3e19d9557cc8feedda5badc5635c761880b57"
     },
     {
       "file": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "36698a8f9d71641de486ba02e0a2826fa24c9dd91292500db3cb1f7899dd7e8d"
+      "sha256": "88b236909affc8347dc073a27a0f2781ae6b04940a5d38adc6f613233e1aae55"
     },
     {
       "file": "ejemplos/completo/CLAVE.txt",
@@ -189,18 +190,18 @@
     },
     {
       "file": "index.html",
-      "bytes": 34135,
-      "sha256": "c43f2a6674e391d3b94adee8802b503c013bba0f1bd3236cfe539be794d09949"
+      "bytes": 48222,
+      "sha256": "d8c3ec053e18cf0d7413829898ae1608e613f9be49a777e0c80fc378b9c9a40e"
     },
     {
       "file": "integridad-dovela.json",
       "bytes": 267,
-      "sha256": "a8e3479f794177ffb9fbcf8873fe27aa9a283acf8daeea9e75811b781b94e8b1"
+      "sha256": "1993769c41a91d0ada0483cf2fb1388d9feddf5a5716ced17ad1728b13dadbc8"
     },
     {
       "file": "integridad.json",
-      "bytes": 674,
-      "sha256": "c8ae891954a211fa0d290a49bd9d122eecd9af92deba6e7812815bce7531cd8a"
+      "bytes": 670,
+      "sha256": "4b8003c23e0f4c4a5806df23ce73cdcedf1900503528d8cea8c922eb13f92af4"
     },
     {
       "file": "plantillas/ISAT.dovela",
@@ -216,6 +217,36 @@
       "file": "plantillas/PBIS.dovela",
       "bytes": 15218,
       "sha256": "694a095dcfde867811679213986fb01c0185d7bb8b4352d614491130088a54fd"
+    },
+    {
+      "file": "shared/licenses/MPL-1.1.txt",
+      "bytes": 25755,
+      "sha256": "f849fc26a7a99981611a3a370e83078deb617d12a45776d6c4cada4d338be469"
+    },
+    {
+      "file": "shared/licenses/RLA-ES-LICENSE.md",
+      "bytes": 991,
+      "sha256": "2b70fd5cb8d3b34cc6ae322c969557a2270b99017594addb2531ef5ffd9e1b17"
+    },
+    {
+      "file": "shared/licenses/RLA-ES-README.txt",
+      "bytes": 2615,
+      "sha256": "0b5c39a863ecb61f5c5631ec1cd977667ef9bda6da6f90e80e9fc0edcbfadd97"
+    },
+    {
+      "file": "shared/licenses/WORDS-FILTER.json",
+      "bytes": 3267,
+      "sha256": "c431e0dbb7865f5e370918dc9945949caa1f4b86c6f6479e4610b692773ca9db"
+    },
+    {
+      "file": "shared/licenses/WORDS.md",
+      "bytes": 1425,
+      "sha256": "7df400683901cdab22ce09bc511711ba62440edcfb8beab77e535676397d0197"
+    },
+    {
+      "file": "shared/spanish-words.js",
+      "bytes": 23585,
+      "sha256": "fb31868ee63cbf8f715af97bbc42c719730c20f2f4f7a533dbdfae5d0622b01a"
     }
   ]
 }
