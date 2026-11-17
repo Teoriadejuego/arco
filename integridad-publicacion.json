@@ -1,6 +1,6 @@
 {
-  "edition": "0.11.0-eval.4",
-  "revision": "integracion-pbis-20261112",
+  "edition": "0.11.2-web.1",
+  "revision": "optimizacion-web-20261118",
   "syntheticOnly": true,
   "files": [
     {
@@ -14,64 +14,324 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "file": "assets/demo.0749e63f4eaf55c6.js",
+      "bytes": 149566,
+      "sha256": "0749e63f4eaf55c64bc11685a0350a436eb36a64dc16aec529d86f08f424b348"
+    },
+    {
+      "file": "assets/demo.0b07cd280cd39ab9.js",
+      "bytes": 138587,
+      "sha256": "0b07cd280cd39ab9bb49b7f2313ab53e640a76e49ffdcff28fbbc550441cfee2"
+    },
+    {
+      "file": "assets/demo.625a577f171a94df.js",
+      "bytes": 138949,
+      "sha256": "625a577f171a94dfe46c1b02756a569222cc37d11dab21f63c899a7ccef65c2e"
+    },
+    {
+      "file": "assets/demo.b4df5c0becbc7638.js",
+      "bytes": 457342,
+      "sha256": "b4df5c0becbc76386b097166d2ca71ff4d9827a5a5279c2b51e91b85bd276c67"
+    },
+    {
+      "file": "assets/demo.d1d3757231393349.js",
+      "bytes": 50186,
+      "sha256": "d1d37572313933494345483d9ed3afdfd5ed0dd306bd069fbff8bebd5915a17d"
+    },
+    {
+      "file": "assets/examples.71864cb316713e4c.js",
+      "bytes": 885,
+      "sha256": "71864cb316713e4c16c33ce721bf0d4380153cda75ea8a70b0b76fcfa4c9e0d5"
+    },
+    {
+      "file": "assets/fonts/OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "file": "assets/manrope.30b83738add8c9ed.woff2",
+      "bytes": 53892,
+      "sha256": "30b83738add8c9edd9e3450b98036a9a8fb5668d0cbd4eb0ce5fe6761197f21f"
+    },
+    {
+      "file": "assets/pdf.83bc522abeab8bee.js",
+      "bytes": 61271,
+      "sha256": "83bc522abeab8bee57ac023e59dd85a8c233ce2bd853054145f6a6cf7a594e82"
+    },
+    {
+      "file": "assets/pdf.931d59f86d67657b.js",
+      "bytes": 1946981,
+      "sha256": "931d59f86d67657b89c85849a7546a86c96db47c3d99ae9d7098fd795212d4c9"
+    },
+    {
+      "file": "assets/pdf.f86412a5b4bbd946.js",
+      "bytes": 1458525,
+      "sha256": "f86412a5b4bbd946816feb40b450a0b03bee70321bd863026111c90b58740f7f"
+    },
+    {
+      "file": "assets/resources.84e498549d843355.js",
+      "bytes": 1185,
+      "sha256": "84e498549d843355df8148de1cd05e3bd952004c3a8ea8f1df005a3caa27e302"
+    },
+    {
+      "file": "assets/resources.8b0659884146b459.js",
+      "bytes": 2013,
+      "sha256": "8b0659884146b459f06d42d8e36f48a0101ba73c230c7842b5a62d49c9563a52"
+    },
+    {
+      "file": "assets/shared.00e2e8e93d955130.js",
+      "bytes": 16989,
+      "sha256": "00e2e8e93d95513038b2efe5f596cc2c6e5e562d3f3f41f5cf2519c0f17409bc"
+    },
+    {
+      "file": "assets/shared.02970fac00d1045c.js",
+      "bytes": 376522,
+      "sha256": "02970fac00d1045cbb78e0899146747e59a422574c422518f02601ada524d341"
+    },
+    {
+      "file": "assets/shared.09770c4871d2c7d3.js",
+      "bytes": 759,
+      "sha256": "09770c4871d2c7d34e8fefdc38e9d402dcf4a544e83c0085c7db42974e84011b"
+    },
+    {
+      "file": "assets/shared.18e3f74571cd882c.js",
+      "bytes": 1245,
+      "sha256": "18e3f74571cd882c34a4cc9ae32cb9e952c4d1195d9b3cedae11fc029c2b2100"
+    },
+    {
+      "file": "assets/shared.209bea66d3fd438a.js",
+      "bytes": 30392,
+      "sha256": "209bea66d3fd438ac022a0775b523b626a541922931b0d41db3fc5685694e574"
+    },
+    {
+      "file": "assets/shared.23ae044d00d21be4.js",
+      "bytes": 1159,
+      "sha256": "23ae044d00d21be49c23613901343bbd197ebdf5425e7897aa84b0b46e826772"
+    },
+    {
+      "file": "assets/shared.29720997f6062d7c.js",
+      "bytes": 53993,
+      "sha256": "29720997f6062d7c336f3d877088f7cef8d4c4249eac91188a30189bef8cdcb5"
+    },
+    {
+      "file": "assets/shared.52ca4f4a35a3415a.js",
+      "bytes": 7773,
+      "sha256": "52ca4f4a35a3415a925e66f2caf44140ed63dc4853e3fa14cd24678f61b122b7"
+    },
+    {
+      "file": "assets/shared.569447dba073d43c.js",
+      "bytes": 3628,
+      "sha256": "569447dba073d43cabeb47f8953eb9b63809e55bf23135792eb6b38213952904"
+    },
+    {
+      "file": "assets/shared.60e89c7a1b1dbfaa.js",
+      "bytes": 2268,
+      "sha256": "60e89c7a1b1dbfaaf0b47884a577106d347d542788bbb88d7f85f0e896059a67"
+    },
+    {
+      "file": "assets/shared.7659fc773bed6df4.js",
+      "bytes": 873,
+      "sha256": "7659fc773bed6df49f8c1fa653cdb45622260ca943dfee2eec439e76f60e2286"
+    },
+    {
+      "file": "assets/shared.77b19453f83f0d90.js",
+      "bytes": 38746,
+      "sha256": "77b19453f83f0d90cc667034130db8215953be7ccb5f0b35044d91888fda7f14"
+    },
+    {
+      "file": "assets/shared.7a77ce2f24ba3e21.js",
+      "bytes": 6972,
+      "sha256": "7a77ce2f24ba3e21893dcfe0eb7854d299bade7035331bead2651582e31c9108"
+    },
+    {
+      "file": "assets/shared.7b36340d3b632013.js",
+      "bytes": 5338,
+      "sha256": "7b36340d3b632013f3f4371ca3252e92cc380b61a978d9b8b203d6c279704816"
+    },
+    {
+      "file": "assets/shared.7b81861012ddc142.js",
+      "bytes": 16019,
+      "sha256": "7b81861012ddc142dd4c1bbd8e8117b2bbadae60b2a8e389f5ec16a939c0e725"
+    },
+    {
+      "file": "assets/shared.7c2ef95263f63629.js",
+      "bytes": 4706,
+      "sha256": "7c2ef95263f6362903ab3b9efb5c5f0ae50946072309d6d7ef606153306f5b1d"
+    },
+    {
+      "file": "assets/shared.80fe516760d96d8a.js",
+      "bytes": 30363,
+      "sha256": "80fe516760d96d8a51c92e5cec12215596bd0c35b499697a13ef449f12fe8b57"
+    },
+    {
+      "file": "assets/shared.8aab0c666c2d0d3a.js",
+      "bytes": 20377,
+      "sha256": "8aab0c666c2d0d3aab7b9926725ebb93b3ed13913d9aae8fbc151797ba1caf21"
+    },
+    {
+      "file": "assets/shared.9dd40d18b314f343.js",
+      "bytes": 5463,
+      "sha256": "9dd40d18b314f343eaf537c088e3b5fa93fc84ce79133b23aa7d88f59ad5fbf1"
+    },
+    {
+      "file": "assets/shared.ab39092ff76600ec.js",
+      "bytes": 21198,
+      "sha256": "ab39092ff76600ec6b6e28bf12436e9e26f7497e2a25e9b19bb0c31fcd47f871"
+    },
+    {
+      "file": "assets/shared.b7ca142243664bba.js",
+      "bytes": 2846,
+      "sha256": "b7ca142243664bbaad806915f52a719505afad79a445f3000fc735c91de4f1d4"
+    },
+    {
+      "file": "assets/shared.b8a7d694021cc7f7.js",
+      "bytes": 4482,
+      "sha256": "b8a7d694021cc7f767fd9e26f6b1894dba1969dc4c573ee66c6a91328671f6ce"
+    },
+    {
+      "file": "assets/shared.d92f135016729324.js",
+      "bytes": 842,
+      "sha256": "d92f13501672932455f995c8e4c8321f41c3d50c0aa1906ff246d3f07708d368"
+    },
+    {
+      "file": "assets/shared.e2704378810e0e25.js",
+      "bytes": 2978,
+      "sha256": "e2704378810e0e25423b43c0f73c46e44544393ffc09bf731b8b1d362b9c3121"
+    },
+    {
+      "file": "assets/shared.e365a980b905b5d4.js",
+      "bytes": 5903,
+      "sha256": "e365a980b905b5d451df9e19c9a925666fddfa6c007fb8979d067f920b192be8"
+    },
+    {
+      "file": "assets/shared.e47f6ef0e0f72d27.js",
+      "bytes": 730,
+      "sha256": "e47f6ef0e0f72d2794648217930f63bfc08779acba9d8760be5cc5ca1991c49b"
+    },
+    {
+      "file": "assets/shared.e5a4e977a23ffb3f.js",
+      "bytes": 12915,
+      "sha256": "e5a4e977a23ffb3f2acb657ced2d26018f451b5b4374164a7c2f0a9a153edaef"
+    },
+    {
+      "file": "assets/shared.e6b1385360339845.js",
+      "bytes": 10718,
+      "sha256": "e6b1385360339845633c156a16f406c835769bd3d3970cc81984f33b21c87575"
+    },
+    {
+      "file": "assets/shared.e7db27abee91a3a5.js",
+      "bytes": 12379,
+      "sha256": "e7db27abee91a3a568bf1fac09e7d5298d9452d6f985f4d99afa8b3cc6b28e2e"
+    },
+    {
+      "file": "assets/style.14bda27c3860d71d.css",
+      "bytes": 17211,
+      "sha256": "14bda27c3860d71d434aa66f48e441ed15225e1a5200ed50128844d3619dc462"
+    },
+    {
+      "file": "assets/style.1983df8732e46cc3.css",
+      "bytes": 39402,
+      "sha256": "1983df8732e46cc3cf9bd721c5891001dad0be6d48d6876801d8398c1a534b22"
+    },
+    {
+      "file": "assets/style.400111f77d7df2fe.css",
+      "bytes": 896,
+      "sha256": "400111f77d7df2fe44f41438e95ec14ca84e405ba44454b7f87e2e9b153d5e79"
+    },
+    {
+      "file": "assets/style.4bf368e6a65e8552.css",
+      "bytes": 5811,
+      "sha256": "4bf368e6a65e8552a265ec5c70af0833bda4a655b53e56c8e3bff0aff432b48a"
+    },
+    {
+      "file": "assets/style.a35261167a877cfc.css",
+      "bytes": 5119,
+      "sha256": "a35261167a877cfcc89d91cde64a381295509e721f4ab27d42e1239ebe8244da"
+    },
+    {
+      "file": "assets/style.d2b7ec16a4ae45b1.css",
+      "bytes": 17047,
+      "sha256": "d2b7ec16a4ae45b1f0058a8ed12867a38b85227234b47b58e73366f713623f6e"
+    },
+    {
+      "file": "assets/style.e96e078eb702b27f.css",
+      "bytes": 25459,
+      "sha256": "e96e078eb702b27f863e85c078a7170300ca7c2c0425b58891e19599999c3755"
+    },
+    {
+      "file": "assets/xlsx.e7b91403d05d3f3f.js",
+      "bytes": 936354,
+      "sha256": "e7b91403d05d3f3f9c42e2cd0e6c2fd9709a2c57b82f24dcdd68eb632825bdb4"
+    },
+    {
       "file": "CLAVE-SALMER.html",
-      "bytes": 4894498,
-      "sha256": "4036807981062aafe4333d203e742bb24ed2e5a965d8a03c4cf74cc5f9062176"
+      "bytes": 32721,
+      "sha256": "bc4437268a8d71603cf018d484ee37c4bd4cbba473fcb80ea7e82ecbf19aab97"
     },
     {
       "file": "CLAVE.html",
-      "bytes": 5768964,
-      "sha256": "4fe86a4ef02d8d90f977406054152932804e35c27490a30fad8b1976a148dd38"
-    },
-    {
-      "file": "DEMO.html",
-      "bytes": 24506,
-      "sha256": "84f90b07a52071cc0bf17c330bff11848d78bcb2b3d93a2e6848c8d47ed249fb"
-    },
-    {
-      "file": "DOVELA.html",
-      "bytes": 6257218,
-      "sha256": "2ec365bfff1a82ededfae79dd7c28195fa809821d888b02322710ee0f48450b2"
-    },
-    {
-      "file": "LEEME.txt",
-      "bytes": 1820,
-      "sha256": "c6f52f92bad8e4177a002b8e3572cd3c48edb51ec9bcac313b99df9a13917e7f"
-    },
-    {
-      "file": "LICENCIA-SheetJS.txt",
-      "bytes": 11355,
-      "sha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
-    },
-    {
-      "file": "LICENCIAS-PDF.txt",
-      "bytes": 6990,
-      "sha256": "c1a540ce5e7cae73a48616cc58653b8f3b6db703a6a1af1b7fc194621e43e278"
-    },
-    {
-      "file": "PBIS-wave1.dovela",
-      "bytes": 15191,
-      "sha256": "b0db865186245a4e8faf0ea6f48d3f0542961585a1f840471494685851244029"
-    },
-    {
-      "file": "README.md",
-      "bytes": 3944,
-      "sha256": "4036060de2adc2c62c3e29e0f3d12016a3ce6db159f6b1e9c38e87c86d3f0a17"
-    },
-    {
-      "file": "SALMER.html",
-      "bytes": 1020625,
-      "sha256": "09951342f3f7c45de06596b6bd56989cbb5c51478efbe60428bcfa4f76765dea"
+      "bytes": 33287,
+      "sha256": "db8c1552997719df031cf136fa8eb3e32e2c9169a2f9e7a2104e4e1cafc7b705"
     },
     {
       "file": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "2c9eb826b142008c97e39d60e60ccb39d055234df4c469b32ce80b57dd1926cb"
+      "sha256": "1ed8535d5617d84c809ba7d9a156d509a0a7304ebf8555e521b26ad706f61874"
     },
     {
       "file": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "58a84256acf634c61a5d2cffb673e97070b08e23d861fbf3f18e33109cd5ae36"
+      "sha256": "eccbe6958197c0198bc70cd553fc8d46e45ed138ac03c957b195dd5efc517c9e"
+    },
+    {
+      "file": "DEMO.html",
+      "bytes": 16049,
+      "sha256": "6e522cd34b91460e06e4075ad7f8bd8f45ed7c91bab2b3a359a3cbd7fde84bdb"
+    },
+    {
+      "file": "DOVELA.html",
+      "bytes": 54413,
+      "sha256": "fd8c02edd934a6b31499bd031c05499c75fe2be5d1f033c9b9a6bf4bc5e80884"
+    },
+    {
+      "file": "downloads/ARCO-Local.zip",
+      "bytes": 4692455,
+      "sha256": "7762c45434e0279f41c6a353bf860bfe4382ec840af6148f26b1d08e0c503c14"
+    },
+    {
+      "file": "downloads/CLAVE-SALMER.html",
+      "bytes": 339862,
+      "sha256": "d2efc6d5b6dc874665717b924e68f0696e793b49b8559a8d8ea66476b57911ff"
+    },
+    {
+      "file": "downloads/CLAVE.html",
+      "bytes": 5863655,
+      "sha256": "a969814e8ec242dc1eac188a091ba781081aad5d3f142e654fc63f70bb3f2e61"
+    },
+    {
+      "file": "downloads/DEMO.html",
+      "bytes": 105139,
+      "sha256": "ccf1151a7c5fa5ee8a9815dce75be7525c7b0ae680f838c4a4a3b3890a02395a"
+    },
+    {
+      "file": "downloads/DOVELA.html",
+      "bytes": 1677449,
+      "sha256": "60d2414e982d1f0a78d5814191621ebbb004360c13795c437b5f1f387501766f"
+    },
+    {
+      "file": "downloads/GUIA.html",
+      "bytes": 93792,
+      "sha256": "d1d743cdbf54c89d5fa64f91a9a1076ca362e48d8033642f532893429a068eae"
+    },
+    {
+      "file": "downloads/index.html",
+      "bytes": 131006,
+      "sha256": "0fb8b81dec0fd8c708202ffc290ec977628d5de79a45b1978cdef45a455dbb42"
+    },
+    {
+      "file": "downloads/SALMER.html",
+      "bytes": 1109141,
+      "sha256": "a550c13987cd3bd668255a3ca71b9c432cb33fd30b42eee2892a540475902e0b"
     },
     {
       "file": "ejemplos/completo/CLAVE.txt",
@@ -94,11 +354,6 @@
       "sha256": "ee1fad16e4a3c2ae3c3c90c1d44b96b2c36731d2490e344d8a2c75838d233778"
     },
     {
-      "file": "ejemplos/esencial/CLAVE.txt",
-      "bytes": 62,
-      "sha256": "f6b08b8ef86ae6d354e1c38a6bccd7986aad8edaa1b014f2847dfd0ebe9634a2"
-    },
-    {
       "file": "ejemplos/esencial/centro-6701.xlsx",
       "bytes": 11301,
       "sha256": "52b57841a7b03a56bcb7ac6effa7bec696dd9b7195b4425e3c8b37caf06a9b46"
@@ -107,6 +362,11 @@
       "file": "ejemplos/esencial/centro-6702.xlsx",
       "bytes": 11301,
       "sha256": "ae9f699a4592c1df0b4fc2389edf1bed87386a2ecb4fbbb42dc542611438014a"
+    },
+    {
+      "file": "ejemplos/esencial/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "f6b08b8ef86ae6d354e1c38a6bccd7986aad8edaa1b014f2847dfd0ebe9634a2"
     },
     {
       "file": "ejemplos/esencial/informe.arco",
@@ -139,14 +399,14 @@
       "sha256": "7e79dd3c732f1f5a08d286f7cca38c542893ce2417ebcca20d1ceaa3703bde5d"
     },
     {
-      "file": "ejemplos/tres-olas/CLAVE.txt",
-      "bytes": 62,
-      "sha256": "d7f03b558301b2c1ca5b58366bd55838f4ddab2ad71ce3cc96378f4c81186a42"
-    },
-    {
       "file": "ejemplos/tres-olas/cierre.xlsx",
       "bytes": 17932,
       "sha256": "1acfa6f8a8e30c0cfcee331ef462993ad576c339df0b64388f681fbd5777bf86"
+    },
+    {
+      "file": "ejemplos/tres-olas/CLAVE.txt",
+      "bytes": 62,
+      "sha256": "d7f03b558301b2c1ca5b58366bd55838f4ddab2ad71ce3cc96378f4c81186a42"
     },
     {
       "file": "ejemplos/tres-olas/informe.arco",
@@ -189,19 +449,44 @@
       "sha256": "42e8bb968c360e27686d5af1d0618ad4e95e49d04e050054e0b595fa3604a916"
     },
     {
+      "file": "GUIA.html",
+      "bytes": 8908,
+      "sha256": "0befffb96005e9cfbdbcccd59c97fa625bbad33a5119e5be87f605dd8926bb42"
+    },
+    {
       "file": "index.html",
-      "bytes": 48222,
-      "sha256": "d8c3ec053e18cf0d7413829898ae1608e613f9be49a777e0c80fc378b9c9a40e"
+      "bytes": 34096,
+      "sha256": "95b7cb1ef0e4741a8c79de27380286496b3d630d77790e3f04f67a74439d352a"
     },
     {
       "file": "integridad-dovela.json",
       "bytes": 267,
-      "sha256": "f19770fe42514c05f1f1c16bd7e874e99567ed4afb41678a5a8348f536a5102e"
+      "sha256": "7f9734012a1de60e6739beaa28b9082e2aade68e57042b30c8780a3a777f4933"
     },
     {
       "file": "integridad.json",
-      "bytes": 670,
-      "sha256": "38882ce69de7182fafbbf02182b3e184924f6afdef87d86f9b7d846f6db38c37"
+      "bytes": 669,
+      "sha256": "a52df0f9b9793c366616592cd0ac550212077365373aa0b7dba95ba40584169b"
+    },
+    {
+      "file": "LEEME.txt",
+      "bytes": 1819,
+      "sha256": "b077d5d52624a0a3b1c3226ecc121772df3295caff9d4aba2765c1446fb3fe25"
+    },
+    {
+      "file": "LICENCIA-SheetJS.txt",
+      "bytes": 11355,
+      "sha256": "4d2a38ac35cda06a555c84074a819d413339cd3691b822cae50f8f322fe01f64"
+    },
+    {
+      "file": "LICENCIAS-PDF.txt",
+      "bytes": 6990,
+      "sha256": "c1a540ce5e7cae73a48616cc58653b8f3b6db703a6a1af1b7fc194621e43e278"
+    },
+    {
+      "file": "PBIS-wave1.dovela",
+      "bytes": 15191,
+      "sha256": "b0db865186245a4e8faf0ea6f48d3f0542961585a1f840471494685851244029"
     },
     {
       "file": "plantillas/ISAT.dovela",
@@ -217,6 +502,16 @@
       "file": "plantillas/PBIS.dovela",
       "bytes": 15218,
       "sha256": "694a095dcfde867811679213986fb01c0185d7bb8b4352d614491130088a54fd"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1890,
+      "sha256": "8814754f533228a88be919de35c7bb842474f2d794d3dbd28f76feaefedd2489"
+    },
+    {
+      "file": "SALMER.html",
+      "bytes": 22522,
+      "sha256": "3347ca4f7393b642a7e849f08c5bf31e1ebad586bb132a0158a4911ccdda0435"
     },
     {
       "file": "shared/licenses/MPL-1.1.txt",

@@ -1,26 +1,26 @@
 {
-  "edition": "0.11.0-eval.4",
+  "edition": "0.11.2-web.1",
   "synthetic": true,
   "files": [
     {
       "name": "CLAVE.html",
-      "bytes": 5768964,
-      "sha256": "4fe86a4ef02d8d90f977406054152932804e35c27490a30fad8b1976a148dd38"
+      "bytes": 5863655,
+      "sha256": "a969814e8ec242dc1eac188a091ba781081aad5d3f142e654fc63f70bb3f2e61"
     },
     {
       "name": "demo-pbis.arco",
       "bytes": 138584,
-      "sha256": "2c9eb826b142008c97e39d60e60ccb39d055234df4c469b32ce80b57dd1926cb"
+      "sha256": "1ed8535d5617d84c809ba7d9a156d509a0a7304ebf8555e521b26ad706f61874"
     },
     {
       "name": "demo-titulacion.arco",
       "bytes": 164680,
-      "sha256": "58a84256acf634c61a5d2cffb673e97070b08e23d861fbf3f18e33109cd5ae36"
+      "sha256": "eccbe6958197c0198bc70cd553fc8d46e45ed138ac03c957b195dd5efc517c9e"
     },
     {
       "name": "LEEME.txt",
-      "bytes": 1820,
-      "sha256": "c6f52f92bad8e4177a002b8e3572cd3c48edb51ec9bcac313b99df9a13917e7f"
+      "bytes": 1819,
+      "sha256": "b077d5d52624a0a3b1c3226ecc121772df3295caff9d4aba2765c1446fb3fe25"
     }
   ]
 }

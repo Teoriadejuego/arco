@@ -1,4 +1,4 @@
-ARCO · 0.11.0-eval.4 · Edición local de evaluación
+ARCO · 0.11.2-web.1 · Edición local de evaluación
 
 1. Abre index.html para ver la portada, las herramientas y cuatro informes de ejemplo.
 2. SALMER.html: contesta la demo por aulas, revisa y descarga el Excel y su plantilla .dovela.
