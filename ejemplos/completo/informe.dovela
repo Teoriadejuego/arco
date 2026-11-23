@@ -8,7 +8,7 @@
   },
   "config": {
     "version": 1,
-    "datasetId": "dovela-pbis-wave1",
+    "datasetId": "dovela-convivencia-wave1",
     "title": "Conocer el grupo con más detalle",
     "synthetic": true,
     "period": {
@@ -147,7 +147,7 @@
         ],
         "invalidLabels": [],
         "allowSelf": true,
-        "maxOthers": 15,
+        "maxOthers": null,
         "relations": [
           {
             "id": "mention",

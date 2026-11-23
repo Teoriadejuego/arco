@@ -1,4 +1,4 @@
-ARCO · 0.11.2-web.1 · Edición local de evaluación
+ARCO · V1.00 · Edición local de evaluación
 
 1. Abre index.html para ver la portada, las herramientas y cuatro informes de ejemplo.
 2. SALMER.html: contesta la demo por aulas, revisa y descarga el Excel y su plantilla .dovela.
@@ -7,17 +7,17 @@ ARCO · 0.11.2-web.1 · Edición local de evaluación
    Hasta 10 Excel del mismo periodo o hasta 3 olas.
 4. CLAVE.html: consulta los ejemplos o abre el .arco con su contraseña.
    Los informes de la galería tienen su clave en los detalles de la portada.
-5. En DOVELA puedes permitir exportar PDF por perfil. CLAVE descarga la vista con marca de agua.
-   La contraseña del PDF es el nombre de usuario; la clave del .arco es independiente.
+5. En DOVELA puedes permitir exportar PDF por perfil. CLAVE descarga la vista.
+   CLAVE genera una clave independiente para los PDF de cada consulta.
 6. Cerrar encuesta/consulta retira las respuestas cargadas de esa página. No elimina archivos descargados.
 
 Todo el contenido incluido es simulado. SALMER es una demo funcional; no está conectado a LimeSurvey.
 No necesitas instalar R ni Node para abrir los HTML. Revisa su funcionamiento en el navegador y equipo de destino.
 La vista previa dentro de DOVELA sirve para revisar: abre los archivos protegidos en CLAVE.html.
 Las claves de los ejemplos son públicas. Los accesos nuevos usan ocho palabras aleatorias.
-La contraseña del PDF es predecible: es el usuario. No equivale a la protección del .arco.
-La marca de agua no verifica la identidad de quien consulta.
+Guarda la clave del PDF antes de cerrar la consulta y entrégala por separado.
+El acceso abre únicamente el ámbito incluido en el archivo.
 La configuración de la clave pública del emisor está pendiente; consulta docs/LICENCIAS_LOCALES.md.
 No está certificada para producción: faltan pruebas físicas, revisión externa de seguridad y acuerdos comerciales.
 
-Ejemplos iniciales demo-pbis.arco / demo-titulacion.arco: ARCO-DEMO-2026
+Ejemplos iniciales demo-convivencia.arco / demo-titulacion.arco: ARCO-DEMO-2026

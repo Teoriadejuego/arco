@@ -8,7 +8,7 @@
   },
   "config": {
     "version": 1,
-    "datasetId": "dovela-pbis-wave1",
+    "datasetId": "dovela-convivencia-wave1",
     "title": "Una primera mirada",
     "synthetic": true,
     "period": {

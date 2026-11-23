@@ -112,7 +112,9 @@
           }
         ],
         "defaultRelation": "",
-        "defaultWeight": 1
+        "defaultWeight": 1,
+        "scope": "center",
+        "viewedColumn": "aulas_revisadas"
       },
       {
         "id": "menciones",

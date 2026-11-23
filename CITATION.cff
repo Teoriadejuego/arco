@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Para citar esta distribución, utiliza la referencia de esta versión de ARCO."
+type: software
+title: "ARCO V1.00 · Distribución web de SALMER, DOVELA y CLAVE"
+authors:
+  - family-names: "Alfonso Costillo"
+    given-names: "Antonio"
+    affiliation: "Universidad de Sevilla"
+version: "1.0.0"
+date-released: 2026-11-23
+repository-code: "https://github.com/Teoriadejuego/arco"
+url: "https://teoriadejuego.github.io/arco/"
+license-url: "https://github.com/Teoriadejuego/arco/blob/V1.00/README.md#derechos-y-cita"

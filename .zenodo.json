@@ -1,0 +1,28 @@
+{
+  "title": "ARCO V1.00 · Distribución web de SALMER, DOVELA y CLAVE",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "description": "<p>Distribución pública de ARCO V1.00 con demostración de encuesta en SALMER, preparación de informes en DOVELA y consulta por perfiles en CLAVE. Incluye aplicaciones web, descargas para uso local y ejemplos ficticios. El servidor de campañas se mantiene en el repositorio privado del proyecto.</p><p>Desarrollo propio con derechos reservados. Los componentes de terceros conservan sus licencias.</p>",
+  "creators": [
+    {
+      "name": "Alfonso Costillo, Antonio",
+      "affiliation": "Universidad de Sevilla"
+    }
+  ],
+  "language": "spa",
+  "license": "other-closed",
+  "access_right": "open",
+  "keywords": [
+    "encuestas",
+    "redes sociales",
+    "informes",
+    "educación",
+    "sociogramas"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://teoriadejuego.github.io/arco/GUIA.html",
+      "relation": "isDocumentedBy"
+    }
+  ]
+}
